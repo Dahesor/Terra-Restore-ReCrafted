@@ -1,0 +1,10 @@
+[
+    {
+        "condition": "reference",
+        "name": "dah.below:wither"
+    },
+    {
+        "condition": "reference",
+        "name": "dah.below:dying"
+    }
+]

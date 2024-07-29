@@ -1,0 +1,10 @@
+[
+    {
+        "condition": "reference",
+        "name": "dah.below:poison"
+    },
+    {
+        "condition": "reference",
+        "name": "dah.below:dying"
+    }
+]

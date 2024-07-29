@@ -1,0 +1,248 @@
+{
+  "providers": [
+    {
+      "type": "space",
+      "advances": {
+          " ": 5,
+          "-": -5,
+          "+": -1,
+          "]": 1,
+          "\u200c": 0
+      }
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/full.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/absorbing_full.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/poisoned_full.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/withered_full.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/frozen_full.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "g"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/half.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "C"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/absorbing_half.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "D"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/poisoned_half.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "E"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/withered_half.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "F"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "gui/sprites/hud/heart/frozen_half.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "G"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/weakness.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "I"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/slowness.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "J"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/mining_fatigue.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "K"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/strength.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "L"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/nausea.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "M"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/darkness.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "N"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/instant_health.png",
+      "height": 14,
+      "ascent": 10,
+      "chars": [
+        "O"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/fire_resistance.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "P"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/blindness.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "!"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/haste.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "@"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/hunger.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "#"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/jump_boost.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "$"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/night_vision.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "%"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/resistance.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "^"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/conduit_power.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "&"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "mob_effect/speed.png",
+      "height": 10,
+      "ascent": 8,
+      "chars": [
+        "*"
+      ]
+    }
+  ]
+}

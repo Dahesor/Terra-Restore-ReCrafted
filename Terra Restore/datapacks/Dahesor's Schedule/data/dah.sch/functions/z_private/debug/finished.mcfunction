@@ -1,0 +1,1 @@
+tellraw @a {"text":"[dah.sch DEBUG] ","color":"dark_aqua","extra":[{"text":"执行没有收到错误信息","color":"green"}]}

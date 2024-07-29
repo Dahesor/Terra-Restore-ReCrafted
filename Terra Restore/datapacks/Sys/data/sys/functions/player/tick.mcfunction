@@ -1,0 +1,1 @@
+execute if score #loop_20 calculator matches 4 run function sys:player/second

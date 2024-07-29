@@ -1,0 +1,299 @@
+{
+  "bgm.absolution": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:absolution",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.badjuju": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:badjuju",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.badjujusnippet": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:badjujusnippet",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.dreams": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:dreams",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.dregs_of_a_bitter_cup": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:dregs_of_a_bitter_cup",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.endless_skies_2": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:endless_skies_2",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.isolating_the_variable": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:isolating_the_variable",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.oh_no": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:oh_no",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_calling": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_calling",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_chaos_arranged": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_chaos_arranged",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_daring": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_daring",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_flamescale_mountain": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_flamescale_mountain",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_gilded_in_blood": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_gilded_in_blood",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_labyrinth": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_labyrinth",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_the_edge": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_the_edge",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_the_griffon_kingdom": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_the_griffon_kingdom",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_the_path_of_darkness": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_the_path_of_darkness",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_through_the_woods": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_through_the_woods",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.radiarc_vast_valley": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_vast_valley",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.redemption": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:redemption",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.rising_sun": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:rising_sun",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.ruins_of_harmony": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:ruins_of_harmony",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.shh": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:shh",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.the_crystal_kingdom": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:the_crystal_kingdom",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.winterglade": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:winterglade",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "event.tp": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:tpsfx",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": false
+          }
+      ]
+  },
+  "event.restore": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:restoresfx",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": false
+          }
+      ]
+  }
+}

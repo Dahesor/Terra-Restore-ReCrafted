@@ -1,0 +1,1 @@
+$tellraw @a {"text":"\n[dah.sch DEBUG] ","color":"dark_aqua","extra":[{"text":"即将尝试执行 ","color":"green"},{"text":"$(run)","color":"light_purple"}]}
