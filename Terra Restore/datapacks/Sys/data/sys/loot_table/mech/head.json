@@ -1,0 +1,31 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "fill_player_head",
+            "entity": "this"
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{deathHead:1b}"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "max_stack_size": 1,
+                "custom_model_data": 1
+            }
+        }
+    ]
+}

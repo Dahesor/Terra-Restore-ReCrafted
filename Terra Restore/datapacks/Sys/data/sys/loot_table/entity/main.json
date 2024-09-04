@@ -1,0 +1,223 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/1",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/2",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 2
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/3",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 3
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/4",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 4
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/5",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 5
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/6",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 6
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/7",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 7
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/8",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 8
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/9",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 9
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/10",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 10
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/11",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 11
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/12",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 12
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/13",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 13
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/14",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 14
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/15",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 15
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/regions/16",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "dropTemp": 16
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

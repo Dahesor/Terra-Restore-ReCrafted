@@ -1,0 +1,33 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.sys.freeze.2"
+    },
+    "effects": {
+        "post_attack": [
+            {
+                "affected": "victim",
+                "enchanted": "attacker",
+                "effect": {
+                    "type": "run_function",
+                    "function": "sys:player/attack/enchant/freeze_2"
+                }
+            }
+        ]
+    },
+    "max_cost": {
+      "base": 24,
+      "per_level_above_first": 7
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 6
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/weapon",
+    "weight": 4,
+    "exclusive_set": "#sys:is_freeze"
+  }

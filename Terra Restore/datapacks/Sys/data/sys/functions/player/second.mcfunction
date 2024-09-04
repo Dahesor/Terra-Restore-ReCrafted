@@ -1,1 +1,0 @@
-execute store result score @s region run function sys:player/get_region

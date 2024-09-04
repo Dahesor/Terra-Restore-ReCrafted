@@ -1,0 +1,43 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries":[
+                {
+                    "type": "item",
+                    "name": "blaze_powder"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "reference",
+            "name": "sys:util/mob_drop"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate": "item.sun","color": "gold","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode":"replace_all",
+            "lore": [
+                "",
+                {"translate": "item.sun.lore","color": "gray","italic": false}
+            ]
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{item:{id:'sun'}}"
+        },
+        {
+            "function": "set_enchantments",
+            "enchantments": {
+                "fortune": 1
+            }
+        }
+    ]
+}

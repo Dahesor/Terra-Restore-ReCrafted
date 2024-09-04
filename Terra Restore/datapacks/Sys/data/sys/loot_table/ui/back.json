@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_custom_model_data",
+            "value": 3
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'back',sound:'click'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.back","color": "red","italic": false}
+        }
+    ]
+}

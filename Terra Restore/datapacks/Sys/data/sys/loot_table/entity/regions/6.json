@@ -1,0 +1,61 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/iron_tier",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.6
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/gold_tier",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/stone_tier"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/water"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.07
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:['essence_mob']}"
+                    }
+                }
+            ]
+        }
+    ]
+}

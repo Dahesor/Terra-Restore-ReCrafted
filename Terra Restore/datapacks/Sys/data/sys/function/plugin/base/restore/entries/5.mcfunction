@@ -1,0 +1,18 @@
+function sys:plugin/base/restore/mod
+
+
+fill -2 34 -78 4 34 -83 minecraft:glowstone replace minecraft:redstone_lamp
+clone 850 3 168 859 23 184 850 83 168
+clone 860 3 151 869 23 167 860 83 151
+clone 870 3 135 879 18 150 870 83 135
+clone 870 3 151 879 23 167 869 83 151
+clone 860 3 168 869 24 184 860 83 168
+clone 840 3 135 849 24 150 840 83 135
+clone 840 3 151 849 23 167 840 83 151
+clone 850 3 135 859 23 150 850 83 135
+clone 870 3 168 879 23 184 870 83 168
+clone 850 3 151 859 23 167 850 83 151
+clone 860 3 135 869 23 150 860 83 135
+clone 840 3 168 849 23 184 840 83 168
+
+function sys:plugin/base/restore/mod_after

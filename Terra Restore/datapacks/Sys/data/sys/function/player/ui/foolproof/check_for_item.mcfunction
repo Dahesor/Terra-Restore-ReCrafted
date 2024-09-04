@@ -1,0 +1,17 @@
+data modify storage temp item set from entity @s Inventory
+data remove storage temp item[{Slot:0b}]
+data remove storage temp item[{Slot:1b}]
+data remove storage temp item[{Slot:2b}]
+data remove storage temp item[{Slot:3b}]
+data remove storage temp item[{Slot:4b}]
+data remove storage temp item[{Slot:5b}]
+data remove storage temp item[{Slot:6b}]
+data remove storage temp item[{Slot:7b}]
+data remove storage temp item[{Slot:8b}]
+data remove storage temp item[{Slot:100b}]
+data remove storage temp item[{Slot:101b}]
+data remove storage temp item[{Slot:102b}]
+data remove storage temp item[{Slot:103b}]
+data remove storage temp item[{Slot:-106b}]
+data remove storage temp item[{components:{"minecraft:custom_data":{ui:{}}}}]
+execute at @s run function sys:player/ui/foolproof/return_from_temp

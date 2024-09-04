@@ -1,0 +1,7 @@
+{
+    "values": [
+        "hopper_minecart",
+        "chest_minecart",
+        "#sys:container_riding"
+    ]
+}

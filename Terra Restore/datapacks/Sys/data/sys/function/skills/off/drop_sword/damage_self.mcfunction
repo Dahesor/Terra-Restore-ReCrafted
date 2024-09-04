@@ -1,0 +1,1 @@
+damage @s 9 sys:player_skill_physics

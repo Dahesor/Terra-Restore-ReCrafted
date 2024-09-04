@@ -1,0 +1,10 @@
+tag @s add 17_spawner_minecart
+tag @s add temp
+
+data merge entity @s[type=spawner_minecart] {SpawnCount:2s,MaxNearbyEntities:8,Delay:2,MaxSpawnDelay:900,MinSpawnDelay:400,RequiredPlayerRange:14,SpawnRange:5s,SpawnPotentials:[{weight:10,data:{entity:{id:"wither_skeleton"},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}},{weight:10,data:{entity:{id:"creeper",powered:1b},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}},{weight:10,data:{entity:{id:"skeleton"},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}},{weight:10,data:{entity:{id:"drowned",HandItems:[{id:"trident",count:1},{}]},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}}]}
+execute store result score #temp calculator run random value 1..4
+
+execute if score #temp calculator matches 1 run data merge entity @s {SpawnData:{entity:{id:"wither_skeleton"},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}}
+execute if score #temp calculator matches 2 run data merge entity @s {SpawnData:{entity:{id:"creeper",powered:1b},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}}
+execute if score #temp calculator matches 3 run data merge entity @s {SpawnData:{entity:{id:"drowned",HandItems:[{id:"trident",count:1},{}]},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}}
+execute if score #temp calculator matches 4 run data merge entity @s {SpawnData:{entity:{id:"skeleton"},custom_spawn_rules:{block_light_limit:{max_inclusive:8,min_inclusive:0},sky_light_limit:{max_inclusive:8,min_inclusive:0}}}}

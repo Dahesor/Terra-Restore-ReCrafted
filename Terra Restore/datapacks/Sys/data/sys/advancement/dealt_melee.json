@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "damage":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "sys:player_melee"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/attack/trigger"
+    }
+}

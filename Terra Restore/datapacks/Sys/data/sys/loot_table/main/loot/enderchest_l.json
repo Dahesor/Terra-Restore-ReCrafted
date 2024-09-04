@@ -1,0 +1,31 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ender_chest"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stone_pickaxe",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "silk_touch": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

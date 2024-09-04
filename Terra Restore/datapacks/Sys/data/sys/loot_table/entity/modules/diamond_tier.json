@@ -1,0 +1,51 @@
+{
+   "type": "entity",
+   "pools": [
+    {
+        "rolls": 1,
+        "bonus_rolls": 0.8,
+        "entries": [
+            {
+                "type": "item",
+                "name": "diamond_boots"
+            },
+            {
+                "type": "item",
+                "name": "diamond_leggings"
+            },
+            {
+                "type": "item",
+                "name": "diamond_chestplate"
+            },
+            {
+                "type": "item",
+                "name": "diamond_helmet"
+            },
+            {
+                "type": "item",
+                "name": "diamond_sword"
+            },
+            {
+                "type": "item",
+                "name": "diamond_axe"
+            },
+            {
+                "type": "item",
+                "name": "trident",
+                "conditions": [
+                    {
+                        "condition": "random_chance",
+                        "chance": 0.8
+                    }
+                ]
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "random_chance",
+                "chance": 0.025
+            }
+        ]
+    }
+   ]
+}

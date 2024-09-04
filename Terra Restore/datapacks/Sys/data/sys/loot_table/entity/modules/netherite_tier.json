@@ -1,0 +1,51 @@
+{
+   "type": "entity",
+   "pools": [
+    {
+        "rolls": 1,
+        "bonus_rolls": 0.8,
+        "entries": [
+            {
+                "type": "item",
+                "name": "netherite_boots"
+            },
+            {
+                "type": "item",
+                "name": "netherite_leggings"
+            },
+            {
+                "type": "item",
+                "name": "netherite_chestplate"
+            },
+            {
+                "type": "item",
+                "name": "netherite_helmet"
+            },
+            {
+                "type": "item",
+                "name": "netherite_sword"
+            },
+            {
+                "type": "item",
+                "name": "netherite_axe"
+            },
+            {
+                "type": "item",
+                "name": "trident",
+                "conditions": [
+                    {
+                        "condition": "random_chance",
+                        "chance": 0.8
+                    }
+                ]
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "random_chance",
+                "chance": 0.025
+            }
+        ]
+    }
+   ]
+}

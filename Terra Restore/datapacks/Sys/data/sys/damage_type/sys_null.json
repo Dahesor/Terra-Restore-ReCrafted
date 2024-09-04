@@ -1,0 +1,7 @@
+{
+    "effects": "hurt",
+    "exhaustion": 0.01,
+    "scaling": "when_caused_by_living_non_player",
+    "death_message_type": "default",
+    "message_id": "null"
+}

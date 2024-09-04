@@ -1,0 +1,1 @@
+$data modify storage sys:data spot set from storage sys:data test.valid_spots[$(index)]

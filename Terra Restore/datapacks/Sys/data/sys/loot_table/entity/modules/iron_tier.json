@@ -1,0 +1,41 @@
+{
+   "type": "entity",
+   "pools": [
+    {
+        "rolls": 1,
+        "bonus_rolls": 0.8,
+        "entries": [
+            {
+                "type": "item",
+                "name": "iron_boots"
+            },
+            {
+                "type": "item",
+                "name": "iron_leggings"
+            },
+            {
+                "type": "item",
+                "name": "iron_chestplate"
+            },
+            {
+                "type": "item",
+                "name": "iron_helmet"
+            },
+            {
+                "type": "item",
+                "name": "iron_sword"
+            },
+            {
+                "type": "item",
+                "name": "iron_axe"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "random_chance",
+                "chance": 0.025
+            }
+        ]
+    }
+   ]
+}

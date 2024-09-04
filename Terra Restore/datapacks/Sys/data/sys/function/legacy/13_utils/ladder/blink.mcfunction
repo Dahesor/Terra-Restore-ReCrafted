@@ -1,0 +1,2 @@
+execute if score 13_ladder data matches 1.. if block 3096 121 -1146 minecraft:glowstone run return run fill 3096 116 -1146 3098 121 -1146 minecraft:red_terracotta replace glowstone
+execute if score 13_ladder data matches 1.. if block 3096 121 -1146 red_terracotta run fill 3096 116 -1146 3098 121 -1146 minecraft:glowstone replace red_terracotta

@@ -1,0 +1,3 @@
+summon armor_stand ~ ~20 ~ {Invisible:1b,Invulnerable:1b,Passengers:[{id:"minecraft:item_display",item:{id:"minecraft:netherite_axe",count:1},transformation:[-3.0180f,0.8002f,-0.0728f,0.5000f,-0.7994f,-3.0208f,-0.0195f,0.1000f,-0.1346f,-0.0004f,1.7484f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:["boss_void_kill"]}],Tags:["boss_void_kill","new_temp"],Small:1b,DisabledSlots:16191}
+tp @e[type=armor_stand,tag=new_temp,distance=..2,limit=1,tag=boss_void_kill] ~ ~ ~ ~ ~
+tag @e[type=armor_stand,tag=new_temp,limit=1,distance=..2] remove new_temp

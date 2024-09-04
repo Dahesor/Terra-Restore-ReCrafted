@@ -1,0 +1,36 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "splash_potion"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "name": {"translate": "item.potion_temp","color": "green","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {"translate": "item.potion_temp.1","color": "green","italic": false}
+            ]
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{is_temp:1b}"
+        },
+        {
+            "function": "set_potion",
+            "id": "strong_healing"
+        }
+    ]
+}

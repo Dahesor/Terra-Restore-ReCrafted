@@ -1,0 +1,84 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+    {"rolls": 1,"entries": [{"type": "loot_table","value": "sys:entity/main"}],"conditions": [{"condition": "killed_by_player"}]},
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:set_count"
+                        },
+                        {
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1.0,
+                                "min": 0.0
+                            },
+                            "function": "minecraft:enchanted_count_increase",
+                            "enchantment": "looting"
+                        }
+                    ],
+                    "name": "minecraft:gunpowder"
+                }
+            ],
+            "rolls": 1.0,
+            "conditions": [
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "all_of",
+                        "terms": [
+                            {
+                                "condition": "damage_source_properties",
+                                "predicate": {
+                                    "tags": [
+                                        {
+                                            "expected": true,
+                                            "id": "minecraft:bypasses_armor"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": "inverted",
+                                "term": {
+                                    "condition": "killed_by_player"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "bonus_rolls": 0.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "type": "#minecraft:skeletons"
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "expand": true,
+                    "name": "minecraft:creeper_drop_music_discs"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "minecraft:entities/creeper"
+}

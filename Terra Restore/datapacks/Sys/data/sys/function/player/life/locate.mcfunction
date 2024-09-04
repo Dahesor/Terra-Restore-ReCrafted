@@ -1,0 +1,1 @@
+$execute positioned $(x) $(y) $(z) run function sys:player/life/reviver

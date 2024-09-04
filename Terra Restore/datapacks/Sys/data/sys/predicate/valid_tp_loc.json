@@ -1,0 +1,28 @@
+[
+    {
+        "condition": "location_check",
+        "predicate": {
+            "block": {
+                "blocks": "#sys:valid_tp"
+            }
+        }
+    },
+    {
+        "condition": "location_check",
+        "predicate": {
+            "block": {
+                "blocks": "#sys:valid_tp"
+            }
+        },
+        "offsetY": 1
+    },
+    {
+        "condition": "location_check",
+        "predicate": {
+            "block": {
+                "blocks": "#sys:valid_tp"
+            }
+        },
+        "offsetY": -1
+    }
+]

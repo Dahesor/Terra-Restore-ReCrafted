@@ -1,0 +1,28 @@
+[
+    {
+        "function": "set_custom_data",
+        "tag": "{parsed:1b,p_override:100}"
+    },
+    {
+        "function": "copy_custom_data",
+        "source": {
+            "type": "storage",
+            "source": "temp"
+        },
+        "ops": [
+            {
+                "source": "run.p_override",
+                "target": "p_override",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {"translate": "identification.click"}
+        ],
+        "mode": "insert",
+        "offset": 0
+    }
+]

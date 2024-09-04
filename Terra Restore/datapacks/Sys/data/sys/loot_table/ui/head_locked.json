@@ -1,0 +1,45 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "fill_player_head",
+            "entity": "this"
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{id:'head',head:1b,head_locked:1b}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.player_page.locked","color": "red","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "mode": "replace_all",
+            "entity": "this",
+            "lore": [
+                "",
+                {"translate":"ui.player_page.locked.1","color": "gray","italic": false},
+                {"translate":"ui.player_page.locked.2","color": "gray","italic": false}
+            ]
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "max_stack_size": 1,
+                "custom_model_data": 2
+            }
+        }
+    ]
+}

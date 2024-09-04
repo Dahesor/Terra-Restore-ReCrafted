@@ -1,1 +1,0 @@
-summon villager ~ ~ ~ {CustomName:'"§aVuco"',NoAI:1b,Invulnerable:1b,NoGravity:1b,VillagerData:{type:"minecraft:plains",level:5,profession:"cleric"},Tags:["opening"]}

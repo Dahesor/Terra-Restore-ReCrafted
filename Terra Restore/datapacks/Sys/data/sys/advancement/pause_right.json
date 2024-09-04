@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "consume":{
+            "trigger": "consume_item"
+        },
+        "used":{
+            "trigger": "using_item"
+        },
+        "place_block":{
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "consume",
+            "used",
+            "place_block"
+        ]
+    ],
+    "rewards": {
+        "function": "sys:player/trigs/fool/use_cooldown"
+    }
+}

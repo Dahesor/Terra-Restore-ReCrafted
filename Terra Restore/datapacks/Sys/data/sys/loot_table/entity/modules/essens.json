@@ -1,0 +1,59 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/fire"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/ice"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/water"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/sun"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.04
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/fire"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/ice"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/water"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/sun"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.025
+                }
+            ]
+        }
+    ]
+}

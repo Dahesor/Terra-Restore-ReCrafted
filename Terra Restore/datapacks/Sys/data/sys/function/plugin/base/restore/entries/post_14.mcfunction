@@ -1,0 +1,16 @@
+setblock 948 190 -42 minecraft:glowstone replace
+setblock 936 209 -21 minecraft:glowstone replace
+setblock 937 189 -49 minecraft:glowstone replace
+setblock 922 185 -36 minecraft:glowstone replace
+setblock 927 174 -25 minecraft:glowstone replace
+setblock 937 196 -46 minecraft:glowstone replace
+setblock 937 214 -36 minecraft:glowstone replace
+setblock 928 197 -33 minecraft:glowstone replace
+setblock 929 178 -46 minecraft:glowstone replace
+setblock 941 197 -21 minecraft:glowstone replace
+setblock 943 177 -33 minecraft:glowstone replace
+setblock 930 174 -20 minecraft:glowstone replace
+setblock 931 207 -39 minecraft:glowstone replace
+setblock 944 220 -33 minecraft:glowstone replace
+setblock 948 184 -32 minecraft:glowstone replace
+setblock 935 187 -29 minecraft:glowstone replace

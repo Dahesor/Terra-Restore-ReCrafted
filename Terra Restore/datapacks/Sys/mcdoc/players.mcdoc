@@ -1,0 +1,102 @@
+use ::java::server::util::inventory::SlottedItem
+use ::java::server::util::InventoryItem
+use ::java::server::util::attribute::AttributeOperation
+use ::java::server::world::entity::mob::MobBase
+
+dispatch minecraft:storage["sys:data"] to struct {
+    player?: [player_data],
+    tp?: [tp_data],
+    test?: tp_data,
+    spot?: [int] @ 3,
+    item?: InventoryItem,
+    itemSlot?: SlottedItem,
+    Inv?: [SlottedItem<byte @ -106..106>] @ -106..106,
+    Inv2?: [SlottedItem<byte @ -106..106>] @ -106..106,
+    SaveInv?: [SlottedItem<byte @ -106..106>] @ -106..106,
+    lore?: [#[text_component]string],
+    dupe?: MobBase,
+    terra: [int @ 0..]
+}
+
+dispatch minecraft:storage["sys:loot_box"] to struct {
+    data?: [box],
+    test?: box,
+}
+
+dispatch minecraft:storage["sys:mod"] to struct {
+    data?: [att],
+    hold?:[att],
+    class?:[att],
+    result?:[att],
+    test?: att,
+}
+
+struct att{
+    type: att_type,
+    ...sys:att_type[[type]],
+    point: int,
+    class?: att_class,
+    positive?: byte @ 0..1,
+}
+
+dispatch sys:att_type[AttModifier] to struct AttModifier {
+    id: #[id="attribute"] string,
+    operation: AttributeOperation,
+    amount?: double,
+}
+
+enum(string) att_type{
+    Attribute = "AttModifier",
+    Enchantments = "Enchant",
+    CustomData = "CustomData"
+}
+
+enum(int) att_class{
+    neutral = 0,
+    l1_20 = 20,
+    l21_40 = 40,
+    l41_60 = 60,
+    l61_80 = 80,
+    l81_100 = 100,
+    l101_130 = 130,
+    l131_160 = 160,
+    l160_200 = 200,
+    l200_ = 300,
+    m1_20 = -20,
+    m21_40 = -40,
+    m41_60 = -60,
+    m61_80 = -80,
+    m81_100 = -100,
+    m101_130 = -130,
+    m131_160 = -160,
+    m160_200 = -200,
+    m200_ = -300
+}
+
+struct player_data{
+    UID: int @ -1..,
+    pack: [SlottedItem<byte @ 0..35>] @ 0..36,
+    name: string,
+    UUID: string
+}
+
+struct tp_data{
+    by: (enum(string){system="SYSTEM"}|int),
+    at: [int] @ 3,
+    valid_spots:[[int]],
+    till: int @ -1..,
+    region: int @ -1..,
+    display?: string,
+}
+
+struct box{
+    id: int,
+    players?:[struct{
+        UID:int,
+        UUID:string,
+    }],
+    loot?: #[id="loot_table"] string,
+    locked?: byte @ 0..1,
+    tags?:[(string|enum(string){haslock = "has_lock",one_time= "one_time",reward= "reward"})],
+    display:InventoryItem,
+}

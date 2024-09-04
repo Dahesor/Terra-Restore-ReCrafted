@@ -1,0 +1,2 @@
+execute as @e[type=block_display,tag=door_moves,tag=stair_moves] run data merge entity @s {teleport_duration:18}
+execute as @e[type=block_display,tag=door_moves,tag=stair_moves] at @s run tp @s ~ ~0.2 ~

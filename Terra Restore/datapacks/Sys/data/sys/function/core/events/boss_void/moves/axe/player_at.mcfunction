@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^6 positioned ~ ~12 ~ rotated as @s rotated ~ 0 run function sys:core/events/boss_void/moves/axe/summon
+execute positioned ~ ~8 ~ rotated as @s rotated ~ 0 run function sys:core/events/boss_void/moves/axe/summon

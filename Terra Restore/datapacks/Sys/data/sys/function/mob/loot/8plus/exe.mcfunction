@@ -1,0 +1,1 @@
+execute if items entity @s armor.* blaze_powder run function sys:mob/loot/8plus/kill_legacy

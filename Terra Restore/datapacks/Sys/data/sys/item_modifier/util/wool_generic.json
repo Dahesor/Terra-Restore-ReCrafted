@@ -1,0 +1,19 @@
+[
+    {
+        "function": "set_lore",
+        "mode": "replace_all",
+        "lore": ["",{"translate":"item.ancient_wool.lore","color": "light_purple","italic": false}]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "enchantment_glint_override": true,
+            "max_stack_size": 1,
+            "rarity": "uncommon"
+        }
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{is_wool:1b}"
+    }
+]

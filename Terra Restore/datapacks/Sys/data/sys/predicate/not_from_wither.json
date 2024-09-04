@@ -1,0 +1,11 @@
+{
+    "condition": "inverted",
+    "term": 
+    {
+      "condition": "entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type":"#sys:from_wither" 
+      }
+    }
+}

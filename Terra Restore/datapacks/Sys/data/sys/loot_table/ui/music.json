@@ -1,0 +1,40 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void",
+                    "functions": [
+                        {
+                            "function": "set_custom_model_data",
+                            "value": 14
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{ui:{trigger:{id:'music'}}}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {"translate": "ui.music","color": "green","italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                "",
+                                {"translate": "ui.music.1","color": "gray","italic": false},
+                                {"translate": "ui.music.2","color": "gray","italic": false},
+                                "",
+                                {"translate": "action.click","color": "yellow","italic": false}
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

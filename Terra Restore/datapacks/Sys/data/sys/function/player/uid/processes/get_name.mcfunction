@@ -1,0 +1,2 @@
+loot spawn 0.0 -10.0 0.0 loot sys:ui/head
+execute positioned 0.0 -10.0 0.0 as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{ui:{}}}}},distance=..3] run function sys:player/uid/processes/head_self

@@ -1,0 +1,12 @@
+{
+    "values": [
+        "#exclusive_set/damage",
+        "unbreaking",
+        "fire_aspect",
+        "knockback",
+        "looting",
+        "#sys:is_freeze",
+        "sys:poison",
+        "sys:armor_breaking"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/stone_tier",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.6
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/wood_tier"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_custom_data",
+            "tag": "{trigger:1b}"
+        },
+        {
+            "function":"set_components",
+            "components": {
+                "hide_tooltip": {},
+                "item_name": "\"\""
+            }
+        },
+        {
+            "function": "reference",
+            "name":"sys:util/hide_off",
+            "conditions": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:['reading_container']}"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+[
+    {
+        "function": "set_attributes",
+        "replace": false,
+        "modifiers": [
+            {
+                "attribute": "generic.luck",
+                "slot":"any",
+                "amount": 0,
+                "id": "sys:show_default",
+                "operation": "add_value"
+            }
+        ]
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{att_lock:1b,atted:1b,parsed:1b}"
+    }
+]

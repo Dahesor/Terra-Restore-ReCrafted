@@ -1,0 +1,44 @@
+scoreboard players operation $region calculator = @s region
+function sys:att/formule/regions/get
+data modify storage temp run set value {p_override:100}
+execute store result storage temp run.p_override int 1 run scoreboard players get $p calculator
+execute if items entity @s container.0 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.0 sys:att/record_region
+execute if items entity @s container.1 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.1 sys:att/record_region
+execute if items entity @s container.2 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.2 sys:att/record_region
+execute if items entity @s container.3 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.3 sys:att/record_region
+execute if items entity @s container.4 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.4 sys:att/record_region
+execute if items entity @s container.5 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.5 sys:att/record_region
+execute if items entity @s container.6 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.6 sys:att/record_region
+execute if items entity @s container.7 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.7 sys:att/record_region
+execute if items entity @s container.8 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.8 sys:att/record_region
+execute if items entity @s container.9 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.9 sys:att/record_region
+execute if items entity @s container.10 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.10 sys:att/record_region
+execute if items entity @s container.11 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.11 sys:att/record_region
+execute if items entity @s container.12 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.12 sys:att/record_region
+execute if items entity @s container.13 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.13 sys:att/record_region
+execute if items entity @s container.14 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.14 sys:att/record_region
+execute if items entity @s container.15 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.15 sys:att/record_region
+execute if items entity @s container.16 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.16 sys:att/record_region
+execute if items entity @s container.17 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.17 sys:att/record_region
+execute if items entity @s container.18 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.18 sys:att/record_region
+execute if items entity @s container.19 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.19 sys:att/record_region
+execute if items entity @s container.20 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.20 sys:att/record_region
+execute if items entity @s container.21 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.21 sys:att/record_region
+execute if items entity @s container.22 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.22 sys:att/record_region
+execute if items entity @s container.23 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.23 sys:att/record_region
+execute if items entity @s container.24 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.24 sys:att/record_region
+execute if items entity @s container.25 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.25 sys:att/record_region
+execute if items entity @s container.26 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.26 sys:att/record_region
+execute if items entity @s container.27 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.27 sys:att/record_region
+execute if items entity @s container.28 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.28 sys:att/record_region
+execute if items entity @s container.29 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.29 sys:att/record_region
+execute if items entity @s container.30 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.30 sys:att/record_region
+execute if items entity @s container.31 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.31 sys:att/record_region
+execute if items entity @s container.32 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.32 sys:att/record_region
+execute if items entity @s container.33 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.33 sys:att/record_region
+execute if items entity @s container.34 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.34 sys:att/record_region
+execute if items entity @s container.35 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.35 sys:att/record_region
+execute if items entity @s armor.feet #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s armor.feet sys:att/record_region
+execute if items entity @s armor.legs #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s armor.legs sys:att/record_region
+execute if items entity @s armor.chest #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s armor.chest sys:att/record_region
+execute if items entity @s armor.head #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s armor.head sys:att/record_region

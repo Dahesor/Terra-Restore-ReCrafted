@@ -1,0 +1,26 @@
+[
+    {
+        "function": "set_attributes",
+        "replace": false,
+        "modifiers": [
+            {
+                "attribute": "generic.attack_speed",
+                "slot": "mainhand",
+                "amount": 2,
+                "id": "sys:show_default",
+                "operation": "add_value"
+            },
+            {
+                "attribute": "generic.attack_knockback",
+                "slot": "mainhand",
+                "amount": 1.18,
+                "id": "sys:default_attack_knockback",
+                "operation": "add_value"
+            }
+        ]
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{att_lock:1b,atted:1b,parsed:1b}"
+    }
+]

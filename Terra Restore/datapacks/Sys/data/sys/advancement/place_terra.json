@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "look":{
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:['terra']}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:plugin/base/restore/trigger"
+    }
+}

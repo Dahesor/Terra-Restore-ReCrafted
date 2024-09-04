@@ -1,0 +1,23 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 6,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bread"
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_sword"
+                }
+            ]
+        }
+    ]
+}

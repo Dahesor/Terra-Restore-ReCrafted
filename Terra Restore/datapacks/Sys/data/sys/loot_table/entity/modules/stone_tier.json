@@ -1,0 +1,41 @@
+{
+   "type": "entity",
+   "pools": [
+    {
+        "rolls": 1,
+        "bonus_rolls": 0.8,
+        "entries": [
+            {
+                "type": "item",
+                "name": "chainmail_boots"
+            },
+            {
+                "type": "item",
+                "name": "chainmail_leggings"
+            },
+            {
+                "type": "item",
+                "name": "chainmail_chestplate"
+            },
+            {
+                "type": "item",
+                "name": "chainmail_helmet"
+            },
+            {
+                "type": "item",
+                "name": "stone_sword"
+            },
+            {
+                "type": "item",
+                "name": "stone_axe"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "random_chance",
+                "chance": 0.025
+            }
+        ]
+    }
+   ]
+}

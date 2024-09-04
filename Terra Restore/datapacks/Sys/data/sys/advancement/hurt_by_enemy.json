@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "hurt":{
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "type": "#sys:mobs"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/life/hurt"
+    }
+}

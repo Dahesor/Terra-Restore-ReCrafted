@@ -1,0 +1,3 @@
+fill 765 63 120 765 69 123 bedrock
+setblock 764 64 121 cherry_wall_sign[facing=west]{is_waxed:true,front_text:{messages:['""','{"translate":"action.open_door","color": "gold","clickEvent": {"action": "run_command","value": "/function sys:plugin/door_moves/go"}}','""','["[",{"keybind": "key.use","underlined": true,"color": "green"},"]"]']}}
+execute positioned 764 64 121 summon marker run function sys:dev/sign_util

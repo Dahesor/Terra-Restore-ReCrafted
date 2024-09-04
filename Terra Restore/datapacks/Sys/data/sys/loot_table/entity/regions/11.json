@@ -1,0 +1,30 @@
+{
+    "type": "entity",
+    "pools": [
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "sys:entity/modules/essens"}]},
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/diamond_tier",
+                            "conditions": [
+                                {
+                                    "condition": "random_chance",
+                                    "chance": 0.2
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:entity/modules/iron_tier"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

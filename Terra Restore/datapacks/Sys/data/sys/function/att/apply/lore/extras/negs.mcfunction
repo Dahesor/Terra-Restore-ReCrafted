@@ -1,0 +1,1 @@
+$data modify storage sys:data lore append value '{"translate": "att.new","color": "red","italic": false,"with": ["-","$(value).$(vc)",{"translate": "$(trans)"}]}'

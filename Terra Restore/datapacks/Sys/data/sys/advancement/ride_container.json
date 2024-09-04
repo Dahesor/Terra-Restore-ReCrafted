@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "ds":{
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#sys:container_riding"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/ui/foolproof/interactions/riding"
+    }
+}

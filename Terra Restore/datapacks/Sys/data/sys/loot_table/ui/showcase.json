@@ -1,0 +1,40 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void",
+                    "functions": [
+                        {
+                            "function": "set_custom_model_data",
+                            "value": 15
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{ui:{trigger:{id:'show'}}}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {"translate": "ui.showcase.name","color": "green","italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                "",
+                                {"translate": "ui.showcase.1","color": "gray","italic": false},
+                                {"translate": "ui.showcase.2","color": "gray","italic": false},
+                                "",
+                                {"translate": "action.click","color": "yellow","italic": false}
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

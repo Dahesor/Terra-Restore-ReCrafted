@@ -1,0 +1,1 @@
+scoreboard players set @a[tag=in_boss_void] music 190

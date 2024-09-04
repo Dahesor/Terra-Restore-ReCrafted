@@ -1,0 +1,13 @@
+[
+    {
+        "function": "set_custom_data",
+        "tag": "{att_lock:1b,atted:1b,parsed:1b}"
+    },
+    {
+        "function": "set_lore",
+        "lore": [""],
+        "mode": "replace_section",
+        "offset": 0,
+        "size": 1
+    }
+]

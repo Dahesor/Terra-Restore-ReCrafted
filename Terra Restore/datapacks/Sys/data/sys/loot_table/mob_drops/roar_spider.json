@@ -1,0 +1,21 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "diamond",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "add": false,
+                            "count": 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

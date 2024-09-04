@@ -1,0 +1,14 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "golden_apple"
+                }
+            ]
+        }
+    ]
+}

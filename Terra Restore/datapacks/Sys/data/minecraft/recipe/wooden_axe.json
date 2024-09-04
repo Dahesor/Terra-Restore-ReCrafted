@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:wooden_axe",
+    "components": {
+      "lore": [
+        "\"\"",
+        "{\"translate\": \"att.lock\", \"color\": \"gray\", \"italic\": false}"
+      ],
+      "custom_data": "{att_lock:1b,crafted:1b,parsed:1b}",
+      "attribute_modifiers": [
+        {
+          "amount": 6,
+          "id": "minecraft:base_attack_damage",
+          "type": "generic.attack_damage",
+          "slot": "hand",
+          "operation": "add_value"
+        },
+        {
+          "amount": -1.2,
+          "id": "minecraft:base_attack_speed",
+          "type": "generic.attack_speed",
+          "slot": "hand",
+          "operation": "add_value"
+        },
+        {
+          "amount": 1.18,
+          "id": "sys:base_attack_knockback",
+          "type": "generic.attack_knockback",
+          "slot": "hand",
+          "operation": "add_value"
+        }
+      ]
+    }
+  }
+}

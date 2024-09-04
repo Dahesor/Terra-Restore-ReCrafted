@@ -1,0 +1,30 @@
+function sys:plugin/base/restore/mod
+
+
+fill -29 34 -99 -24 34 -104 minecraft:glowstone replace minecraft:redstone_lamp
+clone 925 3 64 937 25 76 925 70 64
+clone 938 3 51 950 25 63 938 70 51
+clone 938 3 38 950 25 50 938 70 38
+clone 925 3 51 937 25 63 925 70 51
+clone 925 3 38 937 25 50 925 70 38
+clone 938 3 25 950 25 37 938 70 25
+clone 951 3 64 963 25 76 951 70 64
+clone 925 3 25 937 25 37 925 70 25
+clone 938 3 64 950 25 76 938 70 64
+clone 964 3 38 977 22 50 964 70 38
+clone 978 3 25 990 25 37 978 70 25
+clone 951 3 51 963 25 63 951 70 51
+clone 964 3 51 977 22 63 964 70 51
+clone 978 3 38 990 25 50 978 70 38
+clone 978 3 51 990 25 63 978 70 51
+clone 964 3 64 977 22 76 964 70 64
+clone 951 3 25 963 25 37 951 70 25
+clone 951 3 38 963 25 50 951 70 38
+clone 964 3 25 977 22 37 964 70 25
+clone 978 3 64 990 25 76 978 70 64
+clone 925 3 21 957 25 24 925 70 21
+clone 958 3 21 990 26 24 958 70 21
+
+execute as @e[x=959,y=14,z=50,distance=..15,type=horse] at @s run tp ~ ~67 ~
+
+function sys:plugin/base/restore/mod_after

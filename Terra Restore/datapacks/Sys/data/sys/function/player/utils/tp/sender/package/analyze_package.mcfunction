@@ -1,0 +1,1 @@
+execute summon marker run function sys:player/utils/tp/sender/package/change_destination

@@ -1,0 +1,2 @@
+execute store result score #temp calculator run data get storage sys:data tp[0].till
+execute if score #temp calculator <= $gametime calculator run function sys:core/tp/announce_end with storage sys:data tp[0]

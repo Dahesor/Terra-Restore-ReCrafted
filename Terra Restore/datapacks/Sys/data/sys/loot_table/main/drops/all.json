@@ -1,0 +1,53 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/fire"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/ice"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/water"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:main/drops/sun"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+                "type": "score",
+                "score": "calculator",
+                "target": {
+                    "type": "fixed",
+                    "name": "#temp"
+                }
+            }
+        }
+    ]
+}

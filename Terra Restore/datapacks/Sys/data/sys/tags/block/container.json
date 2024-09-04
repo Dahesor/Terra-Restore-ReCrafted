@@ -1,0 +1,25 @@
+{
+    "values": [
+        "chest",
+        "barrel",
+        "#shulker_boxes",
+        "furnace",
+        "blast_furnace",
+        "smoker",
+        "hopper",
+        "trapped_chest",
+        "dispenser",
+        "dropper",
+        {"required": false,"id": "crafter"},
+        "ender_chest",
+        "crafting_table",
+        "#anvil",
+        "brewing_stand",
+        "smithing_table",
+        "fletching_table",
+        "enchanting_table",
+        "cartography_table",
+        "grindstone",
+        "loom"
+    ]
+}

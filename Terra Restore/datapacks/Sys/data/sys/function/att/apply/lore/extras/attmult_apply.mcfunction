@@ -1,0 +1,3 @@
+$execute if score #temp calculator matches ..-1 run return run data modify storage sys:data lore append value '{"translate": "att.new","color": "red","italic": false,"with": ["","$(value)%",{"translate": "attribute.name.generic.attack_damage"}]}'
+
+$data modify storage sys:data lore append value '{"translate": "att.new","color": "blue","italic": false,"with": ["+","$(value)%",{"translate": "attribute.name.generic.attack_damage"}]}'

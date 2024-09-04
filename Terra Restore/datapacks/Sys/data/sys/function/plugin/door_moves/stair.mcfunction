@@ -1,0 +1,1 @@
+execute align xyz run summon block_display ~ ~ ~ {block_state:{Name:"smooth_quartz_stairs",Properties:{facing:"east",half:"bottom",shape:"straight"}},transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],teleport_duration:40,Tags:["door_moves","stair_moves"]}

@@ -1,0 +1,43 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void",
+                    "functions": [
+                        {
+                            "function": "set_custom_model_data",
+                            "value": 10
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{ui:{trigger:{id:'tp'}}}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {"translate": "ui.tp","color": "green","italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "replace_all",
+                            "lore": [
+                                "",
+                                {"translate": "ui.tp.1","color": "gray","italic": false},
+                                {"translate": "ui.tp.2","color": "gray","italic": false},
+                                {"translate": "ui.tp.3","color": "gray","italic": false},
+                                {"translate": "ui.tp.4","color": "gray","italic": false},
+                                {"translate": "ui.tp.5","color": "gray","italic": false},
+                                "",
+                                {"translate": "action.click","color": "yellow","italic": false}
+                            ]  
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

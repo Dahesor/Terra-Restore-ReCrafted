@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "new":{
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#sys:may_att"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:att/mentions/trigger"
+    }
+}

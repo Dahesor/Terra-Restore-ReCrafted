@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^6 run summon armor_stand ~ ~6 ~ {Passengers:[{item:{id:"minecraft:golden_sword",count:1},transformation:[-0.7071f,-0.7071f,0f,0f,0.7071f,-0.7071f,0f,-0.25f,0f,0f,1f,0f,0f,0f,0f,1f],id:"item_display",billboard:"vertical"}],Invulnerable:1b,Tags:["ticking","skill.fall_sword","new_temp"],Invisible:1b,Small:1b}
+scoreboard players set @s CD.off 300

@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~ ~ {Age:0,Radius:3,Color:1123,WaitTime:0,Duration:2147483647,DurationOnUse:0,ReapplicationDelay:10,RadiusOnUse:0,RadiusPerTick:0,potion_contents:{custom_color:16346785,custom_effects:[{id:"regeneration",show_icon:1b,show_particles:0b,amplifier:2b,duration:30}]},Tags:["boss_wither_cloud"]}

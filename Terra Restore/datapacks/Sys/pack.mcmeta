@@ -1,6 +1,19 @@
 {
     "pack": {
-        "pack_format": 41,
+        "pack_format": 48,
         "description": "§bData Pack for\n§a\"Terra Restore\"§6 by Dahesor"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancement/.*"
+            },
+            {"namespace": "minecraft","path": "recipe/rabbit_stew_from_brown_mushroom"},
+            {"namespace": "minecraft","path": "recipe/rabbit_stew_from_red_mushroom"},
+            {"namespace": "minecraft","path": "recipe/recovery_compass"},
+            {"namespace": "minecraft","path": "recipe/carrot_on_a_stick"},
+            {"namespace": "minecraft","path": "recipe/repair_item"}
+        ]
     }
 }

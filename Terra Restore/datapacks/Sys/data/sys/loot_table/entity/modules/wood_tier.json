@@ -1,0 +1,41 @@
+{
+   "type": "entity",
+   "pools": [
+    {
+        "rolls": 1,
+        "bonus_rolls": 0.8,
+        "entries": [
+            {
+                "type": "item",
+                "name": "leather_boots"
+            },
+            {
+                "type": "item",
+                "name": "leather_leggings"
+            },
+            {
+                "type": "item",
+                "name": "leather_chestplate"
+            },
+            {
+                "type": "item",
+                "name": "leather_helmet"
+            },
+            {
+                "type": "item",
+                "name": "wooden_sword"
+            },
+            {
+                "type": "item",
+                "name": "wooden_axe"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "random_chance",
+                "chance": 0.025
+            }
+        ]
+    }
+   ]
+}

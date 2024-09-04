@@ -1,0 +1,1 @@
+execute unless entity @e[type=item,distance=..5,tag=!deathDrop_head] run kill

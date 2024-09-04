@@ -1,0 +1,1 @@
+execute align xyz run summon block_display ~ ~-1 ~ {block_state:{Name:"bedrock"},transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],teleport_duration:59,Tags:["door_moves"]}

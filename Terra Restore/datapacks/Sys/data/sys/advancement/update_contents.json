@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "open_container": {
+            "trigger": "any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#sys:may_update"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:legacy/update/trace_start"
+    }
+}

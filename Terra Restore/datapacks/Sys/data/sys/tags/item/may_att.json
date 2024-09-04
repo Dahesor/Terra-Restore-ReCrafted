@@ -1,0 +1,18 @@
+{
+    "values": [
+        "#chest_armor",
+        "#leg_armor",
+        "leather_helmet",
+        "chainmail_helmet",
+        "golden_helmet",
+        "iron_helmet",
+        "diamond_helmet",
+        "netherite_helmet",
+        "#foot_armor",
+        "#swords",
+        "#axes",
+        "trident",
+        "#pickaxes",
+        "#shovels"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "ds":{
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#sys:container"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/updates/open_container"
+    }
+}

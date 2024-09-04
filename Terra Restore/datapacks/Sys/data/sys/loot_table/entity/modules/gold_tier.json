@@ -1,0 +1,41 @@
+{
+   "type": "entity",
+   "pools": [
+    {
+        "rolls": 1,
+        "bonus_rolls": 0.8,
+        "entries": [
+            {
+                "type": "item",
+                "name": "golden_boots"
+            },
+            {
+                "type": "item",
+                "name": "golden_leggings"
+            },
+            {
+                "type": "item",
+                "name": "golden_chestplate"
+            },
+            {
+                "type": "item",
+                "name": "golden_helmet"
+            },
+            {
+                "type": "item",
+                "name": "golden_sword"
+            },
+            {
+                "type": "item",
+                "name": "golden_axe"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "random_chance",
+                "chance": 0.025
+            }
+        ]
+    }
+   ]
+}
