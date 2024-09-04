@@ -1,0 +1,6 @@
+{
+    "parent": "terra:background",
+    "textures": {
+      "layer0": "item/item_frame"
+    }
+}

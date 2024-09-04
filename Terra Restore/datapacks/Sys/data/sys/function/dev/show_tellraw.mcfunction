@@ -1,1 +1,1 @@
-$tellraw @s {"text":"Get Commands","underlined": true,"color": "light_purple","clickEvent": {"action": "copy_to_clipboard","value": "$(key)"}}
+$tellraw @s {"translate":"function.Sys.data.sys.function.dev.show_tellraw.line0","underlined": true,"color": "light_purple","clickEvent": {"action": "copy_to_clipboard","value": "$(key)"}}

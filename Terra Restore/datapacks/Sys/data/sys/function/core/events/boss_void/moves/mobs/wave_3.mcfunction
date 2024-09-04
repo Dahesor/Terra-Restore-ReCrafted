@@ -11,4 +11,4 @@ summon minecraft:creeper 3009.10 25.00 -1807.48 {DeathLootTable:"empty",Tags:["r
 summon minecraft:creeper 3009.41 25.00 -1811.43 {DeathLootTable:"empty",Tags:["resolved_mob","boss_void_kill"]}
 summon minecraft:creeper 3014.07 25.00 -1822.93 {DeathLootTable:"empty",Tags:["resolved_mob","boss_void_kill"]}
 
-tellraw @a[tag=in_boss_void] [{"text":"[","extra":[{"translate":"boss.void.name","color":"red"},"]"]}," ",{"translate": "boss.void.line.3"}]
+tellraw @a[tag=in_boss_void] [{"translate":"sign.6.front_text.3","extra":[{"translate":"boss.void.name","color":"red"},"]"]}," ",{"translate": "boss.void.line.3"}]

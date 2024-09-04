@@ -4,7 +4,7 @@ title @a[tag=in_boss_void] times 20 60 20
 title @a[tag=in_boss_void] title {"translate":"boss.void.name","color": "red","bold": true}
 title @a[tag=in_boss_void] subtitle {"translate":"boss.void.lore"}
 execute as @a[tag=in_boss_void] at @s run playsound entity.wither.spawn master @s ~ ~ ~ 1 0.5 1
-tellraw @a[tag=in_boss_void] [{"text":"[","extra":[{"translate":"boss.void.name","color":"red"},"]"]}," ",{"translate": "boss.void.line.1"}]
+tellraw @a[tag=in_boss_void] [{"translate":"sign.6.front_text.3","extra":[{"translate":"boss.void.name","color":"red"},"]"]}," ",{"translate": "boss.void.line.1"}]
 
 function sys:core/events/boss_void/setup/boss_spawn
 bossbar add sys:boss_void {"translate":"boss.void.name","color":"red","bold":true}

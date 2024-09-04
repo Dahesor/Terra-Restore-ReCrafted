@@ -1,6 +1,6 @@
 $execute if data storage sys:data {terra:[$(id)]} run return fail
 execute unless items entity @s weapon echo_shard[custom_data~{is_terra:1b}] run return fail
-$execute unless items entity @s weapon echo_shard[custom_data~{terra:$(id)b}] run tellraw @a {"translate": "error.invalid_number","color": "red","with": [{"text": "$(id)","color": "yellow"}]}
+$execute unless items entity @s weapon echo_shard[custom_data~{terra:$(id)b}] run tellraw @a {"translate": "error.invalid_number","color": "red","with": [{"translate":"function.Sys.data.sys.function.plugin.base.restore.check_hand.line2","color": "yellow"}]}
 $execute unless items entity @s weapon echo_shard[custom_data~{terra:$(id)b}] run return run playsound terra:ui.denied master @s ~ ~ ~ 1 1.3
 
 $data modify storage sys:data terra append value $(id)

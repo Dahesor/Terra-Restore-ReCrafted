@@ -8,7 +8,7 @@ tp @a[scores={opening=4}] -751.50 52.00 247.30 -135 12
 
 
 schedule function sys:legacy/opening/acts/prepare_2 1t
-function dah.sch:set {time:40,run:'tellraw @a ["[§aVuco§f] ",{"text":"集合诸神之力, 我们成功将Exiel这个恶魔逐回了他原本居住的次元。但尽管已事隔多年, 如今情势却依然险恶"}]'}
+function dah.sch:set {time:40,run:'tellraw @a ["[��aVuco��f] ",{"translate":"function.Sys.data.sys.function.legacy.opening.acts.2.line10"}]'}
 schedule function sys:legacy/opening/acts/eplosion 30t append
 schedule function sys:legacy/opening/acts/eplosion 50t append
 schedule function sys:legacy/opening/acts/eplosion 70t append

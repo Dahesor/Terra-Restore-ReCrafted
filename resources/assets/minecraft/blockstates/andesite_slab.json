@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "minecraft:block/andesite_slab"
+    },
+    "type=double": {
+      "model": "terra:block/breaking_brick"
+    },
+    "type=top": {
+      "model": "minecraft:block/andesite_slab_top"
+    }
+  }
+}

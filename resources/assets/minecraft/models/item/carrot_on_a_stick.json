@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "terra:blank"
+    },
+    "overrides": [
+      {"predicate": {"custom_model_data": 99999},"model": "terra:gui/blank"}
+    ]
+}

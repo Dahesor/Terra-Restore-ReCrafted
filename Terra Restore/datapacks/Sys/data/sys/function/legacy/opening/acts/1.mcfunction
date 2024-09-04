@@ -5,5 +5,5 @@ tp @a[scores={opening=4}] -532.70 41.00 8.45 270 0
 execute as @e[type=villager,tag=opening] at @s run function sys:legacy/opening/acts/kill
 execute positioned -520.01 46.00 8.05 run function sys:legacy/opening/acts/vuco
 schedule function sys:legacy/opening/acts/bgm 2s
-function dah.sch:set {time:40,run:'tellraw @a ["[§aVuco§f] ",{"text":"英雄...在这片倪拉大地之上, 我们与Exiel的军团所进行的漫长战争已经划下了句点"}]'}
+function dah.sch:set {time:40,run:'tellraw @a ["[��aVuco��f] ",{"translate":"function.Sys.data.sys.function.legacy.opening.acts.1.line7"}]'}
 schedule function sys:legacy/opening/acts/2 14s

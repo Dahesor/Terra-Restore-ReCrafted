@@ -22,7 +22,7 @@
         },
         {
             "function": "set_name",
-            "name": {"translate":"è®¾ç½®Fé”®æŠ€èƒ½","color": "yellow","italic": false}
+            "name": {"translate":"ÉèÖÃF¼ü¼¼ÄÜ","color": "yellow","italic": false}
         },
         {
             "function": "set_lore",
@@ -30,7 +30,7 @@
             "mode": "replace_all",
             "lore": [
                 "",
-                [{"text": "å½“å‰æŠ€èƒ½ï¼š","color": "gray","italic": false},{"score": {"name": "@s","objective": "skill.off"},"color": "green"}]
+                [{"translate":"json.Sys.data.sys.loot_table.ui.off_skill.line32","color": "gray","italic": false},{"score": {"name": "@s","objective": "skill.off"},"color": "green"}]
             ]
         }
     ]

@@ -1,0 +1,8 @@
+{
+    "providers":[
+		{
+			"type":"hex_file",
+			"file":"minecraft:font/unifont.zip"
+		}
+    ]
+}

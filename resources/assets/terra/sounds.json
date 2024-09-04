@@ -263,6 +263,28 @@
           }
       ]
   },
+  "bgm.radiarc_the_basics": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_the_basics",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
+  "bgm.ilg924_sorcery_temple": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:ilg924_sorcery_temple",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
   "bgm.winterglade": {
       "replace":false,
       "sounds": [
@@ -295,5 +317,71 @@
               "stream": false
           }
       ]
-  }
+  },
+  "event.grave": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:sfx/heavy-m-155029",
+              "volume": 1.0,
+              "pitch": 0.4,
+              "stream": false
+          }
+      ]
+  },
+  "event.laser": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:sfx/laser-14729",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": false
+          }
+      ]
+   },
+   "ui.denied": {
+       "replace":true,
+       "sounds": [
+           {
+               "name":"terra:sfx/638029__aesterial-arts__ui-denied",
+               "volume": 1.0,
+               "pitch": 1.0,
+               "stream": false
+           }
+       ]
+    },
+    "event.slide_door": {
+        "replace":true,
+        "sounds": [
+            {
+                "name":"terra:sfx/slide-door-sound-221389",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": false
+            }
+        ]
+    },
+    "bgm.test": {
+        "replace":true,
+        "sounds": [
+            {
+                "name":"terra:dregs_of_a_bitter_cup_section",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": true
+            }
+        ]
+    },
+    "event.move": {
+        "replace":true,
+        "sounds": [
+            {
+                "name":"terra:sfx/moves",
+                "volume": 0.3,
+                "pitch": 1.0,
+                "stream": false
+            }
+        ]
+    }
 }

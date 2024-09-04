@@ -5,7 +5,7 @@ loot give @s loot sys:mech/health_potion
 loot give @s loot sys:mech/health_potion
 loot give @s loot sys:mech/health_potion
 title @s times 20 60 20
-title @s title {"text": "Witley","color": "red","bold": true}
+title @s title {"translate":"function.Sys.data.sys.function.core.events.boss_wither.setup.player_self.line7","color": "red","bold": true}
 title @s subtitle {"translate": "boss.wither.lore","color": "white","bold": true}
 function sys:player/music/badjuju
 
