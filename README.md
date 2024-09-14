@@ -21,15 +21,21 @@ Progress:
 
 * Extend the map:
 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 2%  \(Planned\)
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 0%  \(Planned\)
 
 * Fill With Lore:
 
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 2%  \(Planned\)
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 0%  \(Planned\)
+
+* Multi Language Support:
+
+██████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 44%  \(Translating\)
 
 * ???
 
 
-Simple disclaimer: We do not own anything created by the original creator of Terra Restore. This project will, of course, be completely non-commercial.
+
+
+**Simple disclaimer**: We do not own anything created by the original creator of Terra Restore. This project will, of course, be completely non-commercial.
 
 Check out the original Terra Restore Map here: [https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/maps/2278864-collection-mitheys-maps-terra-restore-and-more](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/maps/2278864-collection-mitheys-maps-terra-restore-and-more)
