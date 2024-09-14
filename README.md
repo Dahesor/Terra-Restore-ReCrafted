@@ -1,5 +1,7 @@
 # Terra-Restore-ReCrafted
- ReCrafted Classic CTM Map Terra Restore to modern versions with new features
+ ReCrafted Classic CTM Map Terra Restore to modern versions with new features. 
+ 
+ **If you are the orinigal author \(MitheysMeadow\), or you know how to contact him, please contact me.**
 
 🚧 Under Heavy Construction 🚧
 
