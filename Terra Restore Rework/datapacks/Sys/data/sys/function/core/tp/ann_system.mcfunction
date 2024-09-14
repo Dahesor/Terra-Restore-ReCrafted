@@ -1,0 +1,3 @@
+$tellraw @a {"translate":"tp.start.player","color": "yellow","with": [{"text":"$(display)","color": "aqua"},{"translate": "area.$(region)","color": "white"}],"clickEvent": {"action": "run_command","value": "/trigger tp set $(by)"},"hoverEvent": {"action": "show_text","contents": "/trigger tp set $(by)"}}
+execute run summon marker ~ ~ ~ {Tags:["tp_center","tp_center_system","ticking"]}
+execute as @e[type=marker,distance=..2,tag=tp_center,tag=tp_center_system] unless score @s tp matches -2147483648..2147483647 store result score @s tp run data get storage sys:data test.by

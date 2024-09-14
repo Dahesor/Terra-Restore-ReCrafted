@@ -1,1 +1,0 @@
-$data modify storage sys:data lore append value '{"translate": "att.base.solo","color": "blue","italic": false,"with": [{"translate":"function.Sys.data.sys.function.att.apply.lore.armor.solo.line0"},{"translate": "$(trans)"}]}'

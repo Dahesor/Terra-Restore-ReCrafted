@@ -1,0 +1,37 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_custom_model_data",
+            "value": 17
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'oc',sound:'click'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"F键技能","color": "yellow","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                [{"translate":"json.Sys.data.sys.loot_table.ui.off_skill.line32","color": "gray","italic": false},{"score": {"name": "@s","objective": "skill.off"},"color": "green"}]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+$data modify storage sys:data lore append value '{"translate": "att.base.pos","color": "dark_green","italic": false,"with": [{"text":"$(value).$(vc)"},{"translate": "$(trans)"},{"translate":"$(modify).$(mc)","color": "blue"}]}'

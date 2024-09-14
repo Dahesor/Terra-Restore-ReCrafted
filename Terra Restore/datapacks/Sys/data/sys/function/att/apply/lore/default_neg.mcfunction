@@ -1,1 +1,0 @@
-$data modify storage sys:data lore append value '{"translate": "att.base.neg","color": "dark_green","italic": false,"with": [{"translate":"function.Sys.data.sys.function.att.apply.lore.default_neg.line0"},{"translate": "$(trans)"},{"translate":"function.Sys.data.sys.function.att.apply.lore.default_neg.line0.1","color": "red"}]}'

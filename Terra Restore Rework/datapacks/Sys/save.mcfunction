@@ -1,0 +1,1 @@
+setblock ~ ~ ~ piston[facing=down]
