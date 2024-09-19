@@ -1,0 +1,1 @@
+scoreboard players set $is_sweep dmg 0

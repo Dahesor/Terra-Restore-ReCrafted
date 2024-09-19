@@ -20,3 +20,5 @@ scoreboard players set @s DEX 100
 scoreboard players set @s INT 100
 scoreboard players set @s POW 100
 scoreboard players set @s EDU 100
+scoreboard players set @s CRIT.DAM 500
+scoreboard players set @s CRIT.CHANCE 50

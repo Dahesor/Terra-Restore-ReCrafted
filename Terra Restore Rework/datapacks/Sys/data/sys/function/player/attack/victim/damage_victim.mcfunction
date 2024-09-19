@@ -1,0 +1,1 @@
+$damage @s $(value) $(type) by @a[limit=1,tag=player_atk_temp,sort=nearest]

@@ -1,5 +1,5 @@
 Below is a credit statement provided with the original Terra Restore in version 1.8.
-This resource pack used in the ReCrafted version is no longer the original one thus the below information is no longer compeletly correct
+This resource pack used in the ReCrafted version is no longer the original one thus the below information is no longer compeletly valid.
 ======================================================================
 
 
@@ -8,8 +8,8 @@ This resource pack used in the ReCrafted version is no longer the original one t
 
        ___  ___ _      __
       / _ \/ _ \ | /| / /
-     / , _/ ___/ |/ |/ / 
-    /_/|_/_/   |__/|__/  
+     / , _/ ___/ |/ |/ /
+    /_/|_/_/   |__/|__/
 
  This ResourcePack was composed using the ResourcePack Workbench.
 
@@ -24,5 +24,5 @@ This resource pack used in the ReCrafted version is no longer the original one t
  * RPW on Minecraft Forum   -> http://goo.gl/ipbcH
 
  * RPW on GitHub            -> https://github.com/MightyPork/rpw
-	 
+
 --------------------------------------------------------------------

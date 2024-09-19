@@ -1,0 +1,7 @@
+{
+    "effects": "poking",
+    "exhaustion": 0.0,
+    "scaling": "never",
+    "death_message_type": "default",
+    "message_id": ""
+}

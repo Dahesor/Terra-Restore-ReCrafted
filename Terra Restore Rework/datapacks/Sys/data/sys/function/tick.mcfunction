@@ -11,4 +11,5 @@ execute if score #loop_20 calculator matches 13 run function sys:second
 execute as @e[type=player,scores={death=1..}] run function sys:player/life/normal_revive
 execute as @e[type=#sys:mobs,distance=0..,tag=!resolved_mob] at @s run function sys:mob/new
 execute as @e[type=#sys:need_ticking,distance=0..,tag=ticking] run function sys:mob/ticking/specialize
-execute if score #loop_5 calculator matches 3 as @e[type=#sys:need_ticking,distance=0..,tag=quater_ticking] run function sys:mob/ticking/quater
+execute as @e[type=#sys:mobs,distance=0..,nbt={HurtTime:10s}] run function sys:player/attack/victim/verify
+execute if score #loop_5 calculator matches 3 as @e[type=#sys:need_ticking,distance=0..,tag=quater_ticking] run function sys:mob/ticking/update_hp

@@ -1,6 +1,7 @@
 {
     "values": [
         "player_attack",
-        "arrow"
+        "arrow",
+        "sys:crit_dmg"
     ]
 }

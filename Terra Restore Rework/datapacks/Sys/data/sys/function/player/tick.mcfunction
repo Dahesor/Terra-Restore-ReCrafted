@@ -1,3 +1,4 @@
+scoreboard players set @s sweep_counter 0
 scoreboard players add $player data 1
 execute if score @s death matches 1.. run function sys:player/life/domains/check
 function sys:player/ui/self

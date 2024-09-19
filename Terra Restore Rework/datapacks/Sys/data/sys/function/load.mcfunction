@@ -46,6 +46,12 @@ scoreboard objectives add DEX dummy
 scoreboard objectives add INT dummy
 scoreboard objectives add POW dummy
 scoreboard objectives add EDU dummy
+scoreboard objectives add CRIT.CHANCE dummy
+scoreboard objectives add CRIT.DAM dummy
+scoreboard objectives add sweep_counter dummy
+scoreboard objectives add dmg dummy
+scoreboard objectives add dmg_TimeStamp dummy
+scoreboard objectives add hp_cache dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1
@@ -59,6 +65,7 @@ scoreboard players set #20 calculator 20
 scoreboard players set #30 calculator 30
 scoreboard players set #60 calculator 60
 scoreboard players set #100 calculator 100
+scoreboard players set #1000 calculator 1000
 
 team add player "Player"
 team add mob_army "mob_army"
@@ -72,3 +79,4 @@ schedule function sys:core/entity_load 2s
 return 1
 scoreboard players set $gametime calculator 0
 scoreboard players set #region calculator 0
+scoreboard players set #crit_check dmg 0
