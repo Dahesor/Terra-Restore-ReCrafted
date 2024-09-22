@@ -8,4 +8,4 @@ execute if score @s region matches 8..9 if score #new region matches 200 run ret
 execute if score @s region matches 8..9 if score #new region matches 8..9 run return fail
 scoreboard players set @s music 8
 
-execute if entity @s[tag=!been_to_base] if score #new region matches 100 run function sys:player/region_name/base
+execute if entity @s[tag=!been_to_base] if score #new region matches 100 run function sys:player/utils/region_name/base

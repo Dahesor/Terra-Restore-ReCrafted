@@ -27,6 +27,11 @@ void main() {
         pos.y = (pos.y / gui.y - 0.35) * gui.y;
     }
 
+    if(pos.z >= 2200 && pos.z <= 2200.01){
+        pos.x = pos.x -0.5;
+        pos.y = pos.x -0.5;
+    }
+
     gl_Position = ProjMat * ModelViewMat * vec4(pos, 1.0);
     vertexDistance = fog_distance(Position, FogShape);
     vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);

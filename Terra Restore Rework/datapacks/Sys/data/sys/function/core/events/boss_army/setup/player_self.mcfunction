@@ -8,7 +8,7 @@ loot give @s loot sys:mech/health_potion
 title @s times 40 60 20
 title @a title {"translate":"sign.1392.front_text.1","color": "red","bold": true}
 title @a subtitle {"translate": "boss.army.line.1","color": "red","bold": true}
-function sys:player/music/daring
+function sys:plugin/music/daring
 effect give @s instant_health 1 10 true
 effect give @s saturation 3 3 true
 

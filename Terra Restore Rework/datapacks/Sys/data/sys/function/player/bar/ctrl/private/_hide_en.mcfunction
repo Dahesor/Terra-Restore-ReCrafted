@@ -1,0 +1,1 @@
+$bossbar set sys:en/$(UID) visible false

@@ -1,5 +1,5 @@
 tp @s 3025.43 ~ -1811.69 ~ 90.00
-function sys:player/music/dregs
+function sys:plugin/music/dregs
 loot give @s loot sys:mech/health_potion
 loot give @s loot sys:mech/health_potion
 loot give @s loot sys:mech/health_potion

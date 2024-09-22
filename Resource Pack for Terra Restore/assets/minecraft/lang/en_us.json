@@ -472,7 +472,7 @@
     "item.brick.1.name": "§a干草牧场的石头",
     "item.brick.1.lore.line0": "§d§o这石头拿起来比羽毛还轻",
     "sign.67.front_text.1": "Info Box",
-    "command_block.1.command": "hint",
+    "command_block.1.command": "Hint",
     "sign.72.front_text.1": "启程之谷下层",
     "sign.72.front_text.2": "--->",
     "sign.73.front_text.2": "<---",

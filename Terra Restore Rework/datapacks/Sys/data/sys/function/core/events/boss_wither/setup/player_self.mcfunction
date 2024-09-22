@@ -7,7 +7,7 @@ loot give @s loot sys:mech/health_potion
 title @s times 20 60 20
 title @s title {"text":"Witley","color": "red","bold": true}
 title @s subtitle {"translate": "boss.wither.lore","color": "white","bold": true}
-function sys:player/music/badjuju
+function sys:plugin/music/badjuju
 
 scoreboard players set @s CD.off 1
 scoreboard players set @s CD.right 1

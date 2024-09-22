@@ -10,15 +10,6 @@ execute positioned 0 9 0 run function sys:player/life/set_spawn
 execute if score game_start data matches 1.. positioned 100 63 100 run function sys:player/life/set_spawn
 execute if score game_start data matches 1.. run tp @s 100 63 100
 team join player @s
-attribute @s generic.attack_speed base set 2
-scoreboard players set @s skill.right 1
-scoreboard players set @s skill.off 1
 
-scoreboard players set @s STR 100
-scoreboard players set @s CON 100
-scoreboard players set @s DEX 100
-scoreboard players set @s INT 100
-scoreboard players set @s POW 100
-scoreboard players set @s EDU 100
-scoreboard players set @s CRIT.DAM 500
-scoreboard players set @s CRIT.CHANCE 50
+function sys:player/uid/processes/new_bossbar with storage sys:data player[-1]
+function sys:player/uid/initial_stats

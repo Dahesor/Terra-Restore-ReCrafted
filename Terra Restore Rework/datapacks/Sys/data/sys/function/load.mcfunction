@@ -52,6 +52,9 @@ scoreboard objectives add sweep_counter dummy
 scoreboard objectives add dmg dummy
 scoreboard objectives add dmg_TimeStamp dummy
 scoreboard objectives add hp_cache dummy
+scoreboard objectives add MAX_MP dummy
+scoreboard objectives add MP dummy
+scoreboard objectives add MP_REGEN dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1
@@ -76,7 +79,9 @@ team modify player friendlyFire false
 team modify player collisionRule never
 schedule function sys:core/entity_load 2s
 
+
 return 1
 scoreboard players set $gametime calculator 0
 scoreboard players set #region calculator 0
 scoreboard players set #crit_check dmg 0
+bossbar add sys:en ""
