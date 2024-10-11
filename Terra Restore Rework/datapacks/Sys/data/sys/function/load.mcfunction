@@ -85,3 +85,5 @@ scoreboard players set $gametime calculator 0
 scoreboard players set #region calculator 0
 scoreboard players set #crit_check dmg 0
 bossbar add sys:en ""
+
+give @a writable_book[written_book_content={pages:[],author:"",title:""}]

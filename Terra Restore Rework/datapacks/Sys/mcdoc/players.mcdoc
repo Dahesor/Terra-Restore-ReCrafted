@@ -1,7 +1,9 @@
 use ::java::server::util::inventory::SlottedItem
-use ::java::server::util::InventoryItem
+use ::java::server::world::item::ItemStack
 use ::java::server::util::attribute::AttributeOperation
 use ::java::server::world::entity::mob::MobBase
+
+type InventoryItem = ItemStack
 
 dispatch minecraft:storage["sys:data"] to struct {
     player?: [player_data],

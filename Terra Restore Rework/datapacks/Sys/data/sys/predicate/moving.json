@@ -1,5 +1,12 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {}
+    "condition": "inverted",
+    "term": {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "movement": {
+                "speed": 0.0
+            }
+        }
+    }
 }

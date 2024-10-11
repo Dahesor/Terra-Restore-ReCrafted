@@ -3,3 +3,4 @@ Terra Restore Rework/playerdata/**.dat_old
 Terra Restore Rework/stats/**.json
 level.dat_old
 session.lock
+**/.VSCodeCounter/**

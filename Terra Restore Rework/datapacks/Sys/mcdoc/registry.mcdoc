@@ -1,0 +1,19 @@
+dispatch minecraft:storage["registry:tooltip"] to struct {
+    data?: [tooltip],
+    temp?: [tooltip],
+}
+
+struct tooltip{
+    id?: string,
+    displayName?: #[text_component] string,
+    Lore?: [registryLore],
+}
+
+struct registryLore{
+    with?: [struct{
+        type: enum(string){
+            const = "Constant",
+        },
+        name: string,
+    }]
+}

@@ -20,7 +20,7 @@
         "condition": "location_check",
         "predicate": {
             "block": {
-                "blocks": "#sys:valid_tp"
+                "blocks": "#sys:valid_stand"
             }
         },
         "offsetY": -1
