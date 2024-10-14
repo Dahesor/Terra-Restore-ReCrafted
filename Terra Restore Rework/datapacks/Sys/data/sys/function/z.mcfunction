@@ -18,6 +18,4 @@ give @p cherry_sign[custom_name='{"translate":"z.line13"}',block_entity_data={id
 give @p cherry_sign[custom_name='{"translate":"z.line17"}',block_entity_data={id:"sign",is_waxed:true,front_text:{messages:['""','{"translate":"action.tp.","color": "aqua","clickEvent": {"action": "run_command","value": "/tp @s 3048 140 -966"}}','""','["[",{"keybind": "key.use","underlined": true,"color": "green"},"]"]']}}]
 
 give @p cherry_sign[custom_name='{"translate":"z.line19"}',block_entity_data={id:"sign",is_waxed:true,front_text:{messages:['{"translate":"action.tp","color": "aqua"}','{"translate":"event.tp_to_restore","color": "aqua","clickEvent": {"action": "run_command","value": "/function sys:plugin/base/to_building {xyz:\'935 87 91\'}"}}','""','["[",{"keybind": "key.use","underlined": true,"color": "green"},"]"]']}}]
-
-
 tellraw @a[distance=..10] [{"translate": "hint.music"}]
