@@ -1,15 +1,15 @@
-execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.helmet",type:"minecraft:generic.armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.helmet",type:"minecraft:generic.armor"}].amount 10
-execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.chestplate",type:"minecraft:generic.armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.chestplate",type:"minecraft:generic.armor"}].amount 10
-execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.leggings",type:"minecraft:generic.armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.leggings",type:"minecraft:generic.armor"}].amount 10
-execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.boots",type:"minecraft:generic.armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.boots",type:"minecraft:generic.armor"}].amount 10
+execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.helmet",type:"minecraft:armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.helmet",type:"minecraft:armor"}].amount 10
+execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.chestplate",type:"minecraft:armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.chestplate",type:"minecraft:armor"}].amount 10
+execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.leggings",type:"minecraft:armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.leggings",type:"minecraft:armor"}].amount 10
+execute if data storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.boots",type:"minecraft:armor"}] store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:armor.boots",type:"minecraft:armor"}].amount 10
 
 scoreboard players set @s calculator 0
 
-execute unless data storage sys:mod result[{id:"generic.armor"}] run function sys:att/apply/lore/armor/only_default_armor
+execute unless data storage sys:mod result[{id:"armor"}] run function sys:att/apply/lore/armor/only_default_armor
 
-execute store result score @s calculator run data get storage sys:mod result[{id:"generic.armor"}].amount 10
+execute store result score @s calculator run data get storage sys:mod result[{id:"armor"}].amount 10
 
-data modify storage temp run set value {trans:"attribute.name.generic.armor",value:0,vc:0,modify:0,mc:0}
+data modify storage temp run set value {trans:"attribute.name.armor",value:0,vc:0,modify:0,mc:0}
 
 scoreboard players operation #temp calculator += @s calculator
 

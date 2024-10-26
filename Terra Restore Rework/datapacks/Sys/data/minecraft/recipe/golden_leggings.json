@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": {
-      "item": "minecraft:gold_ingot"
-    }
+    "X": "minecraft:gold_ingot"
   },
   "pattern": [
     "XXX",
@@ -24,14 +22,14 @@
         {
           "amount": 3,
           "id": "minecraft:armor.leggings",
-          "type": "generic.armor",
+          "type": "armor",
           "slot": "armor",
           "operation": "add_value"
         },
         {
           "amount": 0,
           "id": "minecraft:armor.leggings",
-          "type": "generic.armor_toughness",
+          "type": "armor_toughness",
           "slot": "armor",
           "operation": "add_value"
         }

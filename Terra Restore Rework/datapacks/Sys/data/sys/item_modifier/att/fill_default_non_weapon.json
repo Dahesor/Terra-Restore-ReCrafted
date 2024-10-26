@@ -4,7 +4,7 @@
         "replace": false,
         "modifiers": [
             {
-                "attribute": "generic.luck",
+                "attribute": "luck",
                 "slot":"any",
                 "amount": 0,
                 "id": "sys:show_default",

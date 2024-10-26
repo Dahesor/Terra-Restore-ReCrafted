@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": {
-      "item": "minecraft:iron_ingot"
-    }
+    "X": "minecraft:iron_ingot"
   },
   "pattern": [
     "XXX",
@@ -23,14 +21,14 @@
         {
           "amount": 2,
           "id": "minecraft:armor.helmet",
-          "type": "generic.armor",
+          "type": "armor",
           "slot": "armor",
           "operation": "add_value"
         },
         {
           "amount": 0,
           "id": "minecraft:armor.helmet",
-          "type": "generic.armor_toughness",
+          "type": "armor_toughness",
           "slot": "armor",
           "operation": "add_value"
         }

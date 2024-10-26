@@ -1,6 +1,6 @@
 tag @s add resolved_mob
 execute if entity @s[tag=with_temp_helmet] run return run function sys:mob/loot/8plus/air_helmet
-attribute @s generic.knockback_resistance modifier add sys:mob_base 0.5 add_value
+attribute @s knockback_resistance modifier add sys:mob_base 0.5 add_value
 execute store result score #region calculator run function sys:player/get_region
 scoreboard players operation @s dropTemp = #region calculator
 execute if score @s dropTemp matches 200 run scoreboard players set @s dropTemp 8

@@ -4,14 +4,14 @@
         "replace": false,
         "modifiers": [
             {
-                "attribute": "generic.attack_speed",
+                "attribute": "attack_speed",
                 "slot": "mainhand",
                 "amount": 2,
                 "id": "sys:show_default",
                 "operation": "add_value"
             },
             {
-                "attribute": "generic.attack_knockback",
+                "attribute": "attack_knockback",
                 "slot": "mainhand",
                 "amount": 1.18,
                 "id": "sys:default_attack_knockback",

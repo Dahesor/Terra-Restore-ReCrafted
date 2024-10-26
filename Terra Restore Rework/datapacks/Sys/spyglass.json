@@ -6,7 +6,7 @@
 			"file:///C:/Users/dahes/OneDrive/Desktop/Tools_Mods_MC/Prod/Actionbar-Mixer.zip",
 			"@vanilla-mcdoc"
 		],
-		"gameVersion": "1.21.1"
+		"gameVersion": "1.21.3"
 	},
 	"snippet": {
 		"executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",

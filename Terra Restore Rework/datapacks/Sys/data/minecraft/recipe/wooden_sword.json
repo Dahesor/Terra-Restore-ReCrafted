@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "tag": "minecraft:planks"
-    }
+    "#": "minecraft:stick",
+    "X": "#minecraft:planks"
   },
   "pattern": [
     "X",
@@ -27,21 +23,21 @@
         {
           "amount": 3,
           "id": "minecraft:base_attack_damage",
-          "type": "generic.attack_damage",
+          "type": "attack_damage",
           "slot": "hand",
           "operation": "add_value"
         },
         {
           "amount": -0.4,
           "id": "minecraft:base_attack_speed",
-          "type": "generic.attack_speed",
+          "type": "attack_speed",
           "slot": "hand",
           "operation": "add_value"
         },
         {
           "amount": 1.18,
           "id": "sys:base_attack_knockback",
-          "type": "generic.attack_knockback",
+          "type": "attack_knockback",
           "slot": "hand",
           "operation": "add_value"
         }

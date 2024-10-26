@@ -1,7 +1,13 @@
 {
+  "dah.actbar_mixer:new_player": {
+    "criteria": {
+      "tick": "2024-10-14 14:26:36 -0400"
+    },
+    "done": true
+  },
   "sys:new_player": {
     "criteria": {
-      "tick": "2024-09-21 03:21:08 -0400"
+      "tick": "2024-10-14 18:17:07 -0400"
     },
     "done": true
   },

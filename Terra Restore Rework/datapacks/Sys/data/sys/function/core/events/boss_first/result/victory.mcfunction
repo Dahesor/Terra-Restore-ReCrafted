@@ -1,1 +1,1 @@
-#/summon Enderman 4338 20 47.0 {attributes:[{id:generic.maxHealth,base:9000},{id:generic.attackDamage,base:11},{id:generic.movementSpeed,base:.375}],healF:9000,CustomName:Exiel,CustomNameVisible:1,PersistenceRequired:1,ActiveEffects:[{Id:12,Duration:999999}],carried:minecraft:sea_lantern,NoAI:1}
+#/summon Enderman 4338 20 47.0 {attributes:[{id:maxHealth,base:9000},{id:attackDamage,base:11},{id:movementSpeed,base:.375}],healF:9000,CustomName:Exiel,CustomNameVisible:1,PersistenceRequired:1,ActiveEffects:[{Id:12,Duration:999999}],carried:minecraft:sea_lantern,NoAI:1}

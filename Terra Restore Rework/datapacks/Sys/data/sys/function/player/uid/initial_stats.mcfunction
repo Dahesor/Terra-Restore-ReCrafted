@@ -10,6 +10,6 @@ scoreboard players set @s MP 300
 scoreboard players set @s MAX_MP 300
 scoreboard players set @s MP_REGEN 10
 
-attribute @s generic.attack_speed base set 2
+attribute @s attack_speed base set 2
 scoreboard players set @s skill.right 1
 scoreboard players set @s skill.off 1

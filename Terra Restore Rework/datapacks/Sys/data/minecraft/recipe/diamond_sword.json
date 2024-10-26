@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "item": "minecraft:diamond"
-    }
+    "#": "minecraft:stick",
+    "X": "minecraft:diamond"
   },
   "pattern": [
     "X",
@@ -27,21 +23,21 @@
         {
           "amount": 6,
           "id": "minecraft:base_attack_damage",
-          "type": "generic.attack_damage",
+          "type": "attack_damage",
           "slot": "hand",
           "operation": "add_value"
         },
         {
           "amount": -0.4,
           "id": "minecraft:base_attack_speed",
-          "type": "generic.attack_speed",
+          "type": "attack_speed",
           "slot": "hand",
           "operation": "add_value"
         },
         {
           "amount": 1.18,
           "id": "sys:base_attack_knockback",
-          "type": "generic.attack_knockback",
+          "type": "attack_knockback",
           "slot": "hand",
           "operation": "add_value"
         }
