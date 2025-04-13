@@ -5,7 +5,7 @@ execute unless data block ~ ~ ~ {RequiredPlayerRange:7s} run particle cloud ~ ~ 
 data modify block ~ ~ ~ RequiredPlayerRange set value 7s
 
 #execute store result score #temp calculator run random value 1..10
-data modify block ~ ~ ~ SpawnData.entity set value {id:"potion",Item:{id:"splash_potion",count:1,components:{potion_contents:{custom_color:3289754,custom_effects:[{id:"slowness",amplifier:2b,duration:100,show_particles:1b,show_icon:1b},{id:"blindness",amplifier:2b,duration:100,show_particles:1b,show_icon:1b}]}}}}
+data modify block ~ ~ ~ SpawnData.entity set value {id:"splash_potion",Item:{id:"splash_potion",count:1,components:{potion_contents:{custom_color:3289754,custom_effects:[{id:"slowness",amplifier:2b,duration:100,show_particles:1b,show_icon:1b},{id:"blindness",amplifier:2b,duration:100,show_particles:1b,show_icon:1b}]}}}}
 #execute unless score #temp calculator matches 1..8 run data modify block ~ ~ ~ SpawnData.entity set value {id:"potion",Item:{id:"lingering_potion",count:1,components:{potion_contents:{custom_color:3289754,custom_effects:[{id:"slowness",amplifier:2b,duration:100,show_particles:1b,show_icon:1b}]}}}}
 
 #data modify block ~ ~ ~ SpawnData.entity.HandItems.components."minecraft:custom_data".setPos set from block ~ ~ ~ SpawnData.entity.Pos

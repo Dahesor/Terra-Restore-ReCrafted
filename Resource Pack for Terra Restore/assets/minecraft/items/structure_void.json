@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {"threshold": 1,"model": {"type": "model","model": "terra:background"}},
+      {"threshold": 2,"model": {"type": "model","model": "terra:background_long"}},
+      {"threshold": 3,"model": {"type": "model","model": "terra:gui/back"}},
+      {"threshold": 4,"model": {"type": "model","model": "terra:gui/blank"}},
+      {"threshold": 10,"model": {"type": "model","model": "terra:gui/tp"}},
+      {"threshold": 14,"model": {"type": "model","model": "terra:gui/music"}},
+      {"threshold": 15,"model": {"type": "model","model": "terra:gui/show"}},
+      {"threshold": 16,"model": {"type": "model","model": "terra:gui/right_skill"}},
+      {"threshold": 17,"model": {"type": "model","model": "terra:gui/off_skill"}}
+    ],
+    "fallback": {"type": "model","model": "item/structure_void"},
+
+    "property": "custom_model_data",
+    "index": 0
+  }
+}

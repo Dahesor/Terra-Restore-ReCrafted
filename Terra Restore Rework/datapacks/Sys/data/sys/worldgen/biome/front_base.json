@@ -105,13 +105,10 @@
       "water_creature": []
     },
     "spawn_costs": {},
-    "carvers": {
-      "air": [
-        "minecraft:cave",
-        "minecraft:cave_extra_underground",
-        "minecraft:canyon"
-      ]
-    },
+    "carvers": [
+      "cave",
+      "cave_extra_underground",
+      "canyon"
+    ],
     "features": []
   }
-  

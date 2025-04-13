@@ -1,2 +1,2 @@
-execute unless score boss_army_diff data matches 1 run summon zombie ~ ~ ~ {IsBaby:1b,HandDropChances:[0f,0f],HandItems:[{id:"stone_sword",count:1},{}],PersistenceRequired:1b,Tags:["boss_army_kill","resolved_mob"],DeathLootTable:"empty",Team:"mob_army"}
+execute unless score boss_army_diff data matches 1 run summon zombie ~ ~ ~ {IsBaby:1b,drop_chances:{mainhand:0f,offhand:0f},equipment:{mainhand:{id:"stone_sword",count:1}},PersistenceRequired:1b,Tags:["boss_army_kill","resolved_mob"],DeathLootTable:"empty",Team:"mob_army"}
 execute if score boss_army_diff data matches 1 run summon zombie ~ ~ ~ {IsBaby:1b,PersistenceRequired:1b,Tags:["boss_army_kill","resolved_mob"],DeathLootTable:"empty",Team:"mob_army"}

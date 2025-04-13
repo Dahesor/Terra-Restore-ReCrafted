@@ -1,0 +1,21 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chest",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:lock": {"components": {"custom_data": {"id":"只要没有这种奇怪的物品，这个箱子就打不开"}}}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

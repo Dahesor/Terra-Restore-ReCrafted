@@ -1,7 +1,7 @@
-use ::java::server::util::inventory::SlottedItem
-use ::java::server::world::item::ItemStack
-use ::java::server::util::attribute::AttributeOperation
-use ::java::server::world::entity::mob::MobBase
+use ::java::util::slot::SlottedItem
+use ::java::world::item::ItemStack
+use ::java::util::attribute::AttributeOperation
+use ::java::world::entity::mob::MobBase
 
 type InventoryItem = ItemStack
 

@@ -1,4 +1,4 @@
-execute store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers".modifiers[{id:"minecraft:base_attack_damage"}].amount 10
+execute store result score #temp calculator run data get storage sys:data item.components."minecraft:attribute_modifiers"[{id:"minecraft:base_attack_damage"}].amount 10
 execute store result score #temp2 calculator run attribute @s attack_damage base get 10
 scoreboard players operation #temp calculator += #temp2 calculator
 

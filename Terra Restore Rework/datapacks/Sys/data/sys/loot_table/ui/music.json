@@ -10,7 +10,10 @@
                     "functions": [
                         {
                             "function": "set_custom_model_data",
-                            "value": 14
+                            "floats": {
+                                "mode": "replace_all",
+                                "values": [14]
+                            }
                         },
                         {
                             "function": "set_custom_data",

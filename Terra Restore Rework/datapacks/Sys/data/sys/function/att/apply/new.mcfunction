@@ -5,7 +5,7 @@ execute if items entity @s player.cursor #sys:pool/is_tools run return run funct
 execute if items entity @s player.cursor #sys:pool/is_melee run item modify entity 0-0-0-0-0 container.0 sys:att/fill_default
 execute unless items entity @s player.cursor #sys:pool/is_melee run item modify entity 0-0-0-0-0 container.0 sys:att/fill_default_non_weapon
 data modify storage sys:data item set from entity 0-0-0-0-0 Items[{Slot:0b}]
-data modify storage sys:data item.components."minecraft:attribute_modifiers".show_in_tooltip set value 0b
+data modify storage sys:data item.components."minecraft:tooltip_display".hidden_components append value "attribute_modifiers"
 scoreboard players operation $region calculator = @s region
 function sys:att/apply/get_points
 #tellraw @a {"score": {"name": "$p","objective": "calculator"},"color": "yellow"}

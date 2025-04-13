@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {"threshold": 99999,"model": {"type": "empty"}}
+    ],
+    "fallback": {"type": "model","model": "item/carrot_on_a_stick"},
+
+    "property": "custom_model_data",
+    "index": 0
+  }
+}

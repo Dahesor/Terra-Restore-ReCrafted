@@ -1,4 +1,7 @@
-execute as @e[type=marker,tag=sign_util] at @s unless block ~ ~ ~ cherry_sign run function sys:core/repair_sign with entity @s data
+#execute as @e[type=marker,tag=sign_util] at @s unless block ~ ~ ~ cherry_sign run function sys:core/repair_sign with entity @s data
+execute as @e[type=marker,tag=sign_util,tag=!post1.21.5] at @s run function sys:dev/sign_util
+
+
 execute as @e[type=#sys:need_ticking,distance=0..,tag=second_ticking] at @s run function sys:mob/ticking/second
 
 gamerule keepInventory true

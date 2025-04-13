@@ -37,7 +37,7 @@
             "function": "set_components",
             "components": {
                 "max_stack_size": 1,
-                "custom_model_data": 2
+                "custom_model_data": {"floats":[2]}
             }
         }
     ]

@@ -1,4 +1,4 @@
-data modify entity @s HandItems[0] set value {id:"netherite_sword",count:1,components:{enchantments:{knockback:1}}}
+data modify entity @s equipment.mainhand set value {id:"netherite_sword",count:1,components:{enchantments:{knockback:1}}}
 data modify entity @s Motion set value [0.0d,0.5d,1d]
 
 execute facing entity @r[distance=..30,gamemode=!spectator] eyes positioned ^ ^ ^3 positioned ~ ~0.3 ~ run function dtm:calculate_motion

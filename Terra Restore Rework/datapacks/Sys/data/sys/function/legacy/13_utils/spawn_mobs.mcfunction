@@ -9,8 +9,8 @@ execute unless score 13_spawn_mob_off data matches 1.. run summon creeper 3182 1
 execute unless score 13_spawn_mob_off data matches 2.. run summon creeper 3177 125 -1207 {Tags:["resolved_mob"]}
 execute unless score 13_spawn_mob_off data matches 3.. run summon zombie 3172 125 -1207 {Tags:["resolved_mob"]}
 execute unless score 13_spawn_mob_off data matches 4.. run summon zombie 3182 125 -1218 {Tags:["resolved_mob"]}
-execute unless score 13_spawn_mob_off data matches 5.. run summon skeleton 3177 125 -1218 {Tags:["resolved_mob"],HandItems:[{id:"bow"},{}]}
-summon skeleton 3172 125 -1218 {Tags:["resolved_mob"],HandItems:[{id:"bow"},{}]}
+execute unless score 13_spawn_mob_off data matches 5.. run summon skeleton 3177 125 -1218 {Tags:["resolved_mob"],equipment:{mainhand:{id:"bow"}}}
+summon skeleton 3172 125 -1218 {Tags:["resolved_mob"],equipment:{mainhand:{id:"bow"}}}
 
 return fail
 scoreboard players set 13_spawn_mob_off data 0

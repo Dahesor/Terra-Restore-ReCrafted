@@ -5,3 +5,4 @@ execute if block ~ ~ ~ spawner run return run function sys:dev/spawner_utils
 execute if block ~ ~ ~ #wall_signs summon marker run return run function sys:dev/sign_util
 execute if entity @s[distance=..10] positioned ^ ^ ^0.1 run return run function sys:dev/looper
 function sys:dev/list
+

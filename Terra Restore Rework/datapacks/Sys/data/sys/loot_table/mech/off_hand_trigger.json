@@ -19,7 +19,7 @@
         {
             "function":"set_components",
             "components": {
-                "hide_tooltip": {},
+                "tooltip_display": {"hide_tooltip": true},
                 "item_name": "\"\""
             }
         },

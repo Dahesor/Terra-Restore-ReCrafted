@@ -1,0 +1,28 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "model",
+          "model": "terra:gui/blank"
+        }
+      },
+      {
+        "threshold": 2,
+        "model": {
+          "type": "model",
+          "model": "item/air"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "model",
+      "model": "item/barrier"
+    },
+    "property": "custom_model_data",
+    "index": 0,
+    "scale": 1
+  }
+}

@@ -1,4 +1,4 @@
-tellraw @s {"translate":"dev.list.line0","color": "yellow","clickEvent": {"action": "run_command","value": "/execute at @s run function sys:dev/respawn_sign"}}
+tellraw @s {"translate":"dev.list.line0","color": "yellow","click_event": {"action": "run_command","command": "/execute at @s run function sys:dev/respawn_sign"}}
 
 
 execute unless data storage temp cb[0] run return fail

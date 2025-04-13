@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/template_skull",
-  "overrides": [
-      {"predicate": {"custom_model_data": 1},"model": "terra:item/ground_head"},
-      {"predicate": {"custom_model_data": 2},"model": "terra:item/ui_head"}
-  ]
-}

@@ -4,7 +4,7 @@
 #setblock ~ ~ ~ spawner{Delay:100s,MaxNearbyEntities:6s,RequiredPlayerRange:16s,SpawnCount:1s,MaxSpawnDelay:380s,MinSpawnDelay:200s,SpawnRange:4s,#SpawnData:{entity:{id:"zombie"},custom_spawn_rules:{block_light_limit:{min_inclusive:0,max_inclusive:7},sky_light_limit:{min_inclusive:0,#max_inclusive:15}}},id:"mob_spawner",SpawnPotentials:[]}
 particle cloud ~ ~ ~ 0.5 0.5 0.5 0.3 100 force @a
 
-#return 0
+return 0
 
 data modify block ~ ~ ~ SpawnData.entity merge value {id:"zombie"}
 data modify block ~ ~ ~ RequiredPlayerRange set value 7s
