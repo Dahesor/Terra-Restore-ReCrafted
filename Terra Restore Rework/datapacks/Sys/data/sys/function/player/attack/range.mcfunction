@@ -1,12 +1,10 @@
-advancement revoke @s only sys:dealt_melee
-
-function sys:player/attack/attack_speed
+advancement revoke @s only sys:dealt_range
+say triggered range attack
 function sys:player/attack/reset_params
 
-scoreboard players add @s sweep_counter 1
-execute if score @s sweep_counter matches 2.. run scoreboard players set $is_sweep dmg 1
 
-scoreboard players operation $attacker dmg = @s UID
+
+return 0
 
 tag @s add player_atk_temp
 execute as @e[type=#sys:mobs,distance=..8,nbt={HurtTime:10s}] run function sys:player/attack/victim/verify

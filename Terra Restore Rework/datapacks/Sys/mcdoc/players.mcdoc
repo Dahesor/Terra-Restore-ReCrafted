@@ -17,7 +17,14 @@ dispatch minecraft:storage["sys:data"] to struct {
     SaveInv?: [SlottedItem<byte @ -106..106>] @ -106..106,
     lore?: [#[text_component]string],
     dupe?: MobBase,
-    terra: [int @ 0..]
+    terra: [int @ 0..],
+    mobData?: MobBase,
+    Pos?: [double],
+    Pos_xyz?: struct {
+        x?: double,
+        y?: double,
+        z?: double,
+    }
 }
 
 dispatch minecraft:storage["sys:loot_box"] to struct {

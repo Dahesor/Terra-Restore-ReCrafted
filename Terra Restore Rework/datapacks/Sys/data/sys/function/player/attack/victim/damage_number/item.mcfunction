@@ -1,1 +1,1 @@
-$summon item ~ ~ ~ {PickupDelay:10000s,Age:5975s,Item:{id:"barrier",count:1,components:{custom_model_data:2}},CustomNameVisible:1b,CustomName:'"$(value)"',Motion:[0.0d,0.02d,0.0d],NoGravity:1b}
+$summon item ~ ~-0.1 ~ {PickupDelay:10000s,Age:5975s,Item:{id:"barrier",count:1,components:{custom_model_data:{floats:[2]}}},CustomNameVisible:1b,CustomName:'$(int).$(decimal)',Motion:[0.0d,0.02d,0.0d],NoGravity:1b}

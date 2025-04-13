@@ -1,0 +1,98 @@
+{
+    "anvil_cost": 9999999,
+    "description": {"translate": "null"},
+    "weight": 1,
+    "max_level": 1,
+    "supported_items": "barrier",
+    "slots": ["any"],
+    "max_cost": {"base": 1,"per_level_above_first": 0},
+    "min_cost": {"base": 2,"per_level_above_first": 0},
+    "effects": {
+        "post_attack": [
+            {
+                "affected": "victim",
+                "enchanted": "victim",
+                "effect": {
+                    "type": "run_function",
+                    "function": "sys:player/attack/verify/melee_victim"
+                },
+                "requirements": [
+                    {
+                        "condition": "damage_source_properties",
+                        "predicate": {
+                            "tags": [
+                                {
+                                    "expected": true,
+                                    "id": "sys:player_melee"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "affected": "attacker",
+                "enchanted": "victim",
+                "effect": {
+                    "type": "run_function",
+                    "function": "sys:player/attack/verify/melee_attacker"
+                },
+                "requirements": [
+                    {
+                        "condition": "damage_source_properties",
+                        "predicate": {
+                            "tags": [
+                                {
+                                    "expected": true,
+                                    "id": "sys:player_melee"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "affected": "victim",
+                "enchanted": "victim",
+                "effect": {
+                    "type": "run_function",
+                    "function": "sys:player/attack/verify/ranged_victim"
+                },
+                "requirements": [
+                    {
+                        "condition": "damage_source_properties",
+                        "predicate": {
+                            "tags": [
+                                {
+                                    "expected": true,
+                                    "id": "sys:player_range_classic"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "affected": "attacker",
+                "enchanted": "victim",
+                "effect": {
+                    "type": "run_function",
+                    "function": "sys:player/attack/verify/ranged_attacker"
+                },
+                "requirements": [
+                    {
+                        "condition": "damage_source_properties",
+                        "predicate": {
+                            "tags": [
+                                {
+                                    "expected": true,
+                                    "id": "sys:player_range_classic"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

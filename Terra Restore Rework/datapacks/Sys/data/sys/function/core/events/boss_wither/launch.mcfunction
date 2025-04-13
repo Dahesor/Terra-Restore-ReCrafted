@@ -1,5 +1,5 @@
 tp @a[tag=in_boss_wither] 346.88 49.00 -803.44 0 0
-summon wither 347.61 72.42 -784.13 {Tags:["boss_wither","resolved_mob","boss"],DeathLootTable:"empty",Invul:200,CustomName:'{"translate": "boss.wither.name","color": "red"}'}
+summon wither 347.61 72.42 -784.13 {Tags:["boss_wither","resolved_mob","boss"],DeathLootTable:"empty",Invul:200,CustomName:{"translate": "boss.wither.name","color": "red"}}
 fill 344 60 -781 350 60 -787 barrier
 function #dah.sch:set {time:201,run:"fill 344 60 -781 350 60 -787 air",extra:{flags:["no_entity"]}}
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{is_temp:1b}}}}]
