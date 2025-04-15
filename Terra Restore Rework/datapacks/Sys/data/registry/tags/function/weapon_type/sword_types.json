@@ -1,0 +1,15 @@
+{
+    "values": [
+        "registry:weapon_type/swords/short",
+        "registry:weapon_type/swords/katana",
+        "registry:weapon_type/swords/light",
+        "registry:weapon_type/swords/long",
+        "registry:weapon_type/swords/bastard",
+        "registry:weapon_type/swords/claymore",
+        "registry:weapon_type/swords/great",
+        "registry:weapon_type/swords/machete",
+        "registry:weapon_type/swords/rapier",
+        "registry:weapon_type/swords/sabre",
+        "registry:weapon_type/swords/foil"
+    ]
+}

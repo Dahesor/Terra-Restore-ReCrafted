@@ -1,6 +1,6 @@
 {
     "anvil_cost": 9999999,
-    "description": {"translate": "null"},
+    "description": {"translate": "enchantment.null"},
     "weight": 1,
     "max_level": 1,
     "supported_items": "barrier",

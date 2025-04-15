@@ -1,3 +1,5 @@
+execute if score $is_sweep dmg matches 1.. run function sys:player/attack/victim/reset_sweep
+
 execute if score $is_crit dmg matches 1 at @s run function sys:player/attack/victim/inflict_crit
 scoreboard players operation $total_damage dmg = $base_damage dmg
 scoreboard players operation $total_damage dmg += $crit_damage dmg

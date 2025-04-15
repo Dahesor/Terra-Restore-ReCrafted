@@ -4,6 +4,7 @@ function sys:player/attack/reset_params
 
 scoreboard players operation $attacker dmg = @s UID
 
+execute if score $base_damage dmg matches ..9 run scoreboard players set $base_damage dmg 10
 tag @s add player_atk_temp
 
 function sys:player/attack/buffs/crit/check

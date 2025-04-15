@@ -1,6 +1,47 @@
+use ::java::util::text::Text
+use ::java::util::slot::EquipmentSlotGroup
+use ::java::util::attribute::AttributeOperation
+
+dispatch minecraft:storage["registry:main"] to struct {
+    var?: any
+}
+
 dispatch minecraft:storage["registry:tooltip"] to struct {
     data?: [tooltip],
     temp?: [tooltip],
+}
+
+dispatch minecraft:storage["registry:weapon_type"] to struct {
+    sword?: struct{
+        data?: [ParsedWeaponType],
+        temp?: [RawWeaponSettings],
+        run?: RawWeaponSettings,
+    },
+    parser?: [ParsedWeaponType],
+    raw?: [RawWeaponSettings],
+    run?: RawWeaponSettings,
+    temp?: RawWeaponSettings,
+    class?: string,
+    str?: string,
+    adjust?: baseAdjustments,
+    temp_modifier?: SimpleAttributeModifier
+}
+
+struct RawWeaponSettings{
+    id?: string,
+    Lore?: [registryLore],
+    additional_lore?: [Text],
+    adjusts?: [baseAdjustments],
+    weight?: int,
+    slot?: EquipmentSlotGroup
+}
+
+struct ParsedWeaponType{
+    id?: string,
+    lore?: [Text],
+    modifiers?: [SimpleAttributeModifier],
+    chance?: int @ 0..10000,
+    name?: Text
 }
 
 struct tooltip{
@@ -16,4 +57,20 @@ struct registryLore{
         },
         name: string,
     }]
+}
+
+struct baseAdjustments{
+    id?: #[id="attribute"] string,
+    operation?: enum(string){
+	    add = "add",
+	    scale = "scale",
+	    set = "set"
+    },
+    amount?: double
+}
+
+struct SimpleAttributeModifier {
+	type: #[id="attribute"] string,
+	amount: double,
+	operation: AttributeOperation,
 }

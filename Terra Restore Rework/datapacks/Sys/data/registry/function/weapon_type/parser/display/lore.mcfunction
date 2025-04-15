@@ -1,0 +1,2 @@
+$data modify storage registry:weapon_type parser[0].lore set value [{translate:"weapon.$(class).$(id).lore",color:"#eeeeee",italic:false}]
+execute if data storage registry:weapon_type raw[0].additional_lore run data modify storage registry:weapon_type parser[0].lore append from storage registry:weapon_type raw[0].additional_lore[]

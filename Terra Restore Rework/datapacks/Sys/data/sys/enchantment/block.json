@@ -1,0 +1,54 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#sys:enchant/melee",
+    "description": {"translate": "enchantment.block"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 5,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["mainhand"],
+    "weight": 1,
+    "effects": {
+        "damage_immunity": [
+            {
+                "effect": {},
+                "requirements": [
+                    {
+                        "condition": "all_of",
+                        "terms": [
+                            {
+                                "condition": "damage_source_properties",
+                                "predicate": {
+                                    "tags": [
+                                        {
+                                            "expected": true,
+                                            "id": "is_projectile"
+                                        }
+                                    ],
+                                    "source_entity": {
+                                        "distance": {
+                                            "absolute": {
+                                                "min": 5.5
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "random_chance",
+                                "chance": {
+                                    "type": "enchantment_level",
+                                    "amount": {
+                                        "type": "linear",
+                                        "base": 0.1,
+                                        "per_level_above_first": 0.1
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "exclusive_set": "#sys:melee_functional"
+}

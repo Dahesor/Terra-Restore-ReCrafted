@@ -1,0 +1,77 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#sys:enchant/melee",
+    "description": {"translate": "enchantment.corrosion"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 3,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["mainhand"],
+    "weight": 2,
+    "effects": {
+        "post_attack": [
+            {
+                "affected": "victim",
+                "enchanted": "attacker",
+                "effect":{
+                    "type": "run_function",
+                    "function": "sys:player/attack/enchant/corrosion_1"
+                },
+                "requirements": {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "enchantment_level",
+                        "amount": {
+                            "type": "linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 1
+                }
+            },
+            {
+                "affected": "victim",
+                "enchanted": "attacker",
+                "effect":{
+                    "type": "run_function",
+                    "function": "sys:player/attack/enchant/corrosion_2"
+                },
+                "requirements": {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "enchantment_level",
+                        "amount": {
+                            "type": "linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": 2
+                }
+            },
+            {
+                "affected": "victim",
+                "enchanted": "attacker",
+                "effect":{
+                    "type": "run_function",
+                    "function": "sys:player/attack/enchant/corrosion_3"
+                },
+                "requirements": {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "enchantment_level",
+                        "amount": {
+                            "type": "linear",
+                            "base": 1,
+                            "per_level_above_first": 1
+                        }
+                    },
+                    "range": {
+                        "min": 3
+                    }
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#sys:melee_debuffs"
+}

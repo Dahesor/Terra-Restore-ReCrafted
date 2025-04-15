@@ -1,0 +1,25 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#sys:enchant/melee",
+    "description": {"translate": "enchantment.sword_wind"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 4,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["mainhand"],
+    "weight": 2,
+    "effects": {
+        "attributes": [
+            {
+                "attribute": "entity_interaction_range",
+                "amount": {
+                    "type": "linear",
+                    "base": 0.3,
+                    "per_level_above_first": 0.3
+                },
+                "id": "sys:enchantment/sword_wind",
+                "operation": "add_value"
+            }
+        ]
+    },
+    "exclusive_set": "#sys:melee_functional"
+}

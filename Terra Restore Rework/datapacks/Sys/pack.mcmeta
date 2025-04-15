@@ -5,10 +5,7 @@
     },
     "filter": {
         "block": [
-            {
-                "namespace": "minecraft",
-                "path": "advancement/.*"
-            },
+            {"namespace": "minecraft","path": "advancement/.*"},
             {"namespace": "minecraft","path": "recipe/rabbit_stew_from_brown_mushroom"},
             {"namespace": "minecraft","path": "recipe/rabbit_stew_from_red_mushroom"},
             {"namespace": "minecraft","path": "recipe/recovery_compass"},

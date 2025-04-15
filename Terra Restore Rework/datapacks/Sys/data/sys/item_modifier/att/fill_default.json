@@ -4,13 +4,6 @@
         "replace": false,
         "modifiers": [
             {
-                "attribute": "attack_speed",
-                "slot": "mainhand",
-                "amount": 2,
-                "id": "sys:show_default",
-                "operation": "add_value"
-            },
-            {
                 "attribute": "attack_knockback",
                 "slot": "mainhand",
                 "amount": 1.18,

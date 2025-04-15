@@ -1,0 +1,14 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {"translate": "enchantment.darkmare"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 1,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["armor"],
+    "weight": 6,
+    "effects": {
+
+    },
+    "exclusive_set": "#sys:armor_bonus"
+}

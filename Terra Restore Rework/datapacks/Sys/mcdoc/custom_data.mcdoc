@@ -1,0 +1,32 @@
+use::mcdoc::identify::WeaponStats
+
+dispatch mcdoc:custom_data["weapon_type"] to string
+dispatch mcdoc:custom_data["att_lock"] to byte
+dispatch mcdoc:custom_data["crafted"] to byte
+dispatch mcdoc:custom_data["parsed"] to byte
+dispatch mcdoc:custom_data["ui_check"] to byte
+dispatch mcdoc:custom_data["is_temp"] to byte
+dispatch mcdoc:custom_data["trigger"] to byte
+dispatch mcdoc:custom_data["deathHead"] to byte
+dispatch mcdoc:custom_data["is_terra"] to byte
+dispatch mcdoc:custom_data["terra"] to byte
+dispatch mcdoc:custom_data["is_mob_drop"] to byte
+dispatch mcdoc:custom_data["is_wool"] to byte
+dispatch mcdoc:custom_data["setPos"] to any
+
+dispatch mcdoc:custom_data["ui"] to struct{
+    head?: byte,
+    head_locked?: byte,
+    id?: string,
+    spaceholder?: byte,
+    trigger?: struct {
+        sound?: string,
+        id?: string
+    }
+}
+
+dispatch mcdoc:custom_data["item"] to struct{
+    id?: string,
+}
+
+dispatch mcdoc:custom_data["att"] to WeaponStats

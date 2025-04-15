@@ -1,5 +1,5 @@
 scoreboard players operation $region calculator = @s region
-function sys:att/formule/regions/get
+#function sys:att/formule/regions/get
 data modify storage temp run set value {p_override:100}
 execute store result storage temp run.p_override int 1 run scoreboard players get $p calculator
 execute if items entity @s container.0 #sys:may_att[!custom_data~{parsed:1b}] run item modify entity @s container.0 sys:att/record_region

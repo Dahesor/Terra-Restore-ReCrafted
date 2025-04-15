@@ -3,9 +3,12 @@ execute unless entity @s[type=player] run return fail
 function sys:player/attack/attack_speed
 function sys:player/attack/reset_params
 
+#横扫相关
 scoreboard players add @s sweep_counter 1
-execute if score @s sweep_counter matches 2.. run scoreboard players set $is_sweep dmg 1
+execute if score @s sweep_counter < @s sweep_recorder run scoreboard players set $is_sweep dmg 1
+execute if score $is_sweep dmg matches 1.. run scoreboard players remove $base_damage dmg 80
 
+execute if score $base_damage dmg matches ..9 run scoreboard players set $base_damage dmg 10
 scoreboard players operation $attacker dmg = @s UID
 
 tag @s add player_atk_temp

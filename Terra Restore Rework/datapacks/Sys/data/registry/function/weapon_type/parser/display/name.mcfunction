@@ -1,0 +1,1 @@
+$data modify storage registry:weapon_type parser[0].name set value {translate:"weapon.$(class).$(id)"}

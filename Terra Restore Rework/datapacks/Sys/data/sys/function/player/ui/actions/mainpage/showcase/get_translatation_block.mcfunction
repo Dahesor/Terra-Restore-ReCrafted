@@ -1,2 +1,2 @@
-$execute if data storage sys:data item.components{"minecraft:rarity":"uncommon"} run return run data modify storage temp run set value '{"translate": "block.minecraft.$(id)","color": "yellow"}'
-$data modify storage temp run set value '{"translate": "block.minecraft.$(id)","color": "white"}'
+$execute if data storage sys:data item.components{"minecraft:rarity":"uncommon"} run return run data modify storage temp run set value {"translate": "block.minecraft.$(id)","color": "yellow"}
+$data modify storage temp run set value {"translate": "block.minecraft.$(id)","color": "white"}

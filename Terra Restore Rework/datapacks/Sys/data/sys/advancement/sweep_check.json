@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "melee_hit":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#sys:mobs"
+                },
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "sys:player_melee"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/attack/verify/melee_counter"
+    }
+}

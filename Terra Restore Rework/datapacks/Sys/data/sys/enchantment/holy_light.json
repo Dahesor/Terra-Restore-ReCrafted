@@ -1,0 +1,60 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {"translate": "enchantment.holy_light"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 3,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["armor"],
+    "weight": 3,
+    "effects": {
+        "damage_protection": [
+            {
+                "effect": {
+                    "type": "add",
+                    "value": {
+                        "type": "linear",
+                        "base": 2,
+                        "per_level_above_first": 2
+                    }
+                },
+                "requirements": {
+                    "condition": "damage_source_properties",
+                    "predicate": {
+                        "source_entity": {
+                            "type": "#minecraft:undead"
+                        }
+                    }
+                }
+            }
+        ],
+        "post_attack": [
+            {
+                "affected": "attacker",
+                "enchanted": "victim",
+                "requirements": {
+                    "condition": "entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "effects": {
+                            "invisibility": {}
+                        }
+                    }
+                },
+                "effect": {
+                    "type": "apply_mob_effect",
+                    "to_apply": "glowing",
+                    "min_amplifier": 0,
+                    "max_amplifier": 1,
+                    "min_duration": 2,
+                    "max_duration": {
+                        "type": "linear",
+                        "base": 3,
+                        "per_level_above_first": 2
+                    }
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#sys:armor_bonus"
+}

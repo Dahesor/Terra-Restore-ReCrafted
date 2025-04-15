@@ -15,7 +15,7 @@ execute if score $is_sweep dmg matches 1
 #add tag
 tag @s add attack_target
 
-
+#tellraw @a ["Data: ",{score:{name:"Dahesor",objective:"sweep_counter"}}," Base: ",{score:{name:"$base_damage",objective:"dmg"}}," Counter: ",{score:{name:"Dahesor",objective:"sweep_recorder"}}]
 
 #Exclude multi checking
 #execute store result score $time dmg run time query gametime

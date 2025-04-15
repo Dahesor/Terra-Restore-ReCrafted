@@ -1,0 +1,45 @@
+use::mcdoc::registry::ParsedWeaponType
+use::mcdoc::registry::SimpleAttributeModifier
+use::java::world::component::item::AttributeModifier
+use ::java::util::text::Text
+
+
+dispatch minecraft:storage["data"] to struct {
+    //ParsedWeaponType
+    selected_type?: ParsedWeaponType,
+
+    //List of ParsedWeaponType
+    class?: [ParsedWeaponType],
+
+    //SimpleAttributeModifier
+    sm?: SimpleAttributeModifier,
+
+    //AttributeModifier
+    modifiers?: [AttributeModifier],
+
+    weapon_stats?: WeaponStats,
+    lore?: [Text],
+    text?: Text,
+    di?:struct{integer?:int, decimal?:int, sign?:string},
+
+    accepts?: struct{
+        status_total?: double,
+        status_base?: double,
+        status_mod?: double,
+    }
+}
+
+
+struct WeaponStats{
+    melee_damage?: double,
+    ranged_damage?: double,
+    attack_speed?: double,
+    reach?: double,
+    knockback?: double,
+    sweep?: double,
+    armor?: double,
+    armor_toughness?: double,
+    health?: double,
+    speed?: double,
+    safefall?: double,
+}

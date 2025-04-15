@@ -1,3 +1,4 @@
+tag @s add quater_ticking_permanent
 execute unless entity @a[distance=..30,gamemode=!spectator] run return fail
 
 scoreboard players add @s genericCD 1

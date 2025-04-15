@@ -1,3 +1,4 @@
+tag @s add quater_ticking_permanent
 scoreboard players add @s genericCD 1
 execute unless score @s genericCD matches 15.. run return fail
 

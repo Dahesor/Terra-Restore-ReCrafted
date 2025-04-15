@@ -1,1 +1,0 @@
-$data modify storage sys:data Inv[0].components."minecraft:attribute_modifiers"[{id:"sys:att"}].id set value "sys:att/$(diff)"

@@ -55,6 +55,10 @@ scoreboard objectives add hp_cache dummy
 scoreboard objectives add MAX_MP dummy
 scoreboard objectives add MP dummy
 scoreboard objectives add MP_REGEN dummy
+scoreboard objectives add HP.dry dummy
+scoreboard objectives add enchant.corrosion dummy
+scoreboard objectives add sweep_recorder dummy
+scoreboard objectives add registry dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1
@@ -69,6 +73,7 @@ scoreboard players set #30 calculator 30
 scoreboard players set #60 calculator 60
 scoreboard players set #100 calculator 100
 scoreboard players set #1000 calculator 1000
+scoreboard players set #10000 calculator 10000
 
 team add player "Player"
 team add mob_army "mob_army"
@@ -78,6 +83,7 @@ team modify player seeFriendlyInvisibles true
 team modify player friendlyFire false
 team modify player collisionRule never
 schedule function sys:core/entity_load 2s
+function registry:weapon_type/register
 
 
 return 1

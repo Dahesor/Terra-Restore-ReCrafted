@@ -1,0 +1,9 @@
+{
+    "values": [
+        "sys:block",
+        "sys:sword_wind",
+        "#sys:melee_debuffs",
+        "sys:evaporate",
+        "fire_aspect"
+    ]
+}

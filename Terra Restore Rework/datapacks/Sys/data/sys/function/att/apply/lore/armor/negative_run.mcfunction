@@ -1,3 +1,0 @@
-$execute if score #temp calculator matches 1.. run return run data modify storage sys:data lore append value '{"translate": "att.armor.neg","color": "red","italic": false,"with": [{"text":"$(value).$(vc)"},{"translate": "$(trans)"},{"text":"(+$(modify).$(mc))","color": "blue"}]}'
-
-$data modify storage sys:data lore append value '{"translate": "att.armor.neg","color": "red","italic": false,"with": [{"text":"$(value).$(vc)"},{"translate": "$(trans)"},{"text":"(-$(modify).$(mc))","color": "red"}]}'

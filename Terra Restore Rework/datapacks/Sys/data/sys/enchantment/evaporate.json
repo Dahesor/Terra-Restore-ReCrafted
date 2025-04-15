@@ -1,0 +1,82 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#sys:enchant/melee",
+    "description": {"translate": "enchantment.evaporate"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 7,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["mainhand"],
+    "weight": 1,
+    "effects": {
+        "damage": [
+            {
+                "effect": {
+                    "type": "multiply",
+                    "factor": {
+                        "type": "linear",
+                        "base": 1.2,
+                        "per_level_above_first": 0.1
+                    }
+                },
+                "requirements": {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_on_fire": true
+                                }
+                            }
+                        },
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type": "blaze"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "post_attack": [
+            {
+                "effect": {
+                    "type": "all_of",
+                    "effects": [
+                        {
+                            "type": "run_function",
+                            "function": "sys:player/attack/enchant/evaporate"
+                        }
+                    ]
+                },
+                "affected": "victim",
+                "enchanted": "attacker",
+                "requirements": {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "flags": {
+                                    "is_on_fire": true
+                                }
+                            }
+                        },
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "type": "blaze"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#sys:melee_functional"
+}

@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "ench":{
+            "trigger": "inventory_changed",
+            "conditions": {"items": [{"predicates": {"enchantments": [{"enchantments": "sharpness"}]}}]}},
+        "book":{
+            "trigger": "inventory_changed",
+            "conditions": {"items": [{"predicates": {"stored_enchantments": [{"enchantments": "sharpness"}]}}]}}
+        },
+        "requirements": [["ench","book"]],
+    "rewards": {
+        "function": "comms:enchantments/sharpness"
+    }
+}

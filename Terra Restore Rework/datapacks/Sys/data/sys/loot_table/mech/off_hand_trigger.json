@@ -20,7 +20,11 @@
             "function":"set_components",
             "components": {
                 "tooltip_display": {"hide_tooltip": true},
-                "item_name": "\"\""
+                "item_name": "",
+                "item_model": "offhand_stick",
+                "enchantments": {
+                    "sys:mech/offhand": 1
+                }
             }
         },
         {

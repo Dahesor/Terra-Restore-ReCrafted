@@ -1,8 +1,0 @@
-data modify storage sys:mod hold set value []
-data modify storage sys:mod hold append from storage sys:mod data[{id:"movement_speed"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"attack_damage"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"attack_speed"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"attack_knockback"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"entity_interaction_range"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"sweeping_damage_ratio"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"explosion_knockback_resistance"}]

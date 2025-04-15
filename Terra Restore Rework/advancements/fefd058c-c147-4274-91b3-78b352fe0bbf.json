@@ -11,5 +11,11 @@
     },
     "done": true
   },
+  "comms:enchantments/sharpness": {
+    "criteria": {
+      "book": "2025-04-14 09:46:00 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 4325
 }

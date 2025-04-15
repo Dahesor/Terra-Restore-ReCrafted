@@ -1,1 +1,1 @@
-$data modify storage temp run set value '{"translate": "item.minecraft.$(id)","color": "white"}'
+$data modify storage temp run set value {"translate": "item.minecraft.$(id)","color": "white"}

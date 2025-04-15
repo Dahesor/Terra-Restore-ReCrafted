@@ -1,6 +1,0 @@
-data modify storage sys:mod hold set value []
-data modify storage sys:mod hold append from storage sys:mod data[{id:"movement_speed"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"safe_fall_distance"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"armor"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"armor_toughness"}]
-data modify storage sys:mod hold append from storage sys:mod data[{id:"knockback_resistance"}]

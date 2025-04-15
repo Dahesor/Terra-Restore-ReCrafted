@@ -1,0 +1,41 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {"translate": "enchantment.armor"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 3,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["armor"],
+    "weight": 6,
+    "effects": {
+        "damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 3,
+                        "per_level_above_first": 2
+                    }
+                },
+                "requirements": {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "target": "this",
+                        "score": "HP.dry"
+                    },
+                    "range": {
+                        "min": {
+                            "type": "score",
+                            "score": "hp_cache",
+                            "target": "this",
+                            "scale": 0.95
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#sys:armor_bonus"
+}

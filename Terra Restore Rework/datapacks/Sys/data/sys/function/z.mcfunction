@@ -3,13 +3,6 @@
 
 
 
-
-
-
-
-
-
-
 return 1
 tellraw @a {"score": {"objective": "calculator","name": "$gametime"}}
 

@@ -1,0 +1,35 @@
+{
+    "anvil_cost": 1,
+    "supported_items": "#minecraft:enchantable/armor",
+    "description": {"translate": "enchantment.unyielding"},
+    "max_cost": {"base": 12,"per_level_above_first": 11},
+    "max_level": 3,
+    "min_cost": {"base": 1,"per_level_above_first": 11},
+    "slots": ["armor"],
+    "weight": 6,
+    "effects": {
+        "damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2,
+                        "per_level_above_first": 2
+                    }
+                },
+                "requirements": {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:['HP.overhalf']}"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#minecraft:exclusive_set/armor"
+}
