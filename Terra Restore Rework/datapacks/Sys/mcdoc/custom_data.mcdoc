@@ -1,4 +1,6 @@
 use::mcdoc::identify::WeaponStats
+use::mcdoc::identify::RecordedStats
+use::mcdoc::identify::Stats
 
 dispatch mcdoc:custom_data["weapon_type"] to string
 dispatch mcdoc:custom_data["att_lock"] to byte
@@ -13,6 +15,9 @@ dispatch mcdoc:custom_data["terra"] to byte
 dispatch mcdoc:custom_data["is_mob_drop"] to byte
 dispatch mcdoc:custom_data["is_wool"] to byte
 dispatch mcdoc:custom_data["setPos"] to any
+dispatch mcdoc:custom_data["att"] to WeaponStats
+dispatch mcdoc:custom_data["record_att"] to RecordedStats
+dispatch mcdoc:custom_data["stats"] to Stats
 
 dispatch mcdoc:custom_data["ui"] to struct{
     head?: byte,
@@ -29,4 +34,7 @@ dispatch mcdoc:custom_data["item"] to struct{
     id?: string,
 }
 
-dispatch mcdoc:custom_data["att"] to WeaponStats
+dispatch mcdoc:custom_data["rarity"] to struct{
+    level?: int,
+    initial?: int
+}

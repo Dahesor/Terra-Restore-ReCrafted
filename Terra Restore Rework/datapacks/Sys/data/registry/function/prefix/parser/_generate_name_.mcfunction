@@ -1,0 +1,1 @@
+$data modify storage registry:prefix data[0].displayName set value {translate:"prefix.$(id)"}

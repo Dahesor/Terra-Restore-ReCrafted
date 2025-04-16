@@ -1,6 +1,8 @@
 use ::java::util::text::Text
 use ::java::util::slot::EquipmentSlotGroup
 use ::java::util::attribute::AttributeOperation
+use::mcdoc::identify::AttributeEnum
+use::mcdoc::identify::StatsEnum
 
 dispatch minecraft:storage["registry:main"] to struct {
     var?: any
@@ -25,6 +27,51 @@ dispatch minecraft:storage["registry:weapon_type"] to struct {
     str?: string,
     adjust?: baseAdjustments,
     temp_modifier?: SimpleAttributeModifier
+}
+
+dispatch minecraft:storage["registry:prefix"] to struct {
+    new?: [RawPrefix],
+    data?: [Prefix],
+}
+
+struct RawPrefix{
+    id?: string,
+    value?: int @ -300..300,
+    rarity?: int @ -2..2,
+    att_effects?:struct{
+        [AttributeEnum] : PrefixEffect,
+    },
+    stats_effects?:struct{
+        [StatsEnum] : StatsEffect,
+    },
+    negative?: byte @ 0..1,
+    for?: [EquipmentClass]
+}
+
+struct Prefix{
+    ...RawPrefix,
+    displayName?: Text,
+}
+
+enum(string) EquipmentClass{
+    sword = "sword",
+    axe = "axe",
+    bow = "bow",
+    crossbow = "crossbow",
+    helmet = "helmet",
+    chestplate = "chestplate",
+    leggings = "leggings",
+    boots = "boots",
+}
+
+struct PrefixEffect{
+    value?: double,
+    op?: enum(string){add = "add",scale = "scale"},
+}
+
+struct StatsEffect{
+    scale?: double,
+    add?: int,
 }
 
 struct RawWeaponSettings{

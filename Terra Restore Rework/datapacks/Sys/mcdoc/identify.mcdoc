@@ -1,5 +1,8 @@
 use::mcdoc::registry::ParsedWeaponType
 use::mcdoc::registry::SimpleAttributeModifier
+use::mcdoc::registry::Prefix
+use::mcdoc::registry::PrefixEffect
+use::mcdoc::registry::StatsEffect
 use::java::world::component::item::AttributeModifier
 use ::java::util::text::Text
 
@@ -13,33 +16,76 @@ dispatch minecraft:storage["data"] to struct {
 
     //SimpleAttributeModifier
     sm?: SimpleAttributeModifier,
+    pr?: Prefix,
+
+    pcalc?: struct{
+        this?: PrefixEffect,
+        initial?: double,
+        final?: double,
+        changed?: double,
+        modifier?: SimpleAttributeModifier,
+        type?: #[id="attribute"] string,
+    },
+
+    stats?: Stats,
 
     //AttributeModifier
     modifiers?: [AttributeModifier],
-
+    additional_atts?: [AttributeModifier],
     weapon_stats?: WeaponStats,
+    stats_record?: RecordedStats,
     lore?: [Text],
     text?: Text,
+    sum_text?:Text,
     di?:struct{integer?:int, decimal?:int, sign?:string},
+    di_exp?:struct{i_2?:int, d_2?:int, i_1?:int, d_1?:int, sign?:string},
 
     accepts?: struct{
         status_total?: double,
         status_base?: double,
         status_mod?: double,
-    }
+        original?: double,
+        modifies?: double,
+        integer?: int
+    },
+
+    prefixs?: [Prefix],
 }
 
+struct Stats{
+    [StatsEnum]?: StatsEffect,
+}
+
+struct RecordedStats{
+    original?: WeaponStats,
+    modifies?: WeaponStats,
+}
 
 struct WeaponStats{
-    melee_damage?: double,
-    ranged_damage?: double,
-    attack_speed?: double,
-    reach?: double,
-    knockback?: double,
-    sweep?: double,
-    armor?: double,
-    armor_toughness?: double,
-    health?: double,
-    speed?: double,
-    safefall?: double,
+    [AttributeEnum]?: double
+}
+
+enum(string) AttributeEnum{
+    melee_damage = "melee_damage",
+    ranged_damage = "ranged_damage",
+    attack_speed = "attack_speed",
+    reach = "reach",
+    knockback = "knockback",
+    sweep = "sweep",
+    armor = "armor",
+    armor_toughness = "armor_toughness",
+    health = "health",
+    speed = "speed",
+    safefall = "safefall",
+}
+
+enum(string) StatsEnum{
+    crit_chance = "crit_chance",
+    crit_damage = "crit_damage",
+    DEX = "DEX",
+    STR = "STR",
+    INT = "INT",
+    CON = "CON",
+    POW = "POW",
+    EDU = "EDU"
 }

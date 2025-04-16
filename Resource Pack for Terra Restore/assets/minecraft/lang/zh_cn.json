@@ -1276,7 +1276,7 @@
     "sign.1544.front_text.0": "unleash",
     "sign.1544.front_text.1": "fire",
     "storage.m": "c",
-    "storage.task": "英雄, 勿掉以轻心。exiel的残党们依然对这片大地虎视眈眈,他们不可信任, 是我们的重大威胁",
+    "storage.task": "英雄, 勿掉以轻心。Exiel的残党们依然对这片大地虎视眈眈,他们不可信任, 是我们的重大威胁",
     "storage.task.1": "时间不多了, 英雄, 我得走了。恐怕我们不会再碰面了...我们全靠你了。你的旅程将由此开始, 祝你好运。",
     "storage.data": "3.5",
     "storage.data.1": "1.6",
@@ -1287,8 +1287,9 @@
     "team.mob_army.name": "mob_army",
     "dev.list.line0": "respawn sign",
     "dev.show_tellraw.line0": "get commands",
-    "legacy.opening.acts.1.line7": "英雄...在这片倪拉大地之上, 我们与exiel的军团所进行的漫长战争已经划下了句点",
-    "legacy.opening.acts.2.line10": "集合诸神之力, 我们成功将exiel这个恶魔逐回了他原本居住的次元。但尽管已事隔多年, 如今情势却依然险恶",
+    "npc.vuco":"[§aVuco§r]",
+    "legacy.opening.acts.1.line7": "英雄...在这片倪拉大地之上, 我们与Exiel的军团所进行的漫长战争已经划下了句点",
+    "legacy.opening.acts.2.line10": "集合诸神之力, 我们成功将Exiel这个恶魔逐回了他原本居住的次元。但尽管已事隔多年, 如今情势却依然险恶",
     "legacy.opening.acts.3.line5": "大地仍然遍体鳞伤, 而腐败似乎又伴随着怪物的肆虐再次蔓延开来",
     "legacy.opening.acts.4.line6": "你们是我们所有人的希望。你们的任务是踏上旅途, 使大地回复原本的面貌, 并消灭仍蛰伏于黑暗角落的腐败。我已赐予你完成使命的力量",
     "legacy.opening.acts.4.line7": "你是我们所有人的希望。你的任务是踏上旅途, 使大地回复原本的面貌, 并消灭仍蛰伏于黑暗角落的腐败。我已赐予你完成使命的力量",
@@ -1310,5 +1311,6 @@
     "tooltip.INT":"智力",
     "tooltip.CON":"体质",
     "tooltip.POW":"意志",
-    "tooltip.EDU":"教育"
+    "tooltip.EDU":"教育",
+    "test_music":"Bitter Cup (节选)"
 }

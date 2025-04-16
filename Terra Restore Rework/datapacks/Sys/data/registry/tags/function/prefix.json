@@ -1,0 +1,10 @@
+{
+    "values": [
+        "registry:prefix/melee/obtuse",
+        "registry:prefix/melee/sharp",
+        "registry:prefix/melee/acute",
+        "registry:prefix/melee/deadly",
+        "registry:prefix/melee/fast",
+        "registry:prefix/melee/light"
+    ]
+}

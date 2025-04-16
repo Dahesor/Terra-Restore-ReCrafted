@@ -5,5 +5,5 @@ tp @a[scores={opening=3}] -759.49 49.00 187.49 180 0
 tp @a[scores={opening=4}] -765.58 49.00 182.37 -90 0
 
 
-function dah.sch:set {time:80,run:'tellraw @a ["[��aVuco��f] ",{"tranunction.legacy.opening.acts.5.line7"}]'}
+function dah.sch:set {time:80,run:'tellraw @a [{"translate":"npc.vuco"}," ",{"translate":"legacy.opening.acts.5.line7"}]'}
 schedule function sys:legacy/opening/acts/6 20s

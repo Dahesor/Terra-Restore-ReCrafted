@@ -39,3 +39,6 @@ execute store result score @s hp_cache run attribute @s max_health get 100
 
 #蓝量回复
 function sys:player/bar/mp/regen
+
+#清除伤害吸收
+effect clear @s absorption

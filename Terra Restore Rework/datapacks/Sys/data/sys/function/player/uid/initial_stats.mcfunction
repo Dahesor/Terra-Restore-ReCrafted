@@ -4,6 +4,12 @@ scoreboard players set @s DEX 100
 scoreboard players set @s INT 100
 scoreboard players set @s POW 100
 scoreboard players set @s EDU 100
+scoreboard players set @s base_STR 100
+scoreboard players set @s base_CON 100
+scoreboard players set @s base_DEX 100
+scoreboard players set @s base_EDU 100
+scoreboard players set @s base_INT 100
+scoreboard players set @s base_POW 100
 scoreboard players set @s CRIT.DAM 500
 scoreboard players set @s CRIT.CHANCE 50
 scoreboard players set @s MP 300

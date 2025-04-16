@@ -1336,5 +1336,6 @@
     "legacy.opening.acts.5.line7": "你会在旅途中找到一种称为「大地复苏」的神秘物品, 你可以在勇者殿堂中使用它们来回复失土, 并将和平重新带回这片大地",
     "legacy.opening.acts.6.line4": "你还必须找到所有的古代羊毛, 将他们摆回位于忘却之地的纪念碑上, 以让倪拉重新回归平静与祥和, 确保那些怪物带来的伤害不再重演",
     "player.updates.2.main.line4": "[§aupdate§r] 下线期间数据包发生了更新。现在是数据版本1。\n - 使用右键的任意非技能行为后的0.25秒内将不会触发技能，以免误触\n - 修复了词条拥有重复id的bug。\n - §b旧版装备需要你手动修复：将他们脱下并放置于背包内（不在盔甲栏位，不在快捷栏），随后关闭并打开玩家页面。\n - 封闭了旧版的1.8配方系统。",
-    "json.sys.data.sys.loot_table.ui.off_skill.line32": "当前技能："
+    "json.sys.data.sys.loot_table.ui.off_skill.line32": "当前技能：",
+    "test_music":"Bitter Cup (节选)"
 }

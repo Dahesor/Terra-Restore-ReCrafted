@@ -46,6 +46,12 @@ scoreboard objectives add DEX dummy
 scoreboard objectives add INT dummy
 scoreboard objectives add POW dummy
 scoreboard objectives add EDU dummy
+scoreboard objectives add base_STR dummy
+scoreboard objectives add base_CON dummy
+scoreboard objectives add base_DEX dummy
+scoreboard objectives add base_INT dummy
+scoreboard objectives add base_POW dummy
+scoreboard objectives add base_EDU dummy
 scoreboard objectives add CRIT.CHANCE dummy
 scoreboard objectives add CRIT.DAM dummy
 scoreboard objectives add sweep_counter dummy
@@ -83,7 +89,7 @@ team modify player seeFriendlyInvisibles true
 team modify player friendlyFire false
 team modify player collisionRule never
 schedule function sys:core/entity_load 2s
-function registry:weapon_type/register
+function registry:register_all
 
 
 return 1
