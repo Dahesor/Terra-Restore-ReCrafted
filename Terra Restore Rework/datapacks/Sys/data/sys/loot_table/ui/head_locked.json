@@ -12,6 +12,7 @@
         }
     ],
     "functions": [
+        {"function": "reference","name": "sys:ui_default"},
         {
             "function": "fill_player_head",
             "entity": "this"
@@ -29,9 +30,12 @@
             "mode": "replace_all",
             "entity": "this",
             "lore": [
+                {"translate":"ui.player_page.locked.1","color": "#CCCCCC","italic": false},
+                {"translate":"ui.player_page.locked.2","color": "#CCCCCC","italic": false},
                 "",
-                {"translate":"ui.player_page.locked.1","color": "gray","italic": false},
-                {"translate":"ui.player_page.locked.2","color": "gray","italic": false}
+                [{"translate": "stats.STR.compact","color": "red","italic": false},{"text": "：","color": "#CCCCCC"},{"score": {"name": "@s","objective": "STR"},"color": "#1da8f2"},"   ",{"translate": "stats.INT.compact","color": "green","italic": false},{"text": "：","color": "#CCCCCC"},{"score": {"name": "@s","objective": "INT"},"color": "#1da8f2"}],
+                [{"translate": "stats.CON.compact","color": "gold","italic": false},{"text": "：","color": "#CCCCCC"},{"score": {"name": "@s","objective": "CON"},"color": "#1da8f2"},"   ",{"translate": "stats.POW.compact","color": "yellow","italic": false},{"text": "：","color": "#CCCCCC"},{"score": {"name": "@s","objective": "POW"},"color": "#1da8f2"}],
+                [{"translate": "stats.DEX.compact","color": "light_purple","italic": false},{"text": "：","color": "#CCCCCC"},{"score": {"name": "@s","objective": "DEX"},"color": "#1da8f2"},"   ",{"translate": "stats.EDU.compact","color": "aqua","italic": false},{"text": "：","color": "#CCCCCC"},{"score": {"name": "@s","objective": "EDU"},"color": "#1da8f2"}]
             ]
         },
         {

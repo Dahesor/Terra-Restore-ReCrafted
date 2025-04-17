@@ -12,6 +12,7 @@
         }
     ],
     "functions": [
+        {"function": "reference","name": "sys:ui_default"},
         {
             "function": "set_custom_model_data",
             "floats": {

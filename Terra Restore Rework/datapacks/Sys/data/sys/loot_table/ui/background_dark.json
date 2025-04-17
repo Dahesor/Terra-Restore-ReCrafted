@@ -1,0 +1,22 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:ui/background"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_components",
+            "components": {
+                "item_model": "terra:misc/dark_background"
+            }
+        }
+    ]
+}

@@ -8,11 +8,21 @@
     "max_cost": {"base": 1,"per_level_above_first": 0},
     "min_cost": {"base": 2,"per_level_above_first": 0},
     "effects": {
-        "damage": [
+        "damage_immunity": [
             {
-                "effect": {
-                    "type": "minecraft:add",
-                    "value": -10
+                "effect": {},
+                "requirements": {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "inst.dodge_chance": {
+                            "min": {
+                                "type": "score",
+                                "target": "attacker",
+                                "score": "hit_chance"
+                            }
+                        }
+                    }
                 }
             }
         ]

@@ -1,6 +1,6 @@
+scoreboard objectives add calculator dummy
 scoreboard objectives add data dummy
 scoreboard objectives add options dummy
-scoreboard objectives add calculator dummy
 scoreboard objectives add region dummy
 scoreboard objectives add music dummy
 scoreboard objectives add region_name dummy
@@ -52,6 +52,7 @@ scoreboard objectives add base_DEX dummy
 scoreboard objectives add base_INT dummy
 scoreboard objectives add base_POW dummy
 scoreboard objectives add base_EDU dummy
+scoreboard objectives add self_att_pts dummy
 scoreboard objectives add CRIT.CHANCE dummy
 scoreboard objectives add CRIT.DAM dummy
 scoreboard objectives add sweep_counter dummy
@@ -65,6 +66,9 @@ scoreboard objectives add HP.dry dummy
 scoreboard objectives add enchant.corrosion dummy
 scoreboard objectives add sweep_recorder dummy
 scoreboard objectives add registry dummy
+scoreboard objectives add dodge_chance dummy
+scoreboard objectives add inst.dodge_chance dummy
+scoreboard objectives add hit_chance dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

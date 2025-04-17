@@ -2,7 +2,7 @@
 
 
 give @s cherry_sign[block_entity_data={id:"sign",is_waxed:1b,front_text:{messages:["",{text:"▶",color:"aqua",click_event:{action:"run_command",command:"/function sys:plugin/music/test"}},{translate:"test_music",color:"dark_green"},""],has_glowing_text:true}}]
-
+scoreboard players set %diff calculator 0
 return 1
 tellraw @a {"score": {"objective": "calculator","name": "$gametime"}}
 

@@ -1,0 +1,9 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "self_att_pts": {
+            "min": 1
+        }
+    }
+}

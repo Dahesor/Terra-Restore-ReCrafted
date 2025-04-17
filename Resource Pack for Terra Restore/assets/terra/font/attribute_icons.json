@@ -1,0 +1,46 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "ascent": 8,
+            "height":10,
+            "chars": ["\uEA00"],
+            "file": "terra:gui/att/str.png"
+        },
+                {
+            "type": "bitmap",
+            "ascent": 8,
+            "height":10,
+            "chars": ["\uEA01"],
+            "file": "terra:gui/att/consi.png"
+        },
+                {
+            "type": "bitmap",
+            "ascent": 8,
+            "height":10,
+            "chars": ["\uEA02"],
+            "file": "terra:gui/att/dex.png"
+        },
+                {
+            "type": "bitmap",
+            "ascent": 8,
+            "height":10,
+            "chars": ["\uEA03"],
+            "file": "terra:gui/att/int.png"
+        },
+                {
+            "type": "bitmap",
+            "ascent": 8,
+            "height":10,
+            "chars": ["\uEA04"],
+            "file": "terra:gui/att/pow.png"
+        },
+                {
+            "type": "bitmap",
+            "ascent": 8,
+            "height":10,
+            "chars": ["\uEA05"],
+            "file": "terra:gui/att/edu.png"
+        }
+    ]
+}

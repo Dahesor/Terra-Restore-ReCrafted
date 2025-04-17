@@ -1,0 +1,31 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {"function": "reference","name": "sys:ui_default"},
+        {
+            "function": "set_components",
+            "components":{
+                "item_model": "terra:buttons/close"
+            }
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'back',sound:'click'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.close","color": "red","italic": false}
+        }
+    ]
+}

@@ -1,4 +1,5 @@
 function sys:mob/ticking/update_hp
+scoreboard players set @s hit_chance 0
 
 tag @s add fully_resolved
 data modify entity @s drop_chances.feet set value 0.0

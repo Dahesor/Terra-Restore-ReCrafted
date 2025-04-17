@@ -1,5 +1,5 @@
 {
-    "parent": "terra:background",
+    "parent": "terra:background_dark",
     "textures": {
       "layer0": "terra:gui/back"
     }

@@ -1,12 +1,15 @@
+#检测玩家数量
+scoreboard players add $player data 1
+
 #重置横扫计数器
 scoreboard players set @s sweep_counter 0
 scoreboard players set @s sweep_recorder 0
 
-#检测玩家数量
-scoreboard players add $player data 1
-
 #死亡检查
 execute if score @s death matches 1.. run function sys:player/life/domains/check
+
+#更新闪避种子
+function sys:player/utils/dodge/random
 
 #背包UI
 function sys:player/ui/self

@@ -1,0 +1,95 @@
+{
+    "type": "command",
+    "pools": [{"rolls": 1,"entries": [{"type": "item","name": "structure_void"}]}],
+    "functions": [
+        {
+            "function": "set_components",
+            "components": {
+                "item_model": "terra:buttons/dex",
+                "tooltip_style": "terra:gui/dex"
+            }
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'dex'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"stats.DEX.full","color": "light_purple","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {"translate": "stats.current","color": "#CCCCCC","italic": false,"with": [
+                    {"score": {"name": "@s","objective": "DEX"},"color":"light_purple"},
+                    {"score": {"name": "@s","objective": "base_DEX"}},
+                    {"text": "+"},
+                    {"score": {"name": "%diff","objective": "calculator"},"color":"aqua"}
+                ]},
+                "",
+                {"translate": "stats.DEX.lore.1","color": "#CCCCCC","italic": false},
+                {"translate": "stats.DEX.lore.2","color": "#CCCCCC","italic": false},
+                {"translate": "stats.DEX.lore.3","color": "#CCCCCC","italic": false},
+                {"translate": "stats.DEX.lore.4","color": "#CCCCCC","italic": false},
+                ""
+            ]
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "append",
+            "lore": [
+                {"translate": "ui.att.point_left","color": "red","italic": false,"with": [{"score": {"name": "@s","objective": "self_att_pts"}}]}
+            ],
+            "conditions": [{"condition": "inverted","term": {"condition": "reference","name": "sys:has_unused_att_points"}}]
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "append",
+            "lore": [
+                {"translate": "ui.att.point_left","color": "aqua","italic": false,"with": [{"score": {"name": "@s","objective": "self_att_pts"},"color":"green"}]},
+                {"translate": "stats.action.use","color": "yellow","italic": false}
+            ],
+            "conditions": [{"condition": "reference","name": "sys:has_unused_att_points"}]
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_section",
+            "offset": 1,
+            "size": 1,
+            "lore": [
+                {"translate": "stats.current","color": "#CCCCCC","italic": false,"with": [
+                    {"score": {"name": "@s","objective": "DEX"},"color":"light_purple"},
+                    {"score": {"name": "@s","objective": "base_DEX"}},
+                    {"text": "-","color": "red"},
+                    {"score": {"name": "%diff","objective": "calculator"},"color":"red"}
+                ]}
+            ],
+            "conditions": [
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "value_check",
+                        "value": {
+                            "type": "score",
+                            "target": "this",
+                            "score": "DEX"
+                        },
+                        "range": {
+                            "min":{
+                                "type": "score",
+                                "target": "this",
+                                "score": "base_DEX"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

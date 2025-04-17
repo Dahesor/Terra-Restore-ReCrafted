@@ -22,3 +22,6 @@ item replace entity @s player.cursor from entity 0-0-0-0-0 container.0
 data remove storage data class
 data remove storage sys:data item
 data modify entity 0-0-0-0-0 Items set value []
+
+#叮！
+execute at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~
