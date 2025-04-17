@@ -1,0 +1,1 @@
+function sys:player/ui/pages/attribute_icons

@@ -4,8 +4,9 @@ use::mcdoc::registry::Prefix
 use::mcdoc::registry::PrefixEffect
 use::mcdoc::registry::StatsEffect
 use::java::world::component::item::AttributeModifier
-use ::java::util::text::Text
-
+use::java::util::text::Text
+use::java::world::entity::mob::player::Player
+use::java::world::entity::mob::EntityEquipment
 
 dispatch minecraft:storage["data"] to struct {
     //ParsedWeaponType
@@ -27,8 +28,9 @@ dispatch minecraft:storage["data"] to struct {
         type?: #[id="attribute"] string,
     },
 
+    player?: Player,
+    equipment?: EntityEquipment,
     stats?: Stats,
-
     //AttributeModifier
     modifiers?: [AttributeModifier],
     additional_atts?: [AttributeModifier],
@@ -77,6 +79,7 @@ enum(string) AttributeEnum{
     health = "health",
     speed = "speed",
     safefall = "safefall",
+    knockback_resistance = "knockback_resistance"
 }
 
 enum(string) StatsEnum{

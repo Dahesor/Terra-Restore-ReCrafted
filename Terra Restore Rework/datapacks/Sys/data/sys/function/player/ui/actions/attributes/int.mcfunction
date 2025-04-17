@@ -6,5 +6,5 @@ execute unless score @s self_att_pts matches 1.. run return run function sys:pla
 scoreboard players remove @s self_att_pts 1
 scoreboard players add @s base_INT 1
 playsound entity.experience_orb.pickup master @s ~ ~ ~
-function sys:player/utils/stats/refresh
+function sys:player/stats/refresh
 function sys:player/ui/pages/attributes

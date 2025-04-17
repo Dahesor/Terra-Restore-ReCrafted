@@ -1,0 +1,2 @@
+execute if entity @s[tag=reading_container] run loot replace entity @s inventory.0 loot sys:ui/head_locked
+execute unless entity @s[tag=reading_container] run loot replace entity @s inventory.0 loot sys:ui/head

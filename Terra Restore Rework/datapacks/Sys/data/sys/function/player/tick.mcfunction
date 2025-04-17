@@ -8,6 +8,9 @@ scoreboard players set @s sweep_recorder 0
 #死亡检查
 execute if score @s death matches 1.. run function sys:player/life/domains/check
 
+#重置属性检查
+tag @s remove StatsChanged
+
 #更新闪避种子
 function sys:player/utils/dodge/random
 

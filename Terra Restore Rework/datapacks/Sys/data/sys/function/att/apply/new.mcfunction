@@ -13,6 +13,10 @@ data remove storage data additional_atts
 
 #获取武器类型
 execute if items entity 0-0-0-0-0 container.0 #swords run function sys:att/apply/types/sword
+execute if items entity 0-0-0-0-0 container.0 #head_armor run function sys:att/apply/types/helmet
+execute if items entity 0-0-0-0-0 container.0 #chest_armor run function sys:att/apply/types/chestplate
+execute if items entity 0-0-0-0-0 container.0 #leg_armor run function sys:att/apply/types/leggings
+execute if items entity 0-0-0-0-0 container.0 #foot_armor run function sys:att/apply/types/boots
 
 #传回物品
 data modify entity 0-0-0-0-0 Items[{Slot:0b}] set from storage sys:data item

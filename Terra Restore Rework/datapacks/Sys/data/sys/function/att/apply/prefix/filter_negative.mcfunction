@@ -1,5 +1,5 @@
 execute store result score #filter calculator run random value 1..99
-execute if data storage data pr{negative:1b} if score #filter calculator matches ..66 run return fail
+execute if data storage data pr{negative:1b} if score #filter calculator matches ..66 run return run data remove storage data pr.stats_effects
 
 #生成属性修饰器
 function sys:att/apply/prefix/calc_modifiers/all
