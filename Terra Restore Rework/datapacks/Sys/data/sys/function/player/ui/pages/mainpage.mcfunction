@@ -9,4 +9,3 @@ loot replace entity @s inventory.10 loot sys:ui/att
 loot replace entity @s inventory.12 loot sys:ui/off_skill
 loot replace entity @s inventory.21 loot sys:ui/right_skill
 loot replace entity @s inventory.16 loot sys:ui/music
-

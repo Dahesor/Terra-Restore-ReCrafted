@@ -1,0 +1,10 @@
+{
+    "pack": {
+        "pack_format": 71,
+        "description": "Data Pack for\n§a\"UI Sidebar\"§6 by Dahesor\n Specialized For Terra Restore",
+        "supported_formats": {
+            "min_inclusive": 48,
+            "max_inclusive": 71
+        }
+    }
+}
