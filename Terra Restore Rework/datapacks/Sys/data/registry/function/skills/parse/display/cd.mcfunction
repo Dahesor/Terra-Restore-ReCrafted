@@ -1,0 +1,1 @@
+$data modify storage registry:skill data[0].lore[0].with[0].text set value "$(integer).$(decimal)"

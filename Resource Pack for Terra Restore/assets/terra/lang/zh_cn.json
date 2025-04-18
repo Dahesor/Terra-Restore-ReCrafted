@@ -67,5 +67,14 @@
     "armor.head":"头盔",
     "armor.chest":"胸甲",
     "armor.legs":"护腿",
-    "armor.feet":"靴子"
+    "armor.feet":"靴子",
+    "skill.fighting_spirit":"昂扬斗志",
+    "skill.fighting_spirit.1":"点燃自身的斗志，在接下来一段时间内",
+    "skill.fighting_spirit.2":"增加%s的物理攻击力",
+    "skill.fighting_spirit.3":"以及%s的移动速度",
+    "skill.battle_cry":"战吼",
+    "cd":"冷却时间",
+    "cd_l":"冷却时间：%s",
+    "mp_cost":"魔力消耗",
+    "mp_cost_l":"魔力消耗：%s"
 }

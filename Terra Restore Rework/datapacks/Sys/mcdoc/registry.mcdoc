@@ -13,6 +13,11 @@ dispatch minecraft:storage["registry:tooltip"] to struct {
     temp?: [tooltip],
 }
 
+dispatch minecraft:storage["registry:skill"] to struct {
+    data?: [SkillData],
+    temp?: [RawSkill],
+}
+
 dispatch minecraft:storage["registry:weapon_type"] to struct {
     sword?: struct{
         data?: [ParsedWeaponType],
@@ -32,6 +37,56 @@ dispatch minecraft:storage["registry:weapon_type"] to struct {
 dispatch minecraft:storage["registry:prefix"] to struct {
     new?: [RawPrefix],
     data?: [Prefix],
+}
+
+struct RawSkill{
+    ...SkillRegistryUnchanged,
+    lore?: [registryLore],
+    additional_lore?: [Text],
+}
+
+struct SkillData{
+    ...SkillRegistryUnchanged,
+    lore?: [Text],
+    displayName?: Text,
+}
+
+struct SkillRegistryUnchanged{
+    id?: int,
+    sid?: string,
+    mp_cost?: int @ 0..,
+    /// 技能冷却时间。单位：0.1秒
+    cd?: int @ 0..,
+    /// 技能冷却缩减后不会小于的最小冷却时间。单位：0.1秒
+    min_cd?: int @ 0..,
+    entry?: #[id="function"] string,
+    flags?: [SkillFlags],
+    type?: SkillTypes,
+}
+
+enum(string) SkillFlags{
+    healing = "healing",
+    damage = "damage",
+    buff = "buff",
+    debuff = "debuff",
+    summon = "summon",
+    movement = "movement",
+    STR = "STR",
+    DEX = "DEX",
+    INT = "INT",
+    POW = "POW",
+    CON = "CON",
+    EDU = "EDU",
+}
+
+enum(string) SkillTypes{
+    healing = "healing",
+    damage = "damage",
+    buff = "buff",
+    debuff = "debuff",
+    summon = "summon",
+    movement = "movement",
+    defence = "defence",
 }
 
 struct RawPrefix{
@@ -98,12 +153,24 @@ struct tooltip{
 }
 
 struct registryLore{
-    with?: [struct{
-        type: enum(string){
-            const = "Constant",
-        },
-        name: string,
-    }]
+    with?: [
+        struct{
+            type?: registryLoreVar,
+            ...ConstantStats,
+            target?: ConstantStats
+        }
+    ]
+}
+
+enum(string) registryLoreVar{
+    const = "const",
+    stats = "stats",
+    expression = "expression",
+}
+
+struct ConstantStats{
+    name?: #[score_holder]string,
+    stats?: StatsEnum,
 }
 
 struct baseAdjustments{

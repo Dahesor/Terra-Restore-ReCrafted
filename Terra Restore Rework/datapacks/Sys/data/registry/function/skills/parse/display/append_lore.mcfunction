@@ -1,0 +1,1 @@
+$data modify storage registry:skill data[0].lore append value {translate:"skill.$(id).$(index)"}

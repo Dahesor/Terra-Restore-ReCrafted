@@ -69,6 +69,7 @@ scoreboard objectives add registry dummy
 scoreboard objectives add dodge_chance dummy
 scoreboard objectives add inst.dodge_chance dummy
 scoreboard objectives add hit_chance dummy
+scoreboard objectives add const dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

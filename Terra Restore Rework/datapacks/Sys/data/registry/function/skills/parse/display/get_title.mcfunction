@@ -1,0 +1,1 @@
+$data modify storage registry:skill data[0].displayName set value {translate:"skill.$(id)"}
