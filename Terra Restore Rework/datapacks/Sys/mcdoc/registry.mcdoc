@@ -49,6 +49,8 @@ struct SkillData{
     ...SkillRegistryUnchanged,
     lore?: [Text],
     displayName?: Text,
+    cd_mp_lore?: Text,
+    description?: [Text],
 }
 
 struct SkillRegistryUnchanged{
@@ -171,6 +173,7 @@ enum(string) registryLoreVar{
 struct ConstantStats{
     name?: #[score_holder]string,
     stats?: StatsEnum,
+    extra?: string,
 }
 
 struct baseAdjustments{

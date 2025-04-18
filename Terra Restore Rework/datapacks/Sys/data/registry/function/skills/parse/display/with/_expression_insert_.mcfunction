@@ -1,0 +1,1 @@
+$data modify storage registry:skill data[0].lore[-1].with append value {text:"$(int)",color:"#2DA8F2",extra:[{text:"$(extra)"},{translate:"s.$(stats).i",color:"white"}," ",{text:"$(sign)",color:"gray"}," ",{text:"$(target)"},{text:"$(target_extra)"},{translate:"s.$(target_stats).i",color:"white"}]}

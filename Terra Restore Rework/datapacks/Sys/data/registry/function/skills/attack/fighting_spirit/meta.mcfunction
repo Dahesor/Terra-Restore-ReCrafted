@@ -12,4 +12,4 @@ data modify storage registry:skill temp append value \
 \
 {type:"damage",sid:"fighting_spirit",id:1,flags:["STR","damage"],mp_cost:120,cd:200,min_cd:150,\
 entry:"registry:skills/attack/fighting_spirit/entry",\
-lore:[{},{with:[{type:"expression",stats:"STR",name:"s.fighting_spirit.STR",target:{name:"s.fighting_spirit.EDU",stats:"EDU"}}]}]}
+lore:[{},{with:[{type:"expression",stats:"STR",extra:"%",name:"s.fighting_spirit.STR",target:{name:"s.fighting_spirit.EDU",stats:"EDU",extra:"%"}}]},{with:[{type:"const",extra:"%",name:"s.fighting_spirit.EDU"}]}]}
