@@ -1,5 +1,7 @@
 {
     "values": [
-        "registry:skills/attack/fighting_spirit/meta"
+        "registry:skills/attack/fighting_spirit/meta",
+        "registry:skills/attack/small_fireball/meta",
+        "registry:skills/defence/battle_cry/meta"
     ]
 }

@@ -21,10 +21,10 @@ execute store result storage data di.decimal int 1 run scoreboard players get #t
 function registry:skills/parse/display/cd with storage data di
 
 #描述
-scoreboard players set %count calculator 0
+scoreboard players set %count calculator 1
 function registry:skills/parse/display/lore_loop
 data modify storage registry:skill data[0].lore append from storage data sum_text[]
 
 data modify storage registry:skill data[0].description set from storage registry:skill data[0].lore
-data modify storage registry:skill data[0].lore prepend value {text:""}
-data modify storage registry:skill data[0].lore prepend from storage registry:skill data[0].cd_mp_lore
+data modify storage registry:skill data[0].lore set value []
+#data modify storage registry:skill data[0].lore prepend from storage registry:skill data[0].cd_mp_lore

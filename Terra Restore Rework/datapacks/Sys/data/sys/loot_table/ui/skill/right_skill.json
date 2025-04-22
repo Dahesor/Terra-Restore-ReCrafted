@@ -1,0 +1,44 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {"function": "reference","name": "sys:ui_default"},
+        {
+            "function": "set_components",
+            "components": {
+                "item_model": "terra:buttons/right_click"
+            }
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'right_click',sound:'click'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.skill.right","color": "green","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {"translate": "ui.skill.right.1","color": "#CCCCCC","italic": false,"with": [
+                    {"keybind": "key.use","color": "aqua"}
+                ]},
+                "",
+                {"translate": "ui.skill.equip","color": "yellow","italic": false}
+            ]
+        }
+    ]
+}

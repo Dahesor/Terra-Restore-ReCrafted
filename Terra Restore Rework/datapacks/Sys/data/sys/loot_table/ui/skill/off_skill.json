@@ -14,19 +14,18 @@
     "functions": [
         {"function": "reference","name": "sys:ui_default"},
         {
-            "function": "set_custom_model_data",
-            "floats": {
-                "mode": "replace_all",
-                "values": [17]
+            "function": "set_components",
+            "components": {
+                "item_model": "terra:buttons/f"
             }
         },
         {
             "function": "set_custom_data",
-            "tag": "{ui:{trigger:{id:'oc',sound:'click'}}}"
+            "tag": "{ui:{trigger:{id:'off',sound:'click'}}}"
         },
         {
             "function": "set_name",
-            "name": {"translate":"F键技能","color": "yellow","italic": false}
+            "name": {"translate":"ui.skill.off","color": "green","italic": false}
         },
         {
             "function": "set_lore",
@@ -34,7 +33,11 @@
             "mode": "replace_all",
             "lore": [
                 "",
-                [{"translate":"json.Sys.data.sys.loot_table.ui.off_skill.line32","color": "#CCCCCC","italic": false},{"score": {"name": "@s","objective": "skill.off"},"color": "green"}]
+                {"translate": "ui.skill.off.1","color": "#CCCCCC","italic": false,"with": [
+                    {"keybind": "key.swapOffhand","color": "aqua"}
+                ]},
+                "",
+                {"translate": "ui.skill.equip","color": "yellow","italic": false}
             ]
         }
     ]

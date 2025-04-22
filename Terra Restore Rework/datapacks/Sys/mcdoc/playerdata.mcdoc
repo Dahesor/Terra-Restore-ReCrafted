@@ -1,0 +1,23 @@
+use ::java::util::slot::SlottedItem
+use ::java::world::item::ItemStack
+use ::mcdoc::skill_sid::SkillSID
+
+struct PlayerData{
+    UID?: int @ -1..,
+    pack?: [SlottedItem<byte @ 0..35>] @ 0..36,
+    name?: string,
+    UUID?: string,
+    skill?: [UnlockedSkill],
+    ability?: struct{
+        right?: UnlockedSkill,
+        off?: UnlockedSkill,
+        shift?: UnlockedSkill,
+    }
+}
+
+struct UnlockedSkill{
+    id?: int @ 0..,
+    sid?: SkillSID,
+    type?: any,
+    locked?: byte @ 1..3,
+}

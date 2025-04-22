@@ -2,11 +2,12 @@ use ::java::util::slot::SlottedItem
 use ::java::world::item::ItemStack
 use ::java::util::attribute::AttributeOperation
 use ::java::world::entity::mob::MobBase
+use ::mcdoc::playerdata::PlayerData
 
 type InventoryItem = ItemStack
 
 dispatch minecraft:storage["sys:data"] to struct {
-    player?: [player_data],
+    player?: [PlayerData],
     tp?: [tp_data],
     test?: tp_data,
     spot?: [int] @ 3,
@@ -17,7 +18,7 @@ dispatch minecraft:storage["sys:data"] to struct {
     SaveInv?: [SlottedItem<byte @ -106..106>] @ -106..106,
     lore?: [#[text_component]string],
     dupe?: MobBase,
-    terra: [int @ 0..],
+    terra?: [int @ 0..],
     mobData?: MobBase,
     Pos?: [double],
     Pos_xyz?: struct {
@@ -80,13 +81,6 @@ enum(int) att_class{
     m131_160 = -160,
     m160_200 = -200,
     m200_ = -300
-}
-
-struct player_data{
-    UID: int @ -1..,
-    pack: [SlottedItem<byte @ 0..35>] @ 0..36,
-    name: string,
-    UUID: string
 }
 
 struct tp_data{

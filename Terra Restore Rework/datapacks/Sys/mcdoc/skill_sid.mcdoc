@@ -1,0 +1,7 @@
+type SkillSID = (skillSid | string)
+
+enum(string) skillSid{
+    a1 = "fighting_spirit",
+    a2 = "battle_cry",
+    a3 = "small_fireball",
+}

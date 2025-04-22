@@ -1,0 +1,44 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {"function": "reference","name": "sys:ui_default"},
+        {
+            "function": "set_components",
+            "components": {
+                "item_model": "terra:buttons/shift"
+            }
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'off',sound:'click'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.skill.shift","color": "green","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {"translate": "ui.skill.shift.1","color": "#CCCCCC","italic": false,"with": [
+                    {"keybind": "key.sneak","color": "aqua"}
+                ]},
+                "",
+                {"translate": "ui.skill.equip","color": "yellow","italic": false}
+            ]
+        }
+    ]
+}

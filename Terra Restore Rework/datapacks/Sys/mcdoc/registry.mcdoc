@@ -1,8 +1,9 @@
 use ::java::util::text::Text
 use ::java::util::slot::EquipmentSlotGroup
 use ::java::util::attribute::AttributeOperation
-use::mcdoc::identify::AttributeEnum
-use::mcdoc::identify::StatsEnum
+use ::mcdoc::identify::AttributeEnum
+use ::mcdoc::identify::StatsEnum
+use ::mcdoc::skill_sid::SkillSID
 
 dispatch minecraft:storage["registry:main"] to struct {
     var?: any
@@ -55,7 +56,7 @@ struct SkillData{
 
 struct SkillRegistryUnchanged{
     id?: int,
-    sid?: string,
+    sid?: SkillSID,
     mp_cost?: int @ 0..,
     /// 技能冷却时间。单位：0.1秒
     cd?: int @ 0..,
@@ -64,6 +65,7 @@ struct SkillRegistryUnchanged{
     entry?: #[id="function"] string,
     flags?: [SkillFlags],
     type?: SkillTypes,
+    icon?: #[id(registry="item_definition")] string
 }
 
 enum(string) SkillFlags{
@@ -73,6 +75,7 @@ enum(string) SkillFlags{
     debuff = "debuff",
     summon = "summon",
     movement = "movement",
+    defence = "defence",
     STR = "STR",
     DEX = "DEX",
     INT = "INT",
