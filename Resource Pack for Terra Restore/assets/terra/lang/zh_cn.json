@@ -84,7 +84,7 @@
     "skill.battle_cry.1":"大吼一声，获得(%s)的护盾",
     "skill.battle_cry.2":"并使周围敌人小幅度减速",
     "cd":"冷却时间",
-    "cd_l":"冷却时间：%s",
+    "cd_l":"冷却时间：%ss",
     "mp_cost":"魔力消耗",
     "mp_cost_l":"魔力消耗：%s",
     "ui.skill.right":"技能槽位1",
@@ -99,5 +99,6 @@
     "ui.skill.current_equip":"当前装备",
     "ui.skill.elsewhere_equipped":"该技能已装备于槽位%s",
     "ui.skill.select":"点击携带该技能",
-    "ui.skill.swap":"点击交换槽位"
+    "ui.skill.swap":"点击交换槽位",
+    "ui.cancel":"取消"
 }

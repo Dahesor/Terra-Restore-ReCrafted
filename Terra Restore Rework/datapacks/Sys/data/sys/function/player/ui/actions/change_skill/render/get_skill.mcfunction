@@ -1,0 +1,1 @@
+$data modify storage data SkillData set from storage registry:skill data[{id:$(id)}]

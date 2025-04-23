@@ -35,6 +35,7 @@ scoreboard objectives add rolls.boss_army dummy
 scoreboard objectives add rolls.boss_void dummy
 scoreboard objectives add skill.right dummy
 scoreboard objectives add skill.off dummy
+scoreboard objectives add skill.shift dummy
 scoreboard objectives add CD.right dummy
 scoreboard objectives add CD.off dummy
 scoreboard objectives add right.pause dummy
@@ -70,6 +71,7 @@ scoreboard objectives add dodge_chance dummy
 scoreboard objectives add inst.dodge_chance dummy
 scoreboard objectives add hit_chance dummy
 scoreboard objectives add const dummy
+scoreboard objectives add sub_ui dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

@@ -3,6 +3,9 @@ use::mcdoc::registry::SimpleAttributeModifier
 use::mcdoc::registry::Prefix
 use::mcdoc::registry::PrefixEffect
 use::mcdoc::registry::StatsEffect
+use::mcdoc::registry::SkillData
+use::mcdoc::playerdata::UnlockedSkill
+use ::java::world::item::ItemStack
 use::java::world::component::item::AttributeModifier
 use::java::util::text::Text
 use::java::world::entity::mob::player::Player
@@ -41,7 +44,6 @@ dispatch minecraft:storage["data"] to struct {
     sum_text?:Text,
     di?:struct{integer?:int, decimal?:int, sign?:string},
     di_exp?:struct{i_2?:int, d_2?:int, i_1?:int, d_1?:int, sign?:string},
-
     accepts?: struct{
         status_total?: double,
         status_base?: double,
@@ -50,8 +52,11 @@ dispatch minecraft:storage["data"] to struct {
         modifies?: double,
         integer?: int
     },
-
     prefixs?: [Prefix],
+    skill?: [UnlockedSkill],
+    item_list: [ItemStack],
+    item?: ItemStack,
+    SkillData?: SkillData,
 }
 
 struct Stats{

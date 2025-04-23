@@ -2,7 +2,7 @@ data modify storage data sum_text set from storage registry:skill temp[0].additi
 data remove storage registry:skill temp[0].additional_lore
 data modify storage registry:skill data[0] set from storage registry:skill temp[0]
 data modify storage registry:skill data[0].lore set value []
-data modify storage registry:skill data[0].cd_mp_lore set value [{translate:"mp_cost_l",with:[{text:"",color:"aqua"}]},"    ",{translate:"cd_l",with:[{text:"",color:"light_purple"}]}]
+data modify storage registry:skill data[0].cd_mp_lore set value [{translate:"mp_cost_l",with:[{text:"",color:"aqua"}],color:"#CCCCCC",italic:false},"    ",{translate:"cd_l",with:[{text:"",color:"light_purple"}]}]
 
 #显示名称
 data modify storage temp run set value {id:""}
