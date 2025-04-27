@@ -3,7 +3,7 @@ execute store result score $player dah.sch.ram if entity @a
 data modify storage dah.sch:task online set value []
 data modify storage dah.sch:task offline set value []
 function dah.sch:z_private/player/looper
-data modify storage dah.sch:task player set from storage dah.sch:task online
+data modify storage dah.sch:task player append from storage dah.sch:task online[]
 data modify storage dah.sch:task player append from storage dah.sch:task offline[]
 data remove storage dah.sch:task online
 data remove storage dah.sch:task offline

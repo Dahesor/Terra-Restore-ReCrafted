@@ -1,6 +1,6 @@
 tellraw @a {"text":"\n[dah.sch DEBUG] ","color":"dark_aqua","extra":[{"text":"已经计划了","color":"green"}," ",{"nbt":"this.run","storage": "dah.sch:task","color": "light_purple"}," ","执行于 ",{"nbt":"this.on","storage": "dah.sch:task","color": "light_purple"}," 刻或玩家时间。"]}
 
-function dah.sch:z_private/debug/macro with storage dah.sch:task this
+function dah.sch:z_private/debug/for_player/macro with storage dah.sch:task this
 execute unless data storage dah.sch:task this.by run tellraw @a ["",{"text": " - 执行者：","color": "green"},"[Server]"]
 
 execute store result score x dah.sch.ram run data get storage dah.sch:task this.position[0]
