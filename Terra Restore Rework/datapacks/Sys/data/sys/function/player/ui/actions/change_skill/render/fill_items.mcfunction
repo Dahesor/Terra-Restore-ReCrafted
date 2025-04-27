@@ -21,5 +21,4 @@ item replace entity @s inventory.22 from entity 0-0-0-0-0 container.22
 item replace entity @s inventory.23 from entity 0-0-0-0-0 container.23
 item replace entity @s inventory.24 from entity 0-0-0-0-0 container.24
 item replace entity @s inventory.25 from entity 0-0-0-0-0 container.25
-item replace entity @s inventory.26 from entity 0-0-0-0-0 container.26
 data modify entity 0-0-0-0-0 Items set value []

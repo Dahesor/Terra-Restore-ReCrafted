@@ -1,0 +1,20 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "sys:ui/back_long"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.back","color": "red","italic": false}
+        }
+    ]
+}

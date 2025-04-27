@@ -1,0 +1,2 @@
+data modify storage data item.components."minecraft:lore" append value {translate:"ui.skill.current_equip",color:"green",italic:false}
+data modify storage data item.components."minecraft:enchantment_glint_override" set value true

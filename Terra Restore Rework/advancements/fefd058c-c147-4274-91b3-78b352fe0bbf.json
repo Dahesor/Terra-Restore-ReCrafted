@@ -17,5 +17,11 @@
     },
     "done": true
   },
+  "dah.sch:new_player": {
+    "criteria": {
+      "any": "2025-04-27 02:29:28 -0400"
+    },
+    "done": true
+  },
   "DataVersion": 4325
 }

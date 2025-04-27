@@ -38,6 +38,10 @@ scoreboard objectives add skill.off dummy
 scoreboard objectives add skill.shift dummy
 scoreboard objectives add CD.right dummy
 scoreboard objectives add CD.off dummy
+scoreboard objectives add CD.shift dummy
+scoreboard objectives add maxCD.right dummy
+scoreboard objectives add maxCD.off dummy
+scoreboard objectives add maxCD.shift dummy
 scoreboard objectives add right.pause dummy
 scoreboard objectives add version dummy
 scoreboard objectives add in_challenge dummy

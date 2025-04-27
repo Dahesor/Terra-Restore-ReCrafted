@@ -1,0 +1,37 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {"function": "reference","name": "sys:ui_default"},
+        {
+            "function": "set_components",
+            "components": {
+                "item_model": "barrier"
+            }
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.skill.not_equip","color": "red","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {"translate": "ui.skill.not_equip.1","color": "#CCCCCC","italic": false},
+                ""
+            ]
+        }
+    ]
+}

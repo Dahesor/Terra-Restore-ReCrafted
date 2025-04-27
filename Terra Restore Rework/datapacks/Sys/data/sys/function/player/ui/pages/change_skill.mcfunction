@@ -9,3 +9,5 @@ loot replace entity @s inventory.9 loot sys:ui/back_long
 
 scoreboard players set @s sub_ui 0
 function sys:player/ui/actions/change_skill/render/enter
+
+loot replace entity @s inventory.26 loot sys:ui/skill/unequip

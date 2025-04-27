@@ -2,6 +2,9 @@ function sys:core/tp/tick
 function sys:core/events/runner
 scoreboard players set $player data 0
 execute as @a at @s run function sys:player/tick
+
+scoreboard players add #loop_2 calculator 1
+execute if score #loop_2 calculator matches 2.. run scoreboard players set #loop_2 calculator 0
 scoreboard players add #loop_5 calculator 1
 execute if score #loop_5 calculator matches 5.. run scoreboard players set #loop_5 calculator 0
 scoreboard players add #loop_20 calculator 1

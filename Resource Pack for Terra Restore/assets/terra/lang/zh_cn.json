@@ -100,5 +100,8 @@
     "ui.skill.elsewhere_equipped":"该技能已装备于槽位%s",
     "ui.skill.select":"点击携带该技能",
     "ui.skill.swap":"点击交换槽位",
-    "ui.cancel":"取消"
+    "ui.cancel":"取消",
+    "ui.skill.unequip":"卸下技能",
+    "ui.skill.unequip.1":"点击以空置本技能槽位",
+    "mp.not_enough":"[!] 法力不足 (%1$s/%2$s)"
 }

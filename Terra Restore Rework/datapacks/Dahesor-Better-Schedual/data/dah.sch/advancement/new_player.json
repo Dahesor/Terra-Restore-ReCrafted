@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "any":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "dah.sch:z_private/uid/new"
+    }
+}

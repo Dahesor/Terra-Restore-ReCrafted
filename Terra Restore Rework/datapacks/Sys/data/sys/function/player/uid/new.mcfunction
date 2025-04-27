@@ -1,6 +1,6 @@
 scoreboard players add #UID UID 1
 scoreboard players operation @s UID = #UID UID
-data modify storage sys:data player append value {UID:-1,pack:[],name:"",UUID:"",skill:[]}
+data modify storage sys:data player append value {UID:-1,pack:[],name:"",UUID:"",skill:[],ability:{off:{},right:{},shift:{}}}
 function sys:player/uid/processes/get_name
 execute store result storage sys:data player[-1].UID int 1 run scoreboard players get #UID UID
 function gu:generate

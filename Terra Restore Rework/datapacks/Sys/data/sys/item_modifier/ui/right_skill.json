@@ -1,0 +1,14 @@
+[
+    {
+        "function": "set_custom_data",
+        "tag": "{ui:{trigger:{id:'right_click',sound:\"click_high\"}}}"
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "mode": "append",
+        "lore": [
+            {"translate": "ui.skill.equip","color": "yellow","italic": false}
+        ]
+    }
+]

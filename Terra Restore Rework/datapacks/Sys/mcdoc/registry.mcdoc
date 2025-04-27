@@ -62,6 +62,7 @@ struct SkillRegistryUnchanged{
     cd?: int @ 0..,
     /// 技能冷却缩减后不会小于的最小冷却时间。单位：0.1秒
     min_cd?: int @ 0..,
+    /// 进入函数
     entry?: #[id="function"] string,
     flags?: [SkillFlags],
     type?: SkillTypes,
