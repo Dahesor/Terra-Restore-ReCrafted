@@ -4,6 +4,9 @@ use ::java::util::attribute::AttributeOperation
 use ::mcdoc::identify::AttributeEnum
 use ::mcdoc::identify::StatsEnum
 use ::mcdoc::skill_sid::SkillSID
+use ::mcdoc::tree::NodeTypes
+use ::mcdoc::tree::NodeNames
+use ::mcdoc::tree::NodeDirections
 
 dispatch minecraft:storage["registry:main"] to struct {
     var?: any
@@ -38,6 +41,18 @@ dispatch minecraft:storage["registry:weapon_type"] to struct {
 dispatch minecraft:storage["registry:prefix"] to struct {
     new?: [RawPrefix],
     data?: [Prefix],
+}
+
+dispatch minecraft:storage["registry:node"] to struct {
+    new?: [RawTreeNode],
+}
+
+struct RawTreeNode{
+    id?: NodeNames,
+    type?: NodeTypes,
+    direction?: NodeDirections,
+    children?: [NodeNames],
+    cost?: int @ 1..,
 }
 
 struct RawSkill{

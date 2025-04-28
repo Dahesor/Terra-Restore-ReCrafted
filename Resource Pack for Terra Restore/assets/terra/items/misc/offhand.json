@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "when": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand",
+          "head",
+          "fixed",
+          "ground",
+          "none"
+        ],
+        "model": {"type": "empty"}
+      }
+    ],
+    "property": "display_context",
+    "fallback": {
+        "type": "condition",
+        "property": "view_entity",
+        "on_true": {"type":"empty"},
+        "on_false": {
+            "type": "model",
+            "model": "item/diamond"
+        }
+    }
+  }
+}

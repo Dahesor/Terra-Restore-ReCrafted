@@ -1,0 +1,17 @@
+enum(string) NodeNames{
+    root = "root"
+}
+
+enum(string) NodeDirections{
+    fire = "fire",
+    hydro = "hydro",
+    dendro = "dendro",
+    wind = "wind",
+    root = "root"
+}
+
+enum(string) NodeTypes{
+    small = "small",
+    mid = "mid",
+    high = "high"
+}

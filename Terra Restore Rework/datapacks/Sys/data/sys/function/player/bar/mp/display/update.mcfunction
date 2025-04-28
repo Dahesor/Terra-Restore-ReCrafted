@@ -11,12 +11,12 @@ function sys:player/bar/mp/display/exhust
 function sys:player/bar/mp/display/get_number_space
 
 function dah.actbar_mixer:z_private/uid/get
-execute unless data storage dah:actbar data[0].content[{id:"mp"}] run data modify storage dah:actbar data[0].content append value {id:"mp",text:""}
-data modify storage dah:actbar data[0].content[{id:"mp"}].data.bar set from storage temp bar
-data modify storage dah:actbar data[0].content[{id:"mp"}].data.space set from storage temp space
 
-execute if score @s MP >= @s MAX_MP run return run data modify storage dah:actbar data[0].content[{id:"mp"}].text set value [[{score: {name: "@s",objective: "MP"},font: "mp",color: "dark_gray"},"/",{score: {name: "@s",objective: "MAX_MP"}}],"  ",{nbt:"data[0].content[{id:'mp'}].data.bar",storage: "dah:actbar",color: "white"},"  ",{nbt:"data[0].content[{id:'mp'}].data.space",storage: "dah:actbar",font: "mp"}]
+data modify storage data text set value [{score: {name: "@s",objective: "MP"},font: "mp",color: "white",shadow_color:[0f,1f,1f,1f]},"/",{score: {name: "@s",objective: "MAX_MP"}},"  ",{text:"data[0].content[{id:'mp'}].data.bar",color: "white"},"  ",{nbt:"data[0].content[{id:'mp'}].data.space",storage: "dah:actbar",font: "mp"}]
 
-execute if score #temp2 calculator matches ..6 run return run data modify storage dah:actbar data[0].content[{id:"mp"}].text set value [[{score: {name: "@s",objective: "MP"},font: "mp",color: "red"},"/",{score: {name: "@s",objective: "MAX_MP"}}],"  ",{nbt:"data[0].content[{id:'mp'}].data.bar",storage: "dah:actbar",color: "white"},"  ",{nbt:"data[0].content[{id:'mp'}].data.space",storage: "dah:actbar",font: "mp"}]
+data modify storage data text[4].text set from storage temp bar
+data modify storage data text[6].text set from storage temp space
+execute if score @s MP >= @s MAX_MP run data modify storage data text[0].color set value "dark_gray"
+execute if score #temp2 calculator matches ..6 run data modify storage data text[0].color set value "red"
 
-data modify storage dah:actbar data[0].content[{id:"mp"}].text set value [[{score: {name: "@s",objective: "MP"},font: "mp"},"/",{score: {name: "@s",objective: "MAX_MP"}}],"  ",{nbt:"data[0].content[{id:'mp'}].data.bar",storage: "dah:actbar"},"  ",{nbt:"data[0].content[{id:'mp'}].data.space", storage:"dah:actbar", font:"mp"}]
+data modify storage dah:actbar data[0].content[{id:"mp"}].text set from storage data text

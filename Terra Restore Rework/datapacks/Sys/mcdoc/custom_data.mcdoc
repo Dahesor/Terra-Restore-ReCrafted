@@ -42,7 +42,6 @@ dispatch mcdoc:custom_data["rarity"] to struct{
     initial?: int
 }
 
-
 enum(string) UiSoundEffects{
     ding = "ding",
     click = "click",

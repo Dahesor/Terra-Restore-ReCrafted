@@ -21,7 +21,7 @@
             "components": {
                 "tooltip_display": {"hide_tooltip": true},
                 "item_name": "",
-                "item_model": "offhand_stick",
+                "item_model": "terra:misc/offhand",
                 "enchantments": {
                     "sys:mech/offhand": 1
                 }

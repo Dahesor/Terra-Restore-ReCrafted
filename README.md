@@ -5,7 +5,7 @@
 
 🚧 Under Heavy Construction 🚧
 
-Progress:
+## Progress:
 
 * Make the original map works on 1.21, replacing command blocks with datapack:
 
@@ -13,7 +13,7 @@ Progress:
 
 * Redesign the combat system and skill tree:
 
-██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 28%  \(In Progress\) 🚧FOCUSING🚧
+████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 32%  \(In Progress\) 🚧FOCUSING🚧
 
 * Redesign the loot and exploration rewards:
 
@@ -35,7 +35,12 @@ Progress:
 
 
 
+## **Simple disclaimer**:
 
-**Simple disclaimer**: We do not own anything created by the original creator of Terra Restore. This project will, and of course, be completely non-commercial.
+**We do not own anything created by the original creator of Terra Restore. This project will, and of course, be completely non-commercial.**
 
 Check out the original Terra Restore Map here: [https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/maps/2278864-collection-mitheys-maps-terra-restore-and-more](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/maps/2278864-collection-mitheys-maps-terra-restore-and-more)
+
+## License
+
+Since we do not own everything in this repository, no License is included just yet. However, you are free to use any datapack code under MIT.
