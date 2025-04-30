@@ -40,4 +40,3 @@ give @p cherry_sign[custom_name={"translate":"test.line37"},block_entity_data={i
 give @p cherry_sign[custom_name={"translate":"test.line39"},block_entity_data={id:"sign",is_waxed:true,front_text:{messages:[{"translate":"action.tp","color": "aqua","click_event": {"action": "run_command","command": "/function sys:legacy/11_utils/gamma"}},{"translate":"ship.gamma","color": "aqua"},"",["[",{"keybind": "key.use","underlined": true,"color": "green"},"]"]]}}]
 #base
 give @p cherry_sign[custom_name={"translate":"test.line41"},block_entity_data={id:"sign",is_waxed:true,front_text:{messages:[{"translate":"action.tp","color": "aqua","click_event": {"action": "run_command","command": "/function sys:legacy/11_utils/base"}},{"translate":"ship.base","color": "aqua"},"",["[",{"keybind": "key.use","underlined": true,"color": "green"},"]"]]}}]
-

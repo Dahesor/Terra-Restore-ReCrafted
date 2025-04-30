@@ -3,11 +3,15 @@ use ::java::world::item::ItemStack
 use ::java::util::attribute::AttributeOperation
 use ::java::world::entity::mob::MobBase
 use ::mcdoc::playerdata::PlayerData
+use ::mcdoc::playerdata::StoredPlayerEvents
+use ::mcdoc::playerdata::PlayerEvent
 
 type InventoryItem = ItemStack
 
 dispatch minecraft:storage["sys:data"] to struct {
     player?: [PlayerData],
+    events?: [StoredPlayerEvents],
+    new_event?: PlayerEvent,
     tp?: [tp_data],
     test?: tp_data,
     spot?: [int] @ 3,

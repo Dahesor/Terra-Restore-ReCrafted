@@ -10,8 +10,14 @@ use::java::world::component::item::AttributeModifier
 use::java::util::text::Text
 use::java::world::entity::mob::player::Player
 use::java::world::entity::mob::EntityEquipment
+use ::mcdoc::playerdata::StoredPlayerEvents
+use ::mcdoc::playerdata::PlayerEvent
 
 dispatch minecraft:storage["data"] to struct {
+    player_event?:[StoredPlayerEvents],
+    offline_player_event?:[StoredPlayerEvents],
+    online_player_event?:[StoredPlayerEvents],
+    this_events?:[PlayerEvent],
     //ParsedWeaponType
     selected_type?: ParsedWeaponType,
 

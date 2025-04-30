@@ -103,5 +103,8 @@
     "ui.cancel":"取消",
     "ui.skill.unequip":"卸下技能",
     "ui.skill.unequip.1":"点击以空置本技能槽位",
-    "mp.not_enough":"[!] 法力不足 (%1$s/%2$s)"
+    "mp.not_enough":"[!] 法力不足 (%1$s/%2$s)",
+    "arrow_storm":"箭雨",
+    "arrow_storm.1":"向前方发射大量箭矢",
+    "arrow_storm.2":"箭雨"
 }

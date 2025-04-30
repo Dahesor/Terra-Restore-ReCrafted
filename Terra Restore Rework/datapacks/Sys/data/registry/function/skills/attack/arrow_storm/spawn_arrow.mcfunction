@@ -1,0 +1,2 @@
+$summon arrow ~ ~ ~ {Rotation:[$(x)f,$(y)f],Tags:["SKILL.arrow_storm","uninitialized"],pickup:2b}
+execute as @n[type=arrow,tag=SKILL.arrow_storm,tag=uninitialized] positioned as @s run function registry:skills/attack/arrow_storm/initialize_arrow
