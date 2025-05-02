@@ -1,4 +1,3 @@
-data modify storage dah:actbar new set value {id:"ench.DEF",text:[{text:"qW",font:"terra:hud"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"Qq"}]}
 
 scoreboard players set #temp calculator 0
 scoreboard players set #temp2 calculator 0

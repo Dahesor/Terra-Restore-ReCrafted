@@ -23,8 +23,15 @@ function sys:player/stats/calcs/save_data
 function sys:player/stats/calcs/get_final
 function sys:player/stats/display
 
-
 #HUD
+tag @s remove hud.roll_1
+tag @s remove hud.roll_2
+tag @s remove hud.roll_3
+
+execute if score @s health matches ..20 run tag @s add hud.roll_1
+execute if score @s health matches 21..40 run tag @s add hud.roll_2
+execute if score @s health matches 41.. run tag @s add hud.roll_3
+
 function dah.actbar_mixer:remove/this {id:"ench.DEF"}
 function dah.actbar_mixer:remove/this {id:"armor_tough"}
 function dah.actbar_mixer:remove/this {id:"armor_20"}

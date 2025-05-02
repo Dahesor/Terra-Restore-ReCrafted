@@ -22,6 +22,7 @@ dispatch minecraft:storage["registry:skill"] to struct {
     temp?: [RawSkill],
 }
 
+
 dispatch minecraft:storage["registry:weapon_type"] to struct {
     sword?: struct{
         data?: [ParsedWeaponType],
@@ -45,6 +46,23 @@ dispatch minecraft:storage["registry:prefix"] to struct {
 
 dispatch minecraft:storage["registry:node"] to struct {
     new?: [RawTreeNode],
+}
+
+dispatch minecraft:storage["registry:archive"] to struct {
+    data?: [SkillData],
+    temp?: [RawSkill],
+}
+
+
+struct RawArchive{
+
+}
+
+enum(string) ArchiveTypes{
+    tutorial = "tutorial",
+    enemy = "enemy",
+    enchant = "enchant",
+    area = "area"
 }
 
 struct RawTreeNode{

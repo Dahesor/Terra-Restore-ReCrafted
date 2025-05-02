@@ -39,9 +39,9 @@ execute if score #x calculator matches 1903..2010 if score #y calculator matches
 execute if score #x calculator matches 1949..2010 if score #y calculator matches 37..58 if score #z calculator matches -1307..-1087 run return 8
 execute if score #x calculator matches 1972..2010 if score #y calculator matches 58..70 if score #z calculator matches -1307..-1097 run return 8
 #宏伟长城
-execute if score #x calculator matches 2123..2173 if score #z calculator matches -1197..-979 run return 9
-execute if score #x calculator matches 2046..2065 if score #z calculator matches -1029..-1005 run return 9
-execute if score #x calculator matches 1959..2173 if score #y calculator matches 67.. if score #z calculator matches -1065..-979 run return 9
+execute if score #x calculator matches 2123..2173 if score #z calculator matches -1197..-979 if biome ~ ~ ~ sys:great_wall run return 9
+execute if score #x calculator matches 2046..2065 if score #z calculator matches -1029..-1005 if biome ~ ~ ~ sys:great_wall run return 9
+execute if score #x calculator matches 1959..2173 if score #y calculator matches 67.. if score #z calculator matches -1065..-979 if biome ~ ~ ~ sys:great_wall run return 9
 #倪拉顿洞窟
 execute if score #x calculator matches 1853..2162 if score #z calculator matches -1458..-1294 run return 10
 execute if score #x calculator matches 2073..2151 if score #z calculator matches -1290..-1197 run return 10

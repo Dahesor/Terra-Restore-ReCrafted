@@ -1,11 +1,13 @@
 scoreboard objectives add calculator dummy
 scoreboard objectives add data dummy
+scoreboard objectives add monitor.AIR air
 scoreboard objectives add options dummy
 scoreboard objectives add region dummy
 scoreboard objectives add music dummy
 scoreboard objectives add region_name dummy
 scoreboard objectives add warped_stick used:warped_fungus_on_a_stick
 scoreboard objectives add right_trigger used:carrot_on_a_stick
+scoreboard objectives add health health
 scoreboard objectives add death deathCount
 scoreboard objectives add spawn_x dummy
 scoreboard objectives add spawn_y dummy

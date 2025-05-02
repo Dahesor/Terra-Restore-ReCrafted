@@ -18,42 +18,42 @@
             "type": "bitmap",
             "ascent": -6,
             "height":9,
-            "chars": ["1"],
+            "chars": ["z"],
             "file": "terra:gui/hud/ench_def_full.png"
         },
         {
             "type": "bitmap",
             "ascent": -6,
             "height": 9,
-            "chars": ["2"],
+            "chars": ["x"],
             "file": "terra:gui/hud/ench_def_half.png"
         },
         {
             "type": "bitmap",
             "ascent": -17,
             "height":9,
-            "chars": ["4"],
+            "chars": ["c"],
             "file": "terra:gui/hud/armor_toughness_full.png"
         },
         {
             "type": "bitmap",
             "ascent": -17,
             "height": 9,
-            "chars": ["5"],
+            "chars": ["v"],
             "file": "terra:gui/hud/armor_toughness_half.png"
         },
         {
             "type": "bitmap",
             "ascent": -16,
             "height":9,
-            "chars": ["7"],
+            "chars": ["b"],
             "file": "terra:gui/hud/20_plus_armor_full.png"
         },
         {
             "type": "bitmap",
             "ascent": -16,
             "height": 9,
-            "chars": ["8"],
+            "chars": ["n"],
             "file": "terra:gui/hud/20_plus_armor_half.png"
         }
     ]

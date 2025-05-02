@@ -21,6 +21,17 @@
           }
       ]
   },
+    "bgm.radiarc_among_the_griffons": {
+      "replace":false,
+      "sounds": [
+          {
+              "name":"terra:radiarc_among_the_griffons",
+              "volume": 1.0,
+              "pitch": 1.0,
+              "stream": true
+          }
+      ]
+  },
   "bgm.badjujusnippet": {
       "replace":false,
       "sounds": [
