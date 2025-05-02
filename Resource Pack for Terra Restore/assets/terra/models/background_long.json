@@ -2,7 +2,8 @@
 	"textures": {
 		"1": "terra:gui/ui",
 		"particle": "terra:gui/ui",
-		"layer0": "terra:blank"
+		"layer0": "terra:blank",
+		"missing":"terra:blank"
 	},
 	"elements": [
 		{

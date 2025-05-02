@@ -1,0 +1,33 @@
+{
+    "values": [
+        "arrow",
+        "cactus",
+        "campfire",
+        "explosion",
+        "falling_anvil",
+        "falling_block",
+        "falling_stalactite",
+        "fireball",
+        "fireworks",
+        "hot_floor",
+        "in_fire",
+        "in_wall",
+        "lava",
+        "mace_smash",
+        "mob_attack",
+        "mob_attack_no_aggro",
+        "mob_projectile",
+        "player_attack",
+        "player_explosion",
+        "spit",
+        "sting",
+        "sweet_berry_bush",
+        "thorns",
+        "thrown",
+        "trident",
+        "unattributed_fireball",
+        "wind_charge",
+        "wither_skull",
+        "sys:player_skill_physics"
+    ]
+}

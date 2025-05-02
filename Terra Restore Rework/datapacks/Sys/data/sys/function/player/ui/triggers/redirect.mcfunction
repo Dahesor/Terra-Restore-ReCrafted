@@ -6,3 +6,5 @@ execute if score @s ui matches 1 run return run function sys:player/ui/triggers/
 execute if score @s ui matches 10 run return run function sys:player/ui/triggers/children/attributes
 execute if score @s ui matches 20 run return run function sys:player/ui/triggers/children/skill
 execute if score @s ui matches 21..23 run return run function sys:player/ui/triggers/children/change_skill
+execute if score @s ui matches 30 run return run function sys:player/ui/triggers/children/settings
+execute if score @s ui matches 40 run return run function sys:player/ui/triggers/children/arhive

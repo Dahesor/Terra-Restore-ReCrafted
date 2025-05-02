@@ -3,7 +3,8 @@
 		"1": "terra:gui/ui_dark",
 		"particle": "terra:gui/ui_dark",
 		"d": "terra:gui/ui",
-		"layer0": "terra:blank"
+		"layer0": "terra:blank",
+		"missing":"terra:blank"
 	},
 	"elements": [
 		{

@@ -1,0 +1,43 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "structure_void"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {"function": "reference","name": "sys:ui_default"},
+        {
+            "function": "set_components",
+            "components": {
+                "item_model": "terra:buttons/setting"
+            }
+        },
+        {
+            "function": "set_custom_data",
+            "tag": "{ui:{trigger:{id:'setting',sound:'click'}}}"
+        },
+        {
+            "function": "set_name",
+            "name": {"translate":"ui.setting","color": "green","italic": false}
+        },
+        {
+            "function": "set_lore",
+            "entity": "this",
+            "mode": "replace_all",
+            "lore": [
+                "",
+                {"translate": "ui.setting.1","color": "#CCCCCC","italic": false},
+                {"translate": "ui.setting.2","color": "#CCCCCC","italic": false},
+                "",
+                {"translate": "action.click","color": "yellow","italic": false}
+            ]
+        }
+    ]
+}

@@ -24,7 +24,8 @@
                 "item_model": "terra:misc/offhand",
                 "enchantments": {
                     "sys:mech/offhand": 1
-                }
+                },
+                "enchantment_glint_override": false
             }
         },
         {
@@ -39,6 +40,13 @@
                     }
                 }
             ]
+        },
+        {
+            "function": "set_custom_model_data",
+            "floats": {
+                "mode": "replace_all",
+                "values": [100,100,100]
+            }
         }
     ]
 }

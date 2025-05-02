@@ -4,4 +4,5 @@ tag @s add StatsChanged
 
 execute if items entity @s player.cursor *[custom_data~{ui:{}}] run return fail
 
-function sys:player/stats/refresh
+data modify storage dah.sch:new new set value {run:"function sys:player/stats/refresh",time:1,offline:"delay"}
+function dah.sch:new

@@ -1,0 +1,67 @@
+{
+    "anvil_cost": 1,
+    "description": {
+        "translate": "enchantment.minecraft.protection"
+    },
+    "effects": {
+        "minecraft:damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 1.0,
+                        "per_level_above_first": 1.0
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "sys:block_by_mpdef"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 0.5,
+                        "per_level_above_first": 0.5
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "sys:reduced_by_mpdef"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "exclusive_set": "#minecraft:exclusive_set/armor",
+    "max_cost": {
+        "base": 12,
+        "per_level_above_first": 11
+    },
+    "max_level": 10,
+    "min_cost": {
+        "base": 1,
+        "per_level_above_first": 11
+    },
+    "slots": [
+        "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 10
+}

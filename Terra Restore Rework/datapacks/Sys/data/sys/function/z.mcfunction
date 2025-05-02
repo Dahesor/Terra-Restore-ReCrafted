@@ -1,8 +1,11 @@
 
 
+
+
+
+return 1
 give @s cherry_sign[block_entity_data={id:"sign",is_waxed:1b,front_text:{messages:["",{text:"▶",color:"aqua",click_event:{action:"run_command",command:"/function sys:plugin/music/test"}},{translate:"test_music",color:"dark_green"},""],has_glowing_text:true}}]
 scoreboard players set %diff calculator 0
-return 1
 tellraw @a {"score": {"objective": "calculator","name": "$gametime"}}
 
 give @p cherry_sign[custom_name={"translate":"z.line5"},block_entity_data={id:"sign",is_waxed:true,front_text:{messages:["",{"translate":"action.create.tp","color": "gold","click_event": {"action": "run_command","command": "/function sys:core/events/boss_void/create_tp"}},"",["[",{"keybind": "key.use","underlined": true,"color": "green"},"]"]]}}]

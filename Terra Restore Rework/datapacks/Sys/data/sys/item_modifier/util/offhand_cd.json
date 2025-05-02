@@ -1,0 +1,11 @@
+{
+    "function": "set_custom_model_data",
+    "floats": {
+        "mode": "replace_all",
+        "values": [
+            {"type": "score","score": "calculator","target": {"type": "fixed","name": "#cd1"}},
+            {"type": "score","score": "calculator","target": {"type": "fixed","name": "#cd2"}},
+            {"type": "score","score": "calculator","target": {"type": "fixed","name": "#cd3"}}
+        ]
+    }
+}
