@@ -35,7 +35,7 @@
 
 
 
-## **Simple disclaimer**:
+## **Simple disclaimer**
 
 **We do not own anything created by the original creator of Terra Restore. This project will, and of course, be completely non-commercial.**
 
