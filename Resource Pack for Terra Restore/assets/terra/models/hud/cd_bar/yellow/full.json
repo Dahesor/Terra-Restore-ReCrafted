@@ -2,18 +2,18 @@
 	"textures": {
 		"0": "terra:gui/cd_bar/yellow",
 		"particle": "terra:gui/cd_bar/yellow",
-		"missing":"terra:blank"
+		"blank":"terra:blank"
 	},
 	"elements": [
 		{
 			"from": [8.65625, -2, 0],
 			"to": [11.34375, 0, 12.87],
 			"faces": {
-				"north": {"uv": [0, 0, 1.34375, 1], "texture": "#missing"},
-				"east": {"uv": [0, 0, 6.435, 1], "texture": "#missing"},
-				"south": {"uv": [0, 0, 1.34375, 1], "texture": "#missing"},
-				"west": {"uv": [5.5, 1.5, 11.935, 2.5], "texture": "#missing"},
-				"up": {"uv": [0, 0, 1.34375, 6.435], "texture": "#missing"},
+				"north": {"uv": [0, 0, 1.34375, 1], "texture": "#blank"},
+				"east": {"uv": [0, 0, 6.435, 1], "texture": "#blank"},
+				"south": {"uv": [0, 0, 1.34375, 1], "texture": "#blank"},
+				"west": {"uv": [5.5, 1.5, 11.935, 2.5], "texture": "#blank"},
+				"up": {"uv": [0, 0, 1.34375, 6.435], "texture": "#blank"},
 				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#0"}
 			}
 		}

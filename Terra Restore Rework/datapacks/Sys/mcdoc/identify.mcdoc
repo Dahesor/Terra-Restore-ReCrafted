@@ -5,13 +5,14 @@ use::mcdoc::registry::PrefixEffect
 use::mcdoc::registry::StatsEffect
 use::mcdoc::registry::SkillData
 use::mcdoc::playerdata::UnlockedSkill
-use ::java::world::item::ItemStack
+use::java::world::item::ItemStack
+use ::java::util::slot::SlottedItem
 use::java::world::component::item::AttributeModifier
 use::java::util::text::Text
 use::java::world::entity::mob::player::Player
 use::java::world::entity::mob::EntityEquipment
-use ::mcdoc::playerdata::StoredPlayerEvents
-use ::mcdoc::playerdata::PlayerEvent
+use::mcdoc::playerdata::StoredPlayerEvents
+use::mcdoc::playerdata::PlayerEvent
 
 dispatch minecraft:storage["data"] to struct {
     player_event?:[StoredPlayerEvents],
@@ -61,12 +62,12 @@ dispatch minecraft:storage["data"] to struct {
     prefixs?: [Prefix],
     skill?: [UnlockedSkill],
     item_list: [ItemStack],
-    item?: ItemStack,
+    item?: SlottedItem<byte @ 0..35>,
     SkillData?: SkillData,
 }
 
 struct Stats{
-    [StatsEnum]?: StatsEffect,
+    [StatsEnum]?: StatsEffect
 }
 
 struct RecordedStats{

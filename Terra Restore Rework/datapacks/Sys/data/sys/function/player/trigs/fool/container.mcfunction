@@ -1,1 +1,1 @@
-execute if items entity @s weapon.offhand carrot_on_a_stick[custom_data~{trigger:1b}] run item modify entity @s weapon.offhand sys:util/hide_off
+execute if items entity @s weapon.offhand #sys:offhand_trigger[custom_data~{trigger:1b}] run item modify entity @s weapon.offhand sys:util/hide_off

@@ -1,0 +1,1 @@
+execute if entity @s[tag=basic_shield] run function registry:skills/defence/shields/basic/modify_shield

@@ -19,6 +19,7 @@ scoreboard objectives add UID dummy
 scoreboard objectives add ui.drop_head dropped:player_head
 scoreboard objectives add ui.drop_slot dropped:structure_void
 scoreboard objectives add off.drop dropped:carrot_on_a_stick
+scoreboard objectives add off.drop_shield dropped:shield
 scoreboard objectives add zcache_rot_x dummy
 scoreboard objectives add zcache_rot_y dummy
 scoreboard objectives add zcache_timer dummy
@@ -78,6 +79,7 @@ scoreboard objectives add inst.dodge_chance dummy
 scoreboard objectives add hit_chance dummy
 scoreboard objectives add const dummy
 scoreboard objectives add sub_ui dummy
+scoreboard objectives add display.SHIELD dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

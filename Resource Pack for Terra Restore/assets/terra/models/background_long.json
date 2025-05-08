@@ -3,7 +3,7 @@
 		"1": "terra:gui/ui",
 		"particle": "terra:gui/ui",
 		"layer0": "terra:blank",
-		"missing":"terra:blank"
+		"blank":"terra:blank"
 	},
 	"elements": [
 		{
@@ -77,11 +77,11 @@
 			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
-				"east": {"uv": [6, 0, 6.5, 6], "texture": "#missing"},
+				"east": {"uv": [6, 0, 6.5, 6], "texture": "#blank"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
-				"west": {"uv": [6, 6, 6.5, 12], "texture": "#missing"},
-				"up": {"uv": [12.5, 0.5, 6.5, 0], "texture": "#missing"},
-				"down": {"uv": [12.5, 0.5, 6.5, 1], "texture": "#missing"}
+				"west": {"uv": [6, 6, 6.5, 12], "texture": "#blank"},
+				"up": {"uv": [12.5, 0.5, 6.5, 0], "texture": "#blank"},
+				"down": {"uv": [12.5, 0.5, 6.5, 1], "texture": "#blank"}
 			}
 		}
 	],

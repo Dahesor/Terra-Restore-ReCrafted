@@ -71,5 +71,14 @@
     "ui.setting.2":"或修复游戏音乐等问题",
     "ui.archive":"图鉴",
     "ui.archive.1":"查看旅途的各种见闻",
-    "ui.archive.2":"以及不同游戏机制的说明"
+    "ui.archive.2":"以及不同游戏机制的说明",
+    "skill.shield":"木牌凝聚术",
+    "skill.shield.1":"命令草木的力量在副手凝聚，形",
+    "skill.shield.2":"成一面维持%s秒的盾牌。",
+    "skill.shield.3":"使用盾牌格挡大部分物理或弹射",
+    "skill.shield.4":"物攻击时，降低原伤害的",
+    "skill.shield.5":"(%1$s + %2$s)%%。",
+    "skill.shield.6":"对爆炸仅有正常75%%格挡效果",
+    "skill.slot_limit":"该技能只能装备于槽位%s",
+    "skill.slot_locked":"该技能无法装备于槽位%s"
 }

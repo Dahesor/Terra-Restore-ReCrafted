@@ -11,4 +11,3 @@ data modify storage data item.components."minecraft:custom_data".StoredAbility.s
 data modify storage data item.components."minecraft:custom_data".StoredAbility.type set from storage data SkillData.type
 
 data modify storage data item.components."minecraft:lore"[].italic set value false
-data modify storage data item.components."minecraft:lore"[].color set value "#CCCCCC"

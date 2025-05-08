@@ -1,4 +1,4 @@
-execute if score @s MP >= @s MAX_MP run return run data modify storage temp bar set value "*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*"
+execute if score @s MP >= @s MAX_MP run return run data modify storage temp bar set value "*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~"
 execute if score #temp calculator matches 30.. run return run data modify storage temp bar set value "=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~"
 execute if score #temp calculator matches ..0 run data modify storage temp bar set value "#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~"
 execute if score #temp calculator matches 1 run data modify storage temp bar set value "=~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~"

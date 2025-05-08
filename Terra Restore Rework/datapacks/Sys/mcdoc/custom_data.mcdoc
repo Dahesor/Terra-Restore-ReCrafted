@@ -47,4 +47,5 @@ enum(string) UiSoundEffects{
     click = "click",
     click_high = "click_high",
     dong = "dong",
+    deny = "deny",
 }

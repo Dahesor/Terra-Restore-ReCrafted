@@ -1,7 +1,9 @@
 {
     "function": "set_custom_model_data",
-    "floats": {
-        "mode": "replace_all",
-        "values": [99999]
+    "flags": {
+        "mode": "replace_section",
+        "size":1,
+        "offset": 3,
+        "values": [true]
     }
 }

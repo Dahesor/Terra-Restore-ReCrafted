@@ -1,0 +1,1 @@
+$data modify storage data text[1].text set value "$(value)"

@@ -5,48 +5,28 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
-                    "name": "carrot_on_a_stick"
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "sys:mech/shield",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Tags:['shielder']}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "sys:mech/trigger_normal"
+                        }
+                    ]
                 }
             ]
-        }
-    ],
-    "functions": [
-        {
-            "function": "set_custom_data",
-            "tag": "{trigger:1b}"
-        },
-        {
-            "function":"set_components",
-            "components": {
-                "tooltip_display": {"hide_tooltip": true},
-                "item_name": "",
-                "item_model": "terra:misc/offhand",
-                "enchantments": {
-                    "sys:mech/offhand": 1
-                },
-                "enchantment_glint_override": false
-            }
-        },
-        {
-            "function": "reference",
-            "name":"sys:util/hide_off",
-            "conditions": [
-                {
-                    "condition": "entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "nbt": "{Tags:['reading_container']}"
-                    }
-                }
-            ]
-        },
-        {
-            "function": "set_custom_model_data",
-            "floats": {
-                "mode": "replace_all",
-                "values": [100,100,100]
-            }
         }
     ]
 }

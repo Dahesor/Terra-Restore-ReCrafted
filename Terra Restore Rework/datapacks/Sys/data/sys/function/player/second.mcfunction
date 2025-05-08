@@ -15,8 +15,8 @@ execute unless score 11_opening data matches 1.. if entity @s[scores={region=11}
 execute unless score @s ui matches 1.. unless items entity @s inventory.0 player_head[custom_data~{ui:{head:1b}}] run function sys:player/ui/foolproof/fill_head
 execute unless score @s ui matches 1.. run clear @s barrier[custom_data={ui_check:1b}]
 
-#胡萝卜钓竿检查
-execute store result score @s calculator run clear @s carrot_on_a_stick[custom_data~{trigger:1b}] 0
+#副手物品检查
+execute store result score @s calculator run clear @s #sys:offhand_trigger[custom_data~{trigger:1b}] 0
 execute unless score @s calculator matches 1 run function sys:player/trigs/fool/put_on
 
 #音乐，跳字，展示CD

@@ -1,0 +1,1 @@
+scoreboard players remove @s display.SHIELD 1

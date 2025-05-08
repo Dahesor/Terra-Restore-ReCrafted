@@ -1,0 +1,49 @@
+{
+    "model": {
+        "type": "select",
+        "property": "display_context",
+        "cases": [
+            {
+                "when": [
+                    "none",
+                    "ground",
+                    "head",
+                    "fixed"
+                ],
+                "model": {
+                    "type": "empty"
+                }
+            },
+            {
+                "when": [
+                    "gui"
+                ],
+                "model": {
+                    "type": "special",
+                    "base": "terra:hud/shield_timer",
+                    "model": {
+                        "type": "shield"
+                    }
+                }
+            }
+        ],
+        "fallback": {
+            "type": "condition",
+            "on_false": {
+                "type": "special",
+                "base": "terra:item/shield_generic",
+                "model": {
+                    "type": "shield"
+                }
+            },
+            "on_true": {
+                "type": "special",
+                "base": "terra:item/shield_blocking_generic",
+                "model": {
+                    "type": "shield"
+                }
+            },
+            "property": "using_item"
+        }
+    }
+}

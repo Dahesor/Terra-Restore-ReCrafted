@@ -77,6 +77,7 @@ struct RawSkill{
     ...SkillRegistryUnchanged,
     lore?: [registryLore],
     additional_lore?: [Text],
+    key?: string,
 }
 
 struct SkillData{
@@ -85,6 +86,9 @@ struct SkillData{
     displayName?: Text,
     cd_mp_lore?: Text,
     description?: [Text],
+    elements?: struct{
+        [NodeDirections]?: byte
+    }
 }
 
 struct SkillRegistryUnchanged{
@@ -99,7 +103,16 @@ struct SkillRegistryUnchanged{
     entry?: #[id="function"] string,
     flags?: [SkillFlags],
     type?: SkillTypes,
-    icon?: #[id(registry="item_definition")] string
+    icon?: #[id(registry="item_definition")] string,
+    slot_limit?: struct{
+        [SkillSlots] : byte @ 0..1,
+    }
+}
+
+enum(string)SkillSlots{
+    right = "right",
+    off = "off",
+    shift = "shift",
 }
 
 enum(string) SkillFlags{
