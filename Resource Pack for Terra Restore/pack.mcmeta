@@ -2,5 +2,16 @@
   "pack": {
     "pack_format": 55,
     "description": "Terra Restore RP"
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "lang",
+        "formats": {
+          "min_inclusive": 0,
+          "max_inclusive": 100
+        }
+      }
+    ]
   }
 }

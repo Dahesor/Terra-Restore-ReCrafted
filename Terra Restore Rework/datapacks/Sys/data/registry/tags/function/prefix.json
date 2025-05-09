@@ -6,8 +6,9 @@
         "registry:prefix/melee/deadly",
         "registry:prefix/melee/fast",
         "registry:prefix/melee/light",
-        "registry:prefix/armor/hard",
-        "registry:prefix/armor/silly",
-        "registry:prefix/armor/strong"
+        "registry:prefix/armor/legacy/hard",
+        "registry:prefix/armor/legacy/silly",
+        "registry:prefix/armor/legacy/strong",
+        "registry:prefix/armor/package"
     ]
 }

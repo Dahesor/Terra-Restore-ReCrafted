@@ -10,7 +10,7 @@ data modify storage sys:data item.components."minecraft:custom_data".weapon_type
 function sys:att/apply/types/get_material
 
 #记录装备基础属性
-data modify storage data weapon_stats set value {armor:0d,armor_toughness:0d}
+data modify storage data weapon_stats set value {armor:0d,armor_toughness:0d,knockback_resistance:0d}
     #盔甲
 execute if data storage sys:data item.components."minecraft:attribute_modifiers"[{type:"minecraft:armor"}] store result storage data weapon_stats.armor double 0.01 run data get storage sys:data item.components."minecraft:attribute_modifiers"[{type:"minecraft:armor"}].amount 100
     #盔甲韧性

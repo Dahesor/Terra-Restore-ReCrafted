@@ -144,7 +144,7 @@ enum(string) SkillTypes{
 struct RawPrefix{
     id?: string,
     value?: int @ -300..300,
-    rarity?: int @ -2..2,
+    rarity?: int @ -3..3,
     att_effects?:struct{
         [AttributeEnum] : PrefixEffect,
     },

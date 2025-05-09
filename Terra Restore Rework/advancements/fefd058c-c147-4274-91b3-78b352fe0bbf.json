@@ -1,25 +1,25 @@
 {
   "dah.actbar_mixer:new_player": {
     "criteria": {
-      "tick": "2024-10-14 14:26:36 -0400"
+      "tick": "2024-10-14 11:26:36 -0700"
     },
     "done": true
   },
   "sys:new_player": {
     "criteria": {
-      "tick": "2024-10-14 18:17:07 -0400"
+      "tick": "2024-10-14 15:17:07 -0700"
     },
     "done": true
   },
   "comms:enchantments/sharpness": {
     "criteria": {
-      "book": "2025-04-14 09:46:00 -0400"
+      "book": "2025-04-14 06:46:00 -0700"
     },
     "done": true
   },
   "dah.sch:new_player": {
     "criteria": {
-      "any": "2025-04-27 02:29:28 -0400"
+      "any": "2025-04-26 23:29:28 -0700"
     },
     "done": true
   },
