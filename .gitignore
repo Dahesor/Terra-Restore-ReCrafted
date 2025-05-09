@@ -4,3 +4,4 @@ Terra Restore Rework/stats/**.json
 level.dat_old
 session.lock
 **/.VSCodeCounter/**
+**/__pycache__/**
