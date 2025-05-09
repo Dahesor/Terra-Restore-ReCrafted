@@ -1,2 +1,0 @@
-data modify storage registry:prefix new append value \
-{id:"light",for:["axe","sword"],negative:0b,rarity:0,stats_effects:{},att_effects:{attack_speed:{op:"add",value:0.12},knockback:{op:"scale",value:-0.08}},value:10}

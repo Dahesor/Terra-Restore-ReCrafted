@@ -1,14 +1,9 @@
 {
     "values": [
-        "registry:prefix/melee/obtuse",
-        "registry:prefix/melee/sharp",
-        "registry:prefix/melee/acute",
-        "registry:prefix/melee/deadly",
-        "registry:prefix/melee/fast",
-        "registry:prefix/melee/light",
         "registry:prefix/armor/legacy/hard",
         "registry:prefix/armor/legacy/silly",
         "registry:prefix/armor/legacy/strong",
-        "registry:prefix/armor/package"
+        "registry:prefix/armor/package",
+        "registry:prefix/melee/package"
     ]
 }

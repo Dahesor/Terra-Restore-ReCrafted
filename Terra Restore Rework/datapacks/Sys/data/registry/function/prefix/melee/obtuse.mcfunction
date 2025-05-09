@@ -1,2 +1,0 @@
-data modify storage registry:prefix new append value \
-{id:"obtuse",for:["axe","sword"],negative:1b,rarity:-2,stats_effects:{},att_effects:{melee_damage:{op:"scale",value:-0.1},attack_speed:{op:"add",value:-0.15}},value:40}
