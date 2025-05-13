@@ -106,6 +106,8 @@ team modify player collisionRule never
 schedule function sys:core/entity_load 2s
 function registry:register_all
 
+execute unless data storage data TimeStamp run data modify storage data TimeStamp set value 0L
+
 
 return 1
 scoreboard players set $gametime calculator 0

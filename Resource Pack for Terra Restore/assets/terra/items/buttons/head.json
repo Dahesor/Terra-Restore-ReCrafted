@@ -1,0 +1,19 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "model",
+                "model": "terra:gui/slot"
+            },
+            {
+                "type": "minecraft:special",
+                "base": "terra:item/ui_head",
+                "model": {
+                    "type": "minecraft:head",
+                    "kind": "player"
+                }
+            }
+        ]
+    }
+}

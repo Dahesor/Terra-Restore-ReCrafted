@@ -1,536 +1,555 @@
 {
-  "model": {
-    "type": "minecraft:select",
-    "property": "display_context",
-    "cases": [
-      {
-        "when": [
-          "head",
-          "fixed",
-          "ground",
-          "none"
+    "model": {
+        "type": "minecraft:select",
+        "property": "display_context",
+        "cases": [
+            {
+                "when": [
+                    "head",
+                    "fixed",
+                    "ground",
+                    "none"
+                ],
+                "model": {
+                    "type": "empty"
+                }
+            },
+            {
+                "when": [
+                    "thirdperson_righthand",
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_lefthand"
+                ],
+                "model": {
+                    "type": "empty"
+                }
+            }
         ],
-        "model": {
-          "type": "empty"
+        "fallback": {
+            "type": "condition",
+            "property": "custom_model_data",
+            "index": 3,
+            "on_true": {
+                "type": "empty"
+            },
+            "on_false": {
+                "type": "composite",
+                "models": [
+                    {
+                        "type": "model",
+                        "model": "terra:hud/cd_bar/curtain"
+                    },
+                    {
+                        "type": "select",
+                        "property": "custom_model_data",
+                        "cases": [
+                            {
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:gui/shulker"
+                                },
+                                "when": [
+                                    "shulker"
+                                ]
+                            }
+                        ],
+                        "fallback": {
+                            "type": "empty"
+                        }
+                    },
+                    {
+                        "type": "condition",
+                        "property": "custom_model_data",
+                        "index": 0,
+                        "on_true": {
+                            "type": "model",
+                            "model": "terra:hud/cd_bar/icons/right"
+                        },
+                        "on_false": {
+                            "type": "empty"
+                        }
+                    },
+                    {
+                        "type": "condition",
+                        "property": "custom_model_data",
+                        "index": 1,
+                        "on_true": {
+                            "type": "model",
+                            "model": "terra:hud/cd_bar/icons/off"
+                        },
+                        "on_false": {
+                            "type": "empty"
+                        }
+                    },
+                    {
+                        "type": "condition",
+                        "property": "custom_model_data",
+                        "index": 2,
+                        "on_true": {
+                            "type": "model",
+                            "model": "terra:hud/cd_bar/icons/shift"
+                        },
+                        "on_false": {
+                            "type": "empty"
+                        }
+                    },
+                    {
+                        "type": "range_dispatch",
+                        "property": "custom_model_data",
+                        "fallback": {
+                            "type": "empty"
+                        },
+                        "index": 0,
+                        "scale": 1.0,
+                        "entries": [
+                            {
+                                "threshold": 5,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_5"
+                                }
+                            },
+                            {
+                                "threshold": 10,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_10"
+                                }
+                            },
+                            {
+                                "threshold": 15,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_15"
+                                }
+                            },
+                            {
+                                "threshold": 20,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_20"
+                                }
+                            },
+                            {
+                                "threshold": 25,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_25"
+                                }
+                            },
+                            {
+                                "threshold": 30,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_30"
+                                }
+                            },
+                            {
+                                "threshold": 35,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_35"
+                                }
+                            },
+                            {
+                                "threshold": 40,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_40"
+                                }
+                            },
+                            {
+                                "threshold": 45,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_45"
+                                }
+                            },
+                            {
+                                "threshold": 50,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_50"
+                                }
+                            },
+                            {
+                                "threshold": 55,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_55"
+                                }
+                            },
+                            {
+                                "threshold": 60,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_60"
+                                }
+                            },
+                            {
+                                "threshold": 65,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_65"
+                                }
+                            },
+                            {
+                                "threshold": 70,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_70"
+                                }
+                            },
+                            {
+                                "threshold": 75,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_75"
+                                }
+                            },
+                            {
+                                "threshold": 80,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_80"
+                                }
+                            },
+                            {
+                                "threshold": 85,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_85"
+                                }
+                            },
+                            {
+                                "threshold": 90,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_90"
+                                }
+                            },
+                            {
+                                "threshold": 95,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/progress_95"
+                                }
+                            },
+                            {
+                                "threshold": 100,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/blue/full"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "range_dispatch",
+                        "property": "custom_model_data",
+                        "fallback": {
+                            "type": "empty"
+                        },
+                        "index": 1,
+                        "scale": 1.0,
+                        "entries": [
+                            {
+                                "threshold": 5,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_5"
+                                }
+                            },
+                            {
+                                "threshold": 10,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_10"
+                                }
+                            },
+                            {
+                                "threshold": 15,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_15"
+                                }
+                            },
+                            {
+                                "threshold": 20,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_20"
+                                }
+                            },
+                            {
+                                "threshold": 25,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_25"
+                                }
+                            },
+                            {
+                                "threshold": 30,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_30"
+                                }
+                            },
+                            {
+                                "threshold": 35,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_35"
+                                }
+                            },
+                            {
+                                "threshold": 40,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_40"
+                                }
+                            },
+                            {
+                                "threshold": 45,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_45"
+                                }
+                            },
+                            {
+                                "threshold": 50,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_50"
+                                }
+                            },
+                            {
+                                "threshold": 55,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_55"
+                                }
+                            },
+                            {
+                                "threshold": 60,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_60"
+                                }
+                            },
+                            {
+                                "threshold": 65,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_65"
+                                }
+                            },
+                            {
+                                "threshold": 70,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_70"
+                                }
+                            },
+                            {
+                                "threshold": 75,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_75"
+                                }
+                            },
+                            {
+                                "threshold": 80,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_80"
+                                }
+                            },
+                            {
+                                "threshold": 85,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_85"
+                                }
+                            },
+                            {
+                                "threshold": 90,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_90"
+                                }
+                            },
+                            {
+                                "threshold": 95,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/progress_95"
+                                }
+                            },
+                            {
+                                "threshold": 100,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/yellow/full"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "range_dispatch",
+                        "property": "custom_model_data",
+                        "fallback": {
+                            "type": "empty"
+                        },
+                        "index": 2,
+                        "scale": 1.0,
+                        "entries": [
+                            {
+                                "threshold": 5,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_5"
+                                }
+                            },
+                            {
+                                "threshold": 10,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_10"
+                                }
+                            },
+                            {
+                                "threshold": 15,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_15"
+                                }
+                            },
+                            {
+                                "threshold": 20,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_20"
+                                }
+                            },
+                            {
+                                "threshold": 25,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_25"
+                                }
+                            },
+                            {
+                                "threshold": 30,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_30"
+                                }
+                            },
+                            {
+                                "threshold": 35,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_35"
+                                }
+                            },
+                            {
+                                "threshold": 40,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_40"
+                                }
+                            },
+                            {
+                                "threshold": 45,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_45"
+                                }
+                            },
+                            {
+                                "threshold": 50,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_50"
+                                }
+                            },
+                            {
+                                "threshold": 55,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_55"
+                                }
+                            },
+                            {
+                                "threshold": 60,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_60"
+                                }
+                            },
+                            {
+                                "threshold": 65,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_65"
+                                }
+                            },
+                            {
+                                "threshold": 70,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_70"
+                                }
+                            },
+                            {
+                                "threshold": 75,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_75"
+                                }
+                            },
+                            {
+                                "threshold": 80,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_80"
+                                }
+                            },
+                            {
+                                "threshold": 85,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_85"
+                                }
+                            },
+                            {
+                                "threshold": 90,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_90"
+                                }
+                            },
+                            {
+                                "threshold": 95,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/progress_95"
+                                }
+                            },
+                            {
+                                "threshold": 100,
+                                "model": {
+                                    "type": "model",
+                                    "model": "terra:hud/cd_bar/red/full"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
         }
-      },
-      {
-        "when": [
-          "thirdperson_righthand",
-          "firstperson_righthand",
-          "firstperson_lefthand",
-          "thirdperson_lefthand"
-        ],
-        "model": {
-          "type": "empty"
-        }
-      }
-    ],
-    "fallback": {
-      "type": "condition",
-      "property": "custom_model_data",
-      "index": 3,
-      "on_true": {
-        "type": "empty"
-      },
-      "on_false": {
-        "type": "composite",
-        "models": [
-          {
-            "type": "model",
-            "model": "terra:hud/cd_bar/curtain"
-          },
-          {
-            "type": "condition",
-            "property": "custom_model_data",
-            "index": 0,
-            "on_true": {
-              "type": "model",
-              "model": "terra:hud/cd_bar/icons/right"
-            },
-            "on_false": {
-              "type": "empty"
-            }
-          },
-          {
-            "type": "condition",
-            "property": "custom_model_data",
-            "index": 1,
-            "on_true": {
-              "type": "model",
-              "model": "terra:hud/cd_bar/icons/off"
-            },
-            "on_false": {
-              "type": "empty"
-            }
-          },
-          {
-            "type": "condition",
-            "property": "custom_model_data",
-            "index": 2,
-            "on_true": {
-              "type": "model",
-              "model": "terra:hud/cd_bar/icons/shift"
-            },
-            "on_false": {
-              "type": "empty"
-            }
-          },
-          {
-            "type": "range_dispatch",
-            "property": "custom_model_data",
-            "fallback": {
-              "type": "empty"
-            },
-            "index": 0,
-            "scale": 1.0,
-            "entries": [
-              {
-                "threshold": 5,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_5"
-                }
-              },
-              {
-                "threshold": 10,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_10"
-                }
-              },
-              {
-                "threshold": 15,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_15"
-                }
-              },
-              {
-                "threshold": 20,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_20"
-                }
-              },
-              {
-                "threshold": 25,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_25"
-                }
-              },
-              {
-                "threshold": 30,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_30"
-                }
-              },
-              {
-                "threshold": 35,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_35"
-                }
-              },
-              {
-                "threshold": 40,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_40"
-                }
-              },
-              {
-                "threshold": 45,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_45"
-                }
-              },
-              {
-                "threshold": 50,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_50"
-                }
-              },
-              {
-                "threshold": 55,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_55"
-                }
-              },
-              {
-                "threshold": 60,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_60"
-                }
-              },
-              {
-                "threshold": 65,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_65"
-                }
-              },
-              {
-                "threshold": 70,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_70"
-                }
-              },
-              {
-                "threshold": 75,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_75"
-                }
-              },
-              {
-                "threshold": 80,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_80"
-                }
-              },
-              {
-                "threshold": 85,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_85"
-                }
-              },
-              {
-                "threshold": 90,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_90"
-                }
-              },
-              {
-                "threshold": 95,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/progress_95"
-                }
-              },
-              {
-                "threshold": 100,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/blue/full"
-                }
-              }
-            ]
-          },
-          {
-            "type": "range_dispatch",
-            "property": "custom_model_data",
-            "fallback": {
-              "type": "empty"
-            },
-            "index": 1,
-            "scale": 1.0,
-            "entries": [
-              {
-                "threshold": 5,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_5"
-                }
-              },
-              {
-                "threshold": 10,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_10"
-                }
-              },
-              {
-                "threshold": 15,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_15"
-                }
-              },
-              {
-                "threshold": 20,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_20"
-                }
-              },
-              {
-                "threshold": 25,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_25"
-                }
-              },
-              {
-                "threshold": 30,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_30"
-                }
-              },
-              {
-                "threshold": 35,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_35"
-                }
-              },
-              {
-                "threshold": 40,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_40"
-                }
-              },
-              {
-                "threshold": 45,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_45"
-                }
-              },
-              {
-                "threshold": 50,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_50"
-                }
-              },
-              {
-                "threshold": 55,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_55"
-                }
-              },
-              {
-                "threshold": 60,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_60"
-                }
-              },
-              {
-                "threshold": 65,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_65"
-                }
-              },
-              {
-                "threshold": 70,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_70"
-                }
-              },
-              {
-                "threshold": 75,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_75"
-                }
-              },
-              {
-                "threshold": 80,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_80"
-                }
-              },
-              {
-                "threshold": 85,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_85"
-                }
-              },
-              {
-                "threshold": 90,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_90"
-                }
-              },
-              {
-                "threshold": 95,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/progress_95"
-                }
-              },
-              {
-                "threshold": 100,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/yellow/full"
-                }
-              }
-            ]
-          },
-          {
-            "type": "range_dispatch",
-            "property": "custom_model_data",
-            "fallback": {
-              "type": "empty"
-            },
-            "index": 2,
-            "scale": 1.0,
-            "entries": [
-              {
-                "threshold": 5,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_5"
-                }
-              },
-              {
-                "threshold": 10,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_10"
-                }
-              },
-              {
-                "threshold": 15,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_15"
-                }
-              },
-              {
-                "threshold": 20,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_20"
-                }
-              },
-              {
-                "threshold": 25,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_25"
-                }
-              },
-              {
-                "threshold": 30,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_30"
-                }
-              },
-              {
-                "threshold": 35,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_35"
-                }
-              },
-              {
-                "threshold": 40,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_40"
-                }
-              },
-              {
-                "threshold": 45,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_45"
-                }
-              },
-              {
-                "threshold": 50,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_50"
-                }
-              },
-              {
-                "threshold": 55,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_55"
-                }
-              },
-              {
-                "threshold": 60,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_60"
-                }
-              },
-              {
-                "threshold": 65,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_65"
-                }
-              },
-              {
-                "threshold": 70,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_70"
-                }
-              },
-              {
-                "threshold": 75,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_75"
-                }
-              },
-              {
-                "threshold": 80,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_80"
-                }
-              },
-              {
-                "threshold": 85,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_85"
-                }
-              },
-              {
-                "threshold": 90,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_90"
-                }
-              },
-              {
-                "threshold": 95,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/progress_95"
-                }
-              },
-              {
-                "threshold": 100,
-                "model": {
-                  "type": "model",
-                  "model": "terra:hud/cd_bar/red/full"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    }
-  }
+    },
+    "hand_animation_on_swap": false
 }

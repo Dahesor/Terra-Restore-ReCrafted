@@ -6,11 +6,13 @@ use::mcdoc::registry::StatsEffect
 use::mcdoc::registry::SkillData
 use::mcdoc::playerdata::UnlockedSkill
 use::java::world::item::ItemStack
-use ::java::util::slot::SlottedItem
 use::java::world::component::item::AttributeModifier
-use::java::util::text::Text
+use::java::world::component::CustomData
+use::java::world::component::DataComponentPatch
 use::java::world::entity::mob::player::Player
 use::java::world::entity::mob::EntityEquipment
+use::java::util::slot::SlottedItem
+use::java::util::text::Text
 use::mcdoc::playerdata::StoredPlayerEvents
 use::mcdoc::playerdata::PlayerEvent
 
@@ -24,6 +26,10 @@ dispatch minecraft:storage["data"] to struct {
 
     //List of ParsedWeaponType
     class?: [ParsedWeaponType],
+    custom_data?: CustomData,
+    container?:[ContainerSlot] @ 0..255,
+
+    data?: DataComponentPatch,
 
     //SimpleAttributeModifier
     sm?: SimpleAttributeModifier,
@@ -48,6 +54,7 @@ dispatch minecraft:storage["data"] to struct {
     stats_record?: RecordedStats,
     lore?: [Text],
     text?: Text,
+    TimeStamp?: long,
     sum_text?:Text,
     di?:struct{integer?:int, decimal?:int, sign?:string},
     di_exp?:struct{i_2?:int, d_2?:int, i_1?:int, d_1?:int, sign?:string},
@@ -61,8 +68,9 @@ dispatch minecraft:storage["data"] to struct {
     },
     prefixs?: [Prefix],
     skill?: [UnlockedSkill],
-    item_list: [ItemStack],
+    item_list: [SlottedItem<byte @ -106..200>],
     item?: SlottedItem<byte @ 0..35>,
+    Inv?: [SlottedItem<byte @ -106..200>],
     SkillData?: SkillData,
 }
 
@@ -103,4 +111,11 @@ enum(string) StatsEnum{
     CON = "CON",
     POW = "POW",
     EDU = "EDU"
+}
+
+struct ContainerSlot {
+	/// The slot ID of the container.
+	slot?: int @ 0..255,
+	/// The item stack in this container slot.
+	item?: ItemStack,
 }

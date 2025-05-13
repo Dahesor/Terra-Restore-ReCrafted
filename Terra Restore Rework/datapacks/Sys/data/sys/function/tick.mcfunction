@@ -1,5 +1,6 @@
 #更新时间
 execute store result score $gametime calculator run time query gametime
+execute store result storage data TimeStamp long 1 run time query gametime
 
 #玩家互传
 function sys:core/tp/tick

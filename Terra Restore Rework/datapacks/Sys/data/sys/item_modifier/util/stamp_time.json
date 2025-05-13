@@ -1,0 +1,14 @@
+{
+    "function": "copy_custom_data",
+    "source": {
+        "type": "storage",
+        "source": "data"
+    },
+    "ops": [
+        {
+            "op": "replace",
+            "source": "TimeStamp",
+            "target": "TimeStamp"
+        }
+    ]
+}

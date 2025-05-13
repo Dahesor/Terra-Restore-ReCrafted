@@ -21,7 +21,9 @@ function sys:player/stats/calcs/save_data
 
 
 function sys:player/stats/calcs/get_final
-function sys:player/stats/display
+
+#Head
+execute unless entity @s[tag=__shulker] run function sys:player/stats/display
 
 #HUD
 tag @s remove hud.roll_1

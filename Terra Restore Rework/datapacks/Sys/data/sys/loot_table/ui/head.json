@@ -43,7 +43,7 @@
             "function": "set_components",
             "components": {
                 "max_stack_size": 1,
-                "custom_model_data": {"floats":[2]}
+                "item_model": "terra:buttons/head"
             }
         }
     ]

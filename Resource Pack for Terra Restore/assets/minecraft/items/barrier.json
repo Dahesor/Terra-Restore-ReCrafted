@@ -24,5 +24,6 @@
     "property": "custom_model_data",
     "index": 0,
     "scale": 1
-  }
+  },
+  "hand_animation_on_swap": false
 }

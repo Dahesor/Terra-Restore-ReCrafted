@@ -15,7 +15,10 @@ tag @s remove StatsChanged
 function sys:player/utils/dodge/random
 
 #背包UI
-function sys:player/ui/self
+execute unless entity @s[tag=__shulker] run function sys:player/ui/self
+
+#潜影盒预览
+function sys:player/utils/shulker/main
 
 #技能触发
 function sys:player/trigs/self

@@ -1,5 +1,3 @@
-#say 1
-
 #初始化
 scoreboard players set $region calculator 1
 scoreboard players operation $region calculator = @s region

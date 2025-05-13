@@ -12,7 +12,7 @@ execute if entity @s[scores={region=17}] run function sys:legacy/16_utils/apply_
 execute unless score 11_opening data matches 1.. if entity @s[scores={region=11}] if entity @s[x=2224,y=85,z=-1151,dx=43,dy=15,dz=37] run function sys:core/events/great_wall_opening/trigger
 
 #UI完整性检查
-execute unless score @s ui matches 1.. unless items entity @s inventory.0 player_head[custom_data~{ui:{head:1b}}] run function sys:player/ui/foolproof/fill_head
+execute unless score @s ui matches 1.. unless items entity @s inventory.0 player_head[custom_data~{ui:{head:1b}}] unless entity @s[tag=__shulker] run function sys:player/ui/foolproof/fill_head
 execute unless score @s ui matches 1.. run clear @s barrier[custom_data={ui_check:1b}]
 
 #副手物品检查

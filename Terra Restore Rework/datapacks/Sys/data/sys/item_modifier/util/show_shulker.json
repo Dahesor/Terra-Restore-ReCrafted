@@ -1,0 +1,9 @@
+{
+    "function": "set_custom_model_data",
+    "strings": {
+        "mode": "append",
+        "values": [
+            "shulker"
+        ]
+    }
+}

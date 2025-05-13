@@ -12,17 +12,6 @@
             "kind": "player"
           }
         }
-      },
-      {
-        "threshold": 2,
-        "model": {
-          "type": "minecraft:special",
-          "base": "terra:item/ui_head",
-          "model": {
-            "type": "minecraft:head",
-            "kind": "player"
-          }
-        }
       }
     ],
     "fallback": {

@@ -25,9 +25,9 @@
                     "sys:mech/offhand": 1
                 },
                 "enchantment_glint_override": false,
-                "!jukebox_playable": {},
                 "blocks_attacks": {},
-                "item_model": "terra:misc/offhand_shield"
+                "item_model": "terra:misc/offhand_shield",
+                "!equippable": {}
             }
         },
         {
