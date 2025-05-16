@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "effect":{
+            "trigger": "effects_changed",
+            "conditions": {}
+        }
+    },
+    "rewards": {
+        "function": "sys:player/bar/hp/effects_update"
+    }
+}

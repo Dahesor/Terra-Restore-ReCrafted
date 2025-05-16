@@ -55,6 +55,27 @@
             "height": 9,
             "chars": ["n"],
             "file": "terra:gui/hud/20_plus_armor_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height":9,
+            "chars": ["m"],
+            "file": "terra:gui/hud/armor_empty.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height":9,
+            "chars": ["B"],
+            "file": "terra:gui/hud/armor_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height": 9,
+            "chars": ["N"],
+            "file": "terra:gui/hud/armor_half.png"
         }
     ]
 }

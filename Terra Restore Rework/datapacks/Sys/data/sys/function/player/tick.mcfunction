@@ -46,12 +46,7 @@ execute unless score @s tp matches 0 if score @s[tag=!tper] UID matches 1.. run 
 execute if score @s tp_cd matches 1.. run function sys:player/utils/tp/sender/ticker
 
 #存储生命值
-tag @s add HP.overhalf
-execute store result score @s HP.dry run data get entity @s Health 100
-scoreboard players operation #hp calculator = @s HP.dry
-scoreboard players operation #hp calculator *= #2 calculator
-execute if score #hp calculator < @s hp_cache run tag @s remove HP.overhalf
-execute if score #loop_2 calculator matches 1 run function sys:player/stats/display/check_health
+function sys:player/bar/hp/re_record
 
 #DEV
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:structure_void"}}] positioned ~ ~1 ~ run function sys:dev/spread_find

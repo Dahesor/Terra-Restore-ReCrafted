@@ -35,7 +35,8 @@ execute if score @s region matches 100 run function sys:player/utils/in_base
 execute unless score @s version >= %sys version run function sys:player/updates/2/main
 
 #更新最大生命值
-execute store result score @s hp_cache run attribute @s max_health get 100
+execute store result score @s max_hp_cache run attribute @s max_health get 100
+function sys:player/bar/hp/redraw
 
 #蓝量回复
 function sys:player/bar/mp/regen

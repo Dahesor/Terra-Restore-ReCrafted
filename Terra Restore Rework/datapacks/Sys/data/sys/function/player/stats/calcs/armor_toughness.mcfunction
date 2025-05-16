@@ -1,7 +1,6 @@
 data modify storage dah:actbar new set value {id:"armor_tough",text:[{text:"qW",font:"terra:hud"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"Qq"}]}
 
-execute if score @s health matches 21..40 run data modify storage dah:actbar new.text[0].font set value "terra:hud_above"
-execute if score @s health matches 41..60 run data modify storage dah:actbar new.text[0].font set value "terra:hud_top"
+execute if entity @s[tag=hud.absorb] run data modify storage dah:actbar new.text[0].font set value "terra:hud_above"
 
 execute if score #temp calculator matches 1 run return run data modify storage dah:actbar new.text[1].text set value "v"
 execute if score #temp calculator matches 2.. run data modify storage dah:actbar new.text[1].text set value "c"
