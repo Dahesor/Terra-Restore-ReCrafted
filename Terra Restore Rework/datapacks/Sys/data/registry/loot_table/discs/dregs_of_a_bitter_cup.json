@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:disc_mod"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "target": "item_name",
+            "name": "Dregs of a Bitter Cup"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "jukebox_playable": "registry:dregs",
+                "item_model": "terra:item/disc/dregs_of_a_bitter_cup"
+            }
+        }
+    ]
+}

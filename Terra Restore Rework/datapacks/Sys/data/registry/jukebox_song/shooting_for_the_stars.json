@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["TheDashDub"," - \"",{"translate": "music.shooting_for_the_stars"},"\""],
+    "length_in_seconds": 172,
+    "sound_event": {
+        "sound_id": "terra:bgm.shooting_for_the_stars"
+    }
+}

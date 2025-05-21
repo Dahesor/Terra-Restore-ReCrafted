@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["TheDashDub"," - \"",{"translate": "music.endless_skies"},"\""],
+    "length_in_seconds": 265,
+    "sound_event": {
+        "sound_id": "terra:bgm.endless_skies_2"
+    }
+}

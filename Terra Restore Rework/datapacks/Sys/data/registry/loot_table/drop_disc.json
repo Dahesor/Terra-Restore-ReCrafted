@@ -1,0 +1,118 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/absolution"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/among_the_griffons"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/badjuju"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/calling"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/pigstep"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/chaos_arranged"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/daring"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/dreams"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/dregs_of_a_bitter_cup"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/endless_skies"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/flamescale_mountain"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/isolating_the_variable"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/labyrinth"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/outposts"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/path_of_darkness"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/redemption"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/rising_sun"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/ruins_of_harmony"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/shooting_for_the_stars"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/some_time_to_think"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/the_bascis"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/the_crystal_kingdom"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/the_edge"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/the_griffon_kingdom"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/through_the_woods"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/vast_vally"
+                },
+                {
+                    "type": "loot_table",
+                    "value": "registry:discs/winterglade"
+                }
+            ]
+        }
+    ]
+}

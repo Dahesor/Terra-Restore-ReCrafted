@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["Radiarc"," - \"",{"translate": "music.chaos_arranged"},"\""],
+    "length_in_seconds": 312,
+    "sound_event": {
+        "sound_id": "terra:bgm.radiarc_chaos_arranged"
+    }
+}

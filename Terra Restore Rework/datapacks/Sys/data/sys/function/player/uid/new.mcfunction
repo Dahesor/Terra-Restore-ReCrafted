@@ -2,7 +2,7 @@ scoreboard players add #UID UID 1
 scoreboard players operation @s UID = #UID UID
 
 #初始化玩家主数据
-data modify storage sys:data player append value {UID:-1,pack:[],name:"",UUID:"0-0-0-0-0"}
+data modify storage sys:data player append value {UID:-1,pack:[],name:"",UUID:"0-0-0-0-0",misc:{music_played:0}}
 function sys:player/uid/processes/get_name
 execute store result storage sys:data player[-1].UID int 1 run scoreboard players get #UID UID
 function gu:generate

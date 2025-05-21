@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["Radiarc"," - \"",{"translate": "music.vast_valley"},"\""],
+    "length_in_seconds": 200,
+    "sound_event": {
+        "sound_id": "terra:bgm.radiarc_vast_valley"
+    }
+}

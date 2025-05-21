@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "play_disc":{
+            "trigger":"item_used_on_block",
+            "conditions": {
+                "location":[
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": ["jukebox"]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:plugin/music/jukebox/disc_in"
+    }
+}

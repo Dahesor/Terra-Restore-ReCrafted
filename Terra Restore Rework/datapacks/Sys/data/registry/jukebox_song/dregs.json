@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["Makkon"," - \"",{"translate": "music.dregs_of_a_bitter_cup"},"\""],
+    "length_in_seconds": 190,
+    "sound_event": {
+        "sound_id": "terra:bgm.dregs_of_a_bitter_cup"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:disc_mod"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "target": "item_name",
+            "name": "Some Time to Think"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "jukebox_playable": "registry:some_time_to_think",
+                "item_model": "terra:item/disc/some_time_to_think"
+            }
+        }
+    ]
+}

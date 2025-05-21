@@ -15,6 +15,7 @@ execute if items entity 0-0-0-0-0 container.0 #head_armor run function sys:att/a
 execute if items entity 0-0-0-0-0 container.0 #chest_armor run function sys:att/apply/types/chestplate
 execute if items entity 0-0-0-0-0 container.0 #leg_armor run function sys:att/apply/types/leggings
 execute if items entity 0-0-0-0-0 container.0 #foot_armor run function sys:att/apply/types/boots
+execute if items entity 0-0-0-0-0 container.0 #pickaxes run function sys:att/apply/types/pickaxe
 
 #传回物品
 data modify entity 0-0-0-0-0 Items[{Slot:0b}] set from storage sys:data item

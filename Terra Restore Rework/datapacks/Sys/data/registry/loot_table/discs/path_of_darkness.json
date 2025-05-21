@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:disc_mod"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "target": "item_name",
+            "name": "Path of Darkness"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "jukebox_playable": "registry:path_of_darkness",
+                "item_model": "terra:item/disc/path_of_darkness"
+            }
+        }
+    ]
+}

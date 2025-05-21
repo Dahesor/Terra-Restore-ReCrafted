@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["Makkon"," - \"",{"translate": "music.absolution"},"\""],
+    "length_in_seconds": 180,
+    "sound_event": {
+        "sound_id": "terra:bgm.absolution"
+    }
+}

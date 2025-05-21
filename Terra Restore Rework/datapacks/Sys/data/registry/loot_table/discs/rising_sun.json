@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:disc_mod"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "target": "item_name",
+            "name": "Rising Sun"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "jukebox_playable": "registry:rising_sun",
+                "item_model": "terra:item/disc/rising_sun"
+            }
+        }
+    ]
+}

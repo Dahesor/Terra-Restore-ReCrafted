@@ -12,6 +12,9 @@ struct PlayerData{
         right?: UnlockedSkill,
         off?: UnlockedSkill,
         shift?: UnlockedSkill,
+    },
+    misc?: struct{
+        music_played?: int @ 0..,
     }
 }
 

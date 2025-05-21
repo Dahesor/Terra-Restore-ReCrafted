@@ -1,0 +1,1 @@
+give @s music_disc_11[jukebox_playable="registry:winter_glade"]

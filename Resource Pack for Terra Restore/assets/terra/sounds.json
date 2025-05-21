@@ -21,6 +21,50 @@
             }
         ]
     },
+    "bgm.pigstep_stereo": {
+        "replace": false,
+        "sounds": [
+            {
+                "name": "terra:pigstep",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": true
+            }
+        ]
+    },
+    "bgm.some_time_to_think": {
+        "replace": false,
+        "sounds": [
+            {
+                "name": "terra:some_time_to_think",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": true
+            }
+        ]
+    },
+    "bgm.shooting_for_the_stars": {
+        "replace": false,
+        "sounds": [
+            {
+                "name": "terra:shooting_for_the_stars",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": true
+            }
+        ]
+    },
+    "bgm.outpost": {
+        "replace": false,
+        "sounds": [
+            {
+                "name": "terra:outpost",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": true
+            }
+        ]
+    },
     "bgm.radiarc_among_the_griffons": {
         "replace": false,
         "sounds": [

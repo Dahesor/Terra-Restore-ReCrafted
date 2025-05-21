@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:disc_mod"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "target": "item_name",
+            "name": "Shooting For The Stars"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "jukebox_playable": "registry:shooting_for_the_stars",
+                "item_model": "terra:item/disc/shooting_for_the_stars"
+            }
+        }
+    ]
+}

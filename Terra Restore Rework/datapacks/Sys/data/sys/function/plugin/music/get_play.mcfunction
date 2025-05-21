@@ -1,8 +1,14 @@
 execute if score @s region matches ..0 run return fail
 
+function sys:player/uid/get
+execute unless data storage sys:data player[0].misc.music_played run data modify storage sys:data player[0].misc merge value {music_played:0}
+execute store result score %music music run data get storage sys:data player[0].misc.music_played
+scoreboard players add %music music 1
+execute store result storage sys:data player[0].misc.music_played int 1 run scoreboard players get %music music
 
-execute if score @s region matches 100 run function sys:plugin/music/endless_skies
-execute if score @s region matches 200 run function sys:plugin/music/the_crystal_kingdom
+
+execute if score @s region matches 100 run return run function sys:plugin/music/loops/100
+execute if score @s region matches 200 run return run function sys:plugin/music/loops/200
 execute if score @s region matches 1 run function sys:plugin/music/vast_vally
 execute if score @s region matches 2 run function sys:plugin/music/through_the_woods
 execute if score @s region matches 3 run function sys:plugin/music/path_of_darkness

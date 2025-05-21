@@ -12,7 +12,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/full.png",
+      "file": "terra:gui/hud/hearts/normal/full.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -21,7 +21,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/absorbing_full.png",
+      "file": "terra:gui/hud/hearts/absorb/full.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -30,7 +30,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/poisoned_full.png",
+      "file": "terra:gui/hud/hearts/poisoned/full.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -39,7 +39,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/withered_full.png",
+      "file": "terra:gui/hud/hearts/withered/full.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -57,7 +57,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/half.png",
+      "file": "terra:gui/hud/hearts/normal/half.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -66,7 +66,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/absorbing_half.png",
+      "file": "terra:gui/hud/hearts/absorb/half.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -75,7 +75,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/poisoned_half.png",
+      "file": "terra:gui/hud/hearts/poisoned/half.png",
       "height": 10,
       "ascent": 8,
       "chars": [
@@ -84,7 +84,7 @@
     },
     {
       "type": "bitmap",
-      "file": "gui/sprites/hud/heart/withered_half.png",
+      "file": "terra:gui/hud/hearts/withered/half.png",
       "height": 10,
       "ascent": 8,
       "chars": [

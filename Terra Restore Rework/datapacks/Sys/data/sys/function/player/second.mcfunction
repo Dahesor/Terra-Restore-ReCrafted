@@ -37,6 +37,7 @@ execute unless score @s version >= %sys version run function sys:player/updates/
 #更新最大生命值
 execute store result score @s max_hp_cache run attribute @s max_health get 100
 function sys:player/bar/hp/redraw
+function sys:player/bar/hp/redraw_absorb
 
 #蓝量回复
 function sys:player/bar/mp/regen

@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["TheDashDub"," - \"",{"translate": "music.outpost"},"\""],
+    "length_in_seconds": 131,
+    "sound_event": {
+        "sound_id": "terra:bgm.outpost"
+    }
+}

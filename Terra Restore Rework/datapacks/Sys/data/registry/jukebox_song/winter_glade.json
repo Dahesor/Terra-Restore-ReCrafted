@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["Makkon"," - \"",{"translate": "music.winter_glade"},"\""],
+    "length_in_seconds": 198,
+    "sound_event": {
+        "sound_id": "terra:bgm.winterglade"
+    }
+}

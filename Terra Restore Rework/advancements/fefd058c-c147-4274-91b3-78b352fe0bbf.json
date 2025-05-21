@@ -1,10 +1,4 @@
 {
-  "dah.actbar_mixer:new_player": {
-    "criteria": {
-      "tick": "2024-10-14 11:26:36 -0700"
-    },
-    "done": true
-  },
   "sys:new_player": {
     "criteria": {
       "tick": "2024-10-14 15:17:07 -0700"
@@ -20,6 +14,12 @@
   "dah.sch:new_player": {
     "criteria": {
       "any": "2025-04-26 23:29:28 -0700"
+    },
+    "done": true
+  },
+  "dah.actbar_mixer:new_player": {
+    "criteria": {
+      "tick": "2025-05-16 17:39:33 -0700"
     },
     "done": true
   },

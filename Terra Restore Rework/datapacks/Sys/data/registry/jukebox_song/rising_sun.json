@@ -1,0 +1,8 @@
+{
+    "comparator_output": 0,
+    "description": ["TheDashDub"," - \"",{"translate": "music.rising_sun"},"\""],
+    "length_in_seconds": 220,
+    "sound_event": {
+        "sound_id": "terra:bgm.rising_sun"
+    }
+}

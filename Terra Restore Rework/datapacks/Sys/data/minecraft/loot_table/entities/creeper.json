@@ -72,9 +72,8 @@
             ],
             "entries": [
                 {
-                    "type": "minecraft:tag",
-                    "expand": true,
-                    "name": "minecraft:creeper_drop_music_discs"
+                    "type": "loot_table",
+                    "value": "registry:drop_disc"
                 }
             ],
             "rolls": 1.0

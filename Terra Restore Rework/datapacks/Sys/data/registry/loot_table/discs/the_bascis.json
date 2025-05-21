@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "registry:disc_mod"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_name",
+            "target": "item_name",
+            "name": "The Bascis"
+        },
+        {
+            "function": "set_components",
+            "components": {
+                "jukebox_playable": "registry:the_bascis",
+                "item_model": "terra:item/disc/the_bascis"
+            }
+        }
+    ]
+}
