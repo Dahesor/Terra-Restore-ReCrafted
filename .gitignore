@@ -1,7 +1,8 @@
 **/.DS_Store
-Terra Restore Rework/playerdata/**.dat_old
-Terra Restore Rework/stats/**.json
+Terra Restore ReCrafted/playerdata/**.dat_old
+Terra Restore ReCrafted/stats/**.json
 level.dat_old
 session.lock
+copy.bat
 **/.VSCodeCounter/**
 **/__pycache__/**
