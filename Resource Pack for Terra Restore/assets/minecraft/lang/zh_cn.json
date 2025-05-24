@@ -1452,5 +1452,12 @@
     "stats.EDU.lore.1":"角色掌握的理论知识",
     "stats.EDU.lore.2":" - 影响暴击率",
     "stats.EDU.lore.3":" - 小幅影响冷却缩减",
-    "stats.EDU.lore.4":" - 影响角色技能机制与效果"
+    "stats.EDU.lore.4":" - 影响角色技能机制与效果",
+    "advancements.toast.goal":"[!] 注意",
+    "item.minecraft.diamond_sword":"未鉴定的钻石质刃器",
+    "item.minecraft.iron_sword":"未鉴定的铁质刃器",
+    "item.minecraft.golden_sword":"未鉴定的金质刃器",
+    "item.minecraft.wooden_sword":"未鉴定的木质刃器",
+    "item.minecraft.stone_sword":"未鉴定的石质刃器",
+    "item.minecraft.netherite_sword":"未鉴定的下界合金质刃器"
 }

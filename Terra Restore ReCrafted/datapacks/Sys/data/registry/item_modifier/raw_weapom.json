@@ -1,0 +1,24 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "tooltip_style": "terra:unidentified",
+            "tooltip_display": {
+                "hidden_components": ["attribute_modifiers"]
+            }
+        }
+    },
+    {
+        "function": "set_lore",
+        "mode": "insert",
+        "entity": "this",
+        "lore": [
+            "",
+            {"translate": "action.identify.tut","color": "yellow","italic": false}
+        ]
+    },
+    {
+        "function": "set_custom_data",
+        "tag": {"has_identify_notice":1}
+    }
+]

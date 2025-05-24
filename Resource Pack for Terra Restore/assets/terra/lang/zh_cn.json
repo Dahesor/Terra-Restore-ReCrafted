@@ -110,5 +110,7 @@
     "music.winter_glade":"霜谧铃间",
     "music.gilded_in_blood":"血铸华装",
     "music.sorcery_temple":"妖禅冥寺",
-    "music.pigstep":"猪的舞步"
+    "music.pigstep":"猪的舞步",
+    "action.identify":"鉴定",
+    "action.identify.tut":"在物品栏中点击以鉴定"
 }

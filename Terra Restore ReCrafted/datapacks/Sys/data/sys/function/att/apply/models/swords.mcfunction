@@ -1,0 +1,6 @@
+execute if data storage sys:data item{id:"minecraft:diamond_sword"} run return run data modify storage sys:data item.components."minecraft:item_model" set value "terra:item/weapon/sword/diamond_sword"
+execute if data storage sys:data item{id:"minecraft:wooden_sword"} run return run data modify storage sys:data item.components."minecraft:item_model" set value "terra:item/weapon/sword/wooden_sword"
+execute if data storage sys:data item{id:"minecraft:stone_sword"} run return run data modify storage sys:data item.components."minecraft:item_model" set value "terra:item/weapon/sword/stone_sword"
+execute if data storage sys:data item{id:"minecraft:golden_sword"} run return run data modify storage sys:data item.components."minecraft:item_model" set value "terra:item/weapon/sword/golden_sword"
+execute if data storage sys:data item{id:"minecraft:netherite_sword"} run return run data modify storage sys:data item.components."minecraft:item_model" set value "terra:item/weapon/sword/netherite_sword"
+execute if data storage sys:data item{id:"minecraft:iron_sword"} run return run data modify storage sys:data item.components."minecraft:item_model" set value "terra:item/weapon/sword/iron_sword"

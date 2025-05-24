@@ -1,6 +1,7 @@
 {
 	"textures": {
-		"2": "terra:gui/cd_bar/shift_ready",
+		"2": "terra:display/cd_bar/shift_ready",
+		"particle": "terra:display/cd_bar/shift_ready",
 		"blank": "terra:blank"
 	},
 	"elements": [

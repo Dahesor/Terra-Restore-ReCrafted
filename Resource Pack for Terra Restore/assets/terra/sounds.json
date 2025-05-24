@@ -76,17 +76,6 @@
             }
         ]
     },
-    "bgm.badjujusnippet": {
-        "replace": false,
-        "sounds": [
-            {
-                "name": "terra:badjujusnippet",
-                "volume": 1.0,
-                "pitch": 1.0,
-                "stream": true
-            }
-        ]
-    },
     "bgm.dreams": {
         "replace": false,
         "sounds": [

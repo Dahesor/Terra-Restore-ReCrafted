@@ -10,6 +10,7 @@
         "description": {"translate": "notice.playing_disc"},
         "announce_to_chat": false,
         "show_toast": true,
-        "background": "block/amethyst_block"
+        "background": "block/amethyst_block",
+        "frame": "goal"
     }
 }

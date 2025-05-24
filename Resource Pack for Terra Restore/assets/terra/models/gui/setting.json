@@ -1,6 +1,6 @@
 {
     "parent": "terra:background",
     "textures": {
-      "layer0": "terra:gui/settings/settings"
+      "layer0": "block/redstone_torch"
     }
 }

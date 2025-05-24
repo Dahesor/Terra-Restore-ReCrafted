@@ -1,3 +1,5 @@
+function sys:att/apply/models/get_rarity
+
 # 重置攻击速度
 data remove storage sys:data item.components."minecraft:attribute_modifiers"[{id:"minecraft:base_attack_speed"}]
 
@@ -39,6 +41,11 @@ data modify storage data stats_record.original set from storage data weapon_stat
 data modify storage data stats_record.modifies set value {}
 function sys:att/apply/prefix/_selector_ {type:"sword"}
 function sys:att/apply/prefix/filter_negative
+
+#更新稀有度
+execute store result score $effect calculator run data get storage data pr.rarity
+scoreboard players operation $rarity calculator += $effect calculator
+function sys:att/apply/models/set_frame
 
 #生成属性说明
 data modify storage data lore set value ["",{translate:"alk",italic:false,with:[{translate:"att.melee_damage"},{text:"",color:"green"},""],color:"gray"},{translate:"alk",with:[{translate:"att.attack_speed"},{text:"",color:"green"},""],color:"gray",italic:false},{translate:"alk",with:[{translate:"att.reach"},{text:"",color:"green"},""],color:"gray",italic:false},{translate:"alk",with:[{translate:"att.sweep"},{text:"",color:"green"},""],color:"gray",italic:false},{translate:"alk",with:[{translate:"att.knockback"},{text:"",color:"green"},""],color:"gray",italic:false}]
@@ -97,9 +104,10 @@ data modify storage data lore set value ["",{translate:"alk",italic:false,with:[
     execute if data storage data pr.stats_effects.crit_damage run function sys:att/apply/lore/prefixs/crit_dmg
 ## 前缀
 
-
+function sys:att/apply/models/swords
 
 #植入属性与说明
+execute if data storage sys:data item.components."minecraft:custom_data".has_identify_notice run function sys:att/apply/lore/fix/remove_notice
 data modify storage data modifiers[].id set value "registry:weapon_type/sword"
 data modify storage data additional_atts[].id set value "registry:prefix/sword"
 data modify storage data modifiers append from storage data additional_atts[]

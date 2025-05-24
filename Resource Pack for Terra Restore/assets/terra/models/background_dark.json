@@ -1,8 +1,8 @@
 {
 	"textures": {
-		"1": "terra:gui/ui_dark",
-		"particle": "terra:gui/ui_dark",
-		"d": "terra:gui/ui",
+		"1": "terra:display/ui_dark",
+		"particle": "terra:display/ui_dark",
+		"d": "terra:display/ui",
 		"layer0": "terra:blank",
 		"blank":"terra:blank"
 	},

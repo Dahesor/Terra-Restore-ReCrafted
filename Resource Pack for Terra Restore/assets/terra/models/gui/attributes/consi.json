@@ -1,6 +1,6 @@
 {
     "parent": "terra:background",
     "textures": {
-      "layer0": "terra:gui/att/consi"
+      "layer0": "terra:display/att/consi"
     }
 }

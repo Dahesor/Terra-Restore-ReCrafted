@@ -1,5 +1,4 @@
 
-
 # 删除击退
 data remove storage sys:data item.components."minecraft:attribute_modifiers"[{id:"sys:default_attack_knockback"}]
 

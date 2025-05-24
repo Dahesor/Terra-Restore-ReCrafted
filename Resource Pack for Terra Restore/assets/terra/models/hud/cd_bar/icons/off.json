@@ -1,8 +1,8 @@
 {
 	"textures": {
-		"3": "terra:gui/cd_bar/off_ready",
+		"3": "terra:display/cd_bar/off_ready",
 		"blank": "terra:blank",
-		"particle": "terra:gui/cd_bar/off_ready"
+		"particle": "terra:display/cd_bar/off_ready"
 	},
 	"elements": [
 		{

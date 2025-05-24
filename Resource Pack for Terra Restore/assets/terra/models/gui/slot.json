@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"1": "terra:gui/slot",
-		"particle": "terra:gui/slot"
+		"1": "terra:display/slot",
+		"particle": "terra:display/slot"
 	},
 	"elements": [
 		{

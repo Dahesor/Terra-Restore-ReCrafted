@@ -2,6 +2,8 @@
 	"env": {
 		"dataSource": "GitHub",
 		"dependencies": [
+			"@vanilla-datapack",
+			"@vanilla-resourcepack",
 			"@vanilla-mcdoc"
 		],
 		"gameVersion": "1.21.5"

@@ -1,8 +1,7 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "terra:gui/cd_bar/curtain",
-		"particle": "terra:gui/cd_bar/curtain"
+		"0": "terra:display/cd_bar/curtain",
+		"particle": "terra:display/cd_bar/curtain"
 	},
 	"elements": [
 		{
@@ -13,8 +12,8 @@
 				"east": {"uv": [0, 8, 8, 8.5], "texture": "#0"},
 				"south": {"uv": [5, 8.5, 10, 9], "texture": "#0"},
 				"west": {"uv": [8, 8, 16, 8.5], "texture": "#0"},
-				"up": {"uv": [16, 16, 0, 0], "rotation": 270, "texture": "#0"},
-				"down": {"uv": [16, 16, 0, 0], "rotation": 90, "texture": "#0"}
+				"up": {"uv": [16, 9.25, 0, 0], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [16, 9.25, 0, 0], "rotation": 90, "texture": "#0"}
 			}
 		}
 	],

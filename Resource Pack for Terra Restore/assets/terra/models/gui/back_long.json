@@ -1,6 +1,6 @@
 {
     "parent": "terra:background_dark_long",
     "textures": {
-      "layer0": "terra:gui/back"
+      "layer0": "terra:display/back"
     }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "terra:background",
     "textures": {
-      "layer0": "terra:gui/att/attribute"
+      "layer0": "terra:display/att/attribute"
     }
 }

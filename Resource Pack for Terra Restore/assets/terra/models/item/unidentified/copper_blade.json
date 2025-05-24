@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "terra:item/weapon/unidentified_copper_blade"
+    }
+}

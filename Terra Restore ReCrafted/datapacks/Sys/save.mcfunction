@@ -1,1 +1,1 @@
-give @s music_disc_11[jukebox_playable="registry:winter_glade"]
+give @p diamond_sword[item_name={text:"钻石圣剑",color:"#2f0b24",shadow_color:[1,1,1,1]},lore=["",{text:"天机",color:"dark_aqua",italic:false,shadow_color:[1,1,1,1]},"",{text:"自出洞来无敌手",color:"black",italic:false,shadow_color:[1,1,1,1]}],tooltip_display={hidden_components:["attribute_modifiers"]},tooltip_style="terra:tier/12/_"]

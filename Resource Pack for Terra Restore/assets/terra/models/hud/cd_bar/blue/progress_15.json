@@ -1,7 +1,7 @@
 {
   "textures": {
-    "0": "terra:gui/cd_bar/blue",
-    "particle": "terra:gui/cd_bar/blue"
+    "0": "terra:display/cd_bar/bars",
+    "particle": "terra:display/cd_bar/bars"
   },
   "elements": [
     {
@@ -65,8 +65,8 @@
           "uv": [
             0,
             0,
-            2.4,
-            16
+            1.93125,
+            2.5
           ],
           "rotation": 270,
           "texture": "#0"

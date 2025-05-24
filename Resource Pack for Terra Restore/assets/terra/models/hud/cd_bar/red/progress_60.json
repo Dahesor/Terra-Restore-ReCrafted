@@ -1,7 +1,7 @@
 {
   "textures": {
-    "1": "terra:gui/cd_bar/red",
-    "particle": "terra:gui/cd_bar/red"
+    "0": "terra:display/cd_bar/bars",
+    "particle": "terra:display/cd_bar/bars"
   },
   "elements": [
     {
@@ -19,29 +19,29 @@
         "north": {
           "uv": [
             0,
-            0,
+            5.0,
             1.34375,
             1
           ],
-          "texture": "#1"
+          "texture": "#0"
         },
         "east": {
           "uv": [
             0,
-            0,
+            5.0,
             6.435,
             1
           ],
-          "texture": "#1"
+          "texture": "#0"
         },
         "south": {
           "uv": [
             0,
-            0,
+            5.0,
             1.34375,
             1
           ],
-          "texture": "#1"
+          "texture": "#0"
         },
         "west": {
           "uv": [
@@ -50,26 +50,26 @@
             11.935,
             2.5
           ],
-          "texture": "#1"
+          "texture": "#0"
         },
         "up": {
           "uv": [
             0,
-            0,
+            5.0,
             1.34375,
             6.435
           ],
-          "texture": "#1"
+          "texture": "#0"
         },
         "down": {
           "uv": [
             0,
-            0,
-            9.6,
-            16
+            5.0,
+            7.725,
+            7.5
           ],
           "rotation": 270,
-          "texture": "#1"
+          "texture": "#0"
         }
       }
     }

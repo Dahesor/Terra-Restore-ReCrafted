@@ -1,6 +1,6 @@
 {
     "parent": "terra:background",
     "textures": {
-      "layer0": "terra:gui/skill/right_click"
+      "layer0": "terra:display/skill/right_click"
     }
 }
