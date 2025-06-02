@@ -25,5 +25,6 @@
     "index": 0,
     "scale": 1
   },
-  "hand_animation_on_swap": false
+  "hand_animation_on_swap": false,
+    "oversized_in_gui": true
 }

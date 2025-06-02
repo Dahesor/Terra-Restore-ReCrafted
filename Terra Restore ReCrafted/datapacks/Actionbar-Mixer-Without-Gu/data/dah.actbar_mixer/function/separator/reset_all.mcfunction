@@ -1,1 +1,0 @@
-data modify storage dah:actbar data[].separator set value " "

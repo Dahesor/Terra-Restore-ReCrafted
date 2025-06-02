@@ -1,1 +1,0 @@
-execute unless score #off dah.actbar.calc matches 1 run function dah.actbar_mixer:z_private/display/prepare

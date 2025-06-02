@@ -2,5 +2,6 @@
     "model": {
         "type": "model",
         "model": "terra:gui/skill/right_click"
-    }
+    },
+    "oversized_in_gui": true
 }

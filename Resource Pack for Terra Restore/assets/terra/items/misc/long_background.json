@@ -2,5 +2,6 @@
     "model": {
         "type": "model",
         "model": "terra:background_dark_long"
-    }
+    },
+    "oversized_in_gui": true
 }

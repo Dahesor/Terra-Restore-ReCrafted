@@ -2,5 +2,6 @@
     "model": {
         "type": "model",
         "model": "terra:gui/attributes/int"
-    }
+    },
+    "oversized_in_gui": true
 }

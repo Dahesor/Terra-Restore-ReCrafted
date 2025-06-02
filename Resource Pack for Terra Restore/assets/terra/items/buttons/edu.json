@@ -2,5 +2,6 @@
     "model": {
         "type": "model",
         "model": "terra:gui/attributes/edu"
-    }
+    },
+    "oversized_in_gui": true
 }

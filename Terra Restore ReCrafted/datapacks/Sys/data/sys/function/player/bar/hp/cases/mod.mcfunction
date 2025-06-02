@@ -1,4 +1,4 @@
-data modify storage dah:actbar new set value {id:"hp",text:[{text:"qW",font:"terra:hud"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"Qq"}]}
+data modify storage dah:actbar new set value {id:"hp",text:[{text:"qW",font:"terra:hud",shadow_color:0},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"*"},{text:"="},{text:"Qq"}]}
 function sys:player/bar/hp/cases/cross_layer
 execute if score %this_hp HP.dry matches 21..40 run function sys:player/bar/hp/draws/roll_2/base
 execute if score %this_hp HP.dry matches 41..60 run function sys:player/bar/hp/draws/roll_3/base

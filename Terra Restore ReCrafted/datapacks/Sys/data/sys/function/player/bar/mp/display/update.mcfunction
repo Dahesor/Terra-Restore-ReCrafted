@@ -12,7 +12,7 @@ function sys:player/bar/mp/display/exhust
 function sys:player/bar/mp/display/get_number_space
 
 
-data modify storage data text set value [{text:"",font: "mp",color: "white",shadow_color:[0f,1f,1f,1f]},{score: {name: "@s",objective: "MP"}},"/",{score: {name: "@s",objective: "MAX_MP"}}," ",{text:""}," ",{text:""},{text:""}]
+data modify storage data text set value [{text:"",font: "mp",color: "white",shadow_color:0},{score: {name: "@s",objective: "MP"}},"/",{score: {name: "@s",objective: "MAX_MP"}}," ",{text:""}," ",{text:""},{text:""}]
 
 data modify storage data text[0].text set from storage temp offset
 data modify storage data text[5].text set from storage temp bar

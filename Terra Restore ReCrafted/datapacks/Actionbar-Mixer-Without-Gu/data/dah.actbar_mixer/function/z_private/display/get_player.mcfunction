@@ -1,1 +1,0 @@
-$execute as $(UUID) run function dah.actbar_mixer:z_private/display/self

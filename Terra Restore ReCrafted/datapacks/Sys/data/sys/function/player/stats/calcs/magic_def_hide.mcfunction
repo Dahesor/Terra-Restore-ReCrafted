@@ -1,4 +1,4 @@
-data modify storage dah:actbar new set value {id:"ench.DEF",text:[{text:"e",font:"terra:hud_top"},{text:"z"},{text:"⨉"},{text:""},{text:"-"},{text:"E"}],data:{count:0}}
+data modify storage dah:actbar new set value {id:"ench.DEF",text:[{text:"e",font:"terra:hud_top",shadow_color:0},{text:"z"},{text:"⨉"},{text:""},{text:"-"},{text:"E"}],data:{count:0}}
 
 execute if score #temp calculator matches 10.. run data modify storage dah:actbar new.text[4].text set value ""
 
