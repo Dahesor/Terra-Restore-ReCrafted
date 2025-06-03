@@ -20,7 +20,7 @@ out vec2 texCoord0;
 void main() {
     vec3 pos = Position;
     vec4 this_color = Color;
-    if(pos.z >= 0.08 && pos.z <= 0.1 && (Color.r >= 0.317 && Color.r <= 0.318 && Color.g == 0 && Color.b == 0 || Color.r == 0 && Color.g >= 0.3137 && Color.g <= 0.314 && Color.b == 0)){
+    if(pos.z >= 0.0 && (Color.r >= 0.317 && Color.r <= 0.318 && Color.g == 0 && Color.b == 0 || Color.r == 0 && Color.g >= 0.3137 && Color.g <= 0.314 && Color.b == 0)){
         vec2 pixel = vec2(ProjMat[0][0], ProjMat[1][1]) / 2.0;
 	    int guiScale = int(round(pixel.x / (1 / ScreenSize.x)));
 	    vec2 gui = ScreenSize / guiScale;
