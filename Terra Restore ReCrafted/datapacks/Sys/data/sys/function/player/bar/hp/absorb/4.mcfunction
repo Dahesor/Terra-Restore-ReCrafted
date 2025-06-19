@@ -1,6 +1,6 @@
 scoreboard players remove %this_hp HP.absorb 60
 
-data modify storage dah:actbar new set value {id:"absorb",text:[{text:"qW",font:"terra:hud"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"Qq"}]}
+data modify storage dah:actbar new set value {id:"absorb",text:[{text:"qW",font:"terra:hud",shadow_color:0},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"*"},{text:"6"},{text:"Qq"}]}
 
 
 execute if score %this_hp HP.absorb matches 1 run return run data modify storage dah:actbar new.text[1].text set value "&"

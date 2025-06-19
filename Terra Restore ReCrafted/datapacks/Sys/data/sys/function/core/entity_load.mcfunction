@@ -1,5 +1,5 @@
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{ui_check:1b}}}}]
-execute as @e[type=area_effect_cloud,tag=2_leap_booster] run data modify entity @s Age set value 20
+execute as @e[type=area_effect_cloud,tag=2_leap_booster] run data merge entity @s {Age:20,potion_contents:{custom_effects:[{id:"jump_boost",amplifier:4b,duration:50,show_particles:0b,show_icon:1b},{id:"speed",amplifier:4b,duration:50,show_particles:0b,show_icon:1b}]}}
 execute as @e[type=interaction,tag=box] at @s run function sys:core/box/load/check_load
 
 execute as 0-0-0-0-0 run function sys:core/despawn

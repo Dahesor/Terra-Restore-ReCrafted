@@ -84,7 +84,7 @@
     "ship.potion": "Assult Potion",
     "action.set_spawn": "Set Spawn",
     "action.set_spawn.success": "Your spawn point has been set!",
-    "music.playing": "§f[§bMusic§f] Now Playing: %1$s §fBy: %2$s",
+    "music.playing": "§f[§bMusic§f] Now Playing: %1$s%3$s §fBy: %2$s",
     "secret.4": "[!] 你听见不远处有一道沉重的门被打开的声音。",
     "event.becon_shut": "%s 关闭了一座烽火台！",
     "event.becon_remain": "还剩%s座烽火台未关闭！",

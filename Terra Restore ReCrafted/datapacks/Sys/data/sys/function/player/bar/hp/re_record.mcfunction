@@ -14,6 +14,7 @@ scoreboard players operation #hp calculator *= #5 calculator
 execute if score #hp calculator <= @s max_hp_cache run function sys:player/bar/hp/wiggle_only
 
 
+
 #伤害吸收
 execute store result score %this HP.absorb run data get entity @s AbsorptionAmount 100
 execute unless score @s HP.absorb = %this HP.absorb run function sys:player/bar/hp/absorb

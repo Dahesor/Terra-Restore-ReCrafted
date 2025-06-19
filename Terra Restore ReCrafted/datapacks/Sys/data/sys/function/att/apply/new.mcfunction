@@ -1,7 +1,6 @@
 #初始化
 scoreboard players set $region calculator 1
 scoreboard players operation $region calculator = @s region
-data modify storage sys:mod result set value []
 item replace entity 0-0-0-0-0 container.0 from entity @s player.cursor
 item modify entity 0-0-0-0-0 container.0 sys:att/fill_default
 data modify storage sys:data item set from entity 0-0-0-0-0 Items[{Slot:0b}]

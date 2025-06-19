@@ -43,7 +43,7 @@
     "ship.potion": "强袭药水",
     "action.set_spawn": "设置重生点",
     "action.set_spawn.success": "已成功设置重生点",
-    "music.playing": "§f[§b音乐§f] 正在播放：%1$s §f作曲：%2$s",
+    "music.playing": "§f[§b音乐§f] 正在播放：%1$s §7(%3$s§7)§r §f作曲：%2$s",
     "secret.4": "[!] 你听见不远处有一道沉重的门被打开的声音。",
     "event.becon_shut": "%s 关闭了一座烽火台！",
     "event.becon_remain": "还剩%s座烽火台未关闭！",
