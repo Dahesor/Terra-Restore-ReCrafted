@@ -1,1 +1,0 @@
-execute if block ~ ~ ~ #enderman_holdable
