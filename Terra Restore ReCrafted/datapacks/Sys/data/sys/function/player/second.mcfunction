@@ -44,3 +44,6 @@ function sys:player/bar/mp/regen
 
 #清除伤害吸收
 effect clear @s absorption
+
+#发光
+execute if score $player data matches 2.. run effect give @s glowing 2 0 true

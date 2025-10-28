@@ -84,6 +84,7 @@ scoreboard objectives add highHpTick dummy
 scoreboard objectives add max_hp_cache dummy
 scoreboard objectives add saved_blink dummy
 scoreboard objectives add HP.absorb dummy
+scoreboard objectives add player_slot dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1
@@ -101,13 +102,7 @@ scoreboard players set #100 calculator 100
 scoreboard players set #1000 calculator 1000
 scoreboard players set #10000 calculator 10000
 
-team add player "Player"
-team add mob_army "mob_army"
-team add iron_golem "iron_golem"
-team modify player color yellow
-team modify player seeFriendlyInvisibles true
-team modify player friendlyFire false
-team modify player collisionRule never
+function sys:plugin/init/teams
 schedule function sys:core/entity_load 2s
 function registry:register_all
 

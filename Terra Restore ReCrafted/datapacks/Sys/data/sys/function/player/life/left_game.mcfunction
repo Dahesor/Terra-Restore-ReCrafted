@@ -10,3 +10,5 @@ execute if entity @s[tag=tper] run function sys:player/utils/tp/sender/package/i
 
 execute if entity @s[tag=in_boss] run function sys:player/life/domains/respawn
 function sys:skills/left_reset
+
+function sys:plugin/init/playerslot/cases
