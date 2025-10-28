@@ -1,0 +1,32 @@
+{
+    "type": "entity",
+    "pools": [
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/absolution"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/among_the_griffons"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/badjuju"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/calling"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/pigstep"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/chaos_arranged"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/daring"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/dreams"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/dregs_of_a_bitter_cup"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/endless_skies"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/flamescale_mountain"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/isolating_the_variable"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/labyrinth"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/outposts"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/path_of_darkness"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/redemption"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/rising_sun"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/ruins_of_harmony"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/shooting_for_the_stars"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/some_time_to_think"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/the_bascis"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/the_crystal_kingdom"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/the_edge"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/the_griffon_kingdom"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/through_the_woods"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/vast_vally"}]},
+        {"rolls": 1,"entries": [{"type": "loot_table","value": "registry:discs/winterglade"}]}
+    ]
+}
