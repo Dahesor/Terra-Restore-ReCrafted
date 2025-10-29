@@ -5,13 +5,17 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:chest",
+            "name": "minecraft:player_head",
             "functions": [
               {
                 "function": "minecraft:set_components",
                 "components": {
                   "minecraft:lock": {"components": {"custom_data": {"id":"只要没有这种奇怪的物品，这个箱子就打不开"}}}
                 }
+              },
+              {
+                "function": "fill_player_head",
+                "entity": "this"
               }
             ]
           }

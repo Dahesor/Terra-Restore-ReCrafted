@@ -1,0 +1,1 @@
+execute if entity @s[tag=SKILL.anvil_form] if score $is_sweep dmg matches 0 if predicate sys:player/is_falling run function registry:skills/attack/anvil_form/on_hit

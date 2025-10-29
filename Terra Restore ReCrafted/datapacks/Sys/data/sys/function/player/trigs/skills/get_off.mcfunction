@@ -1,3 +1,4 @@
+scoreboard players set $skill_slot calculator 2
 function sys:player/trigs/skills/reset_off
 scoreboard players operation #temp calculator = @s CD.off
 execute if score #temp calculator matches 1.. run return run function sys:player/trigs/skills/in_cd

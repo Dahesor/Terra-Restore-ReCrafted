@@ -1,0 +1,79 @@
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "flags": {
+                "is_flying": false,
+                "is_on_ground": false,
+                "is_swimming": false
+            },
+            "movement": {
+                "y": {
+                    "max": 0
+                }
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "ladder",
+                        "vine",
+                        "water",
+                        "lava",
+                        "powder_snow",
+                        "cobweb"
+                    ]
+                }
+            }
+        }
+    },
+        {
+        "condition": "inverted",
+        "term": {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "ladder",
+                        "vine",
+                        "water",
+                        "lava",
+                        "powder_snow",
+                        "cobweb"
+                    ]
+                }
+            },
+            "offsetY": 1
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "slow_falling": {}
+                }
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "levitation": {}
+                }
+            }
+        }
+    }
+]

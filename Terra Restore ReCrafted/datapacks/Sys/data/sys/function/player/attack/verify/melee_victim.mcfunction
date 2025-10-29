@@ -18,7 +18,7 @@ tag @s add attack_target
 #tellraw @a ["Data: ",{score:{name:"Dahesor",objective:"sweep_counter"}}," Base: ",{score:{name:"$base_damage",objective:"dmg"}}," Counter: ",{score:{name:"Dahesor",objective:"sweep_recorder"}}]
 
 #Exclude multi checking
-#execute store result score $time dmg run time query gametime
+execute store result score $time dmg run time query gametime
 #execute if score @s dmg_TimeStamp = $time dmg if score @s mentionCD = $attacker dmg run return fail
 #scoreboard players operation @s dmg_TimeStamp = $time dmg
 #scoreboard players operation @s mentionCD = $attacker dmg

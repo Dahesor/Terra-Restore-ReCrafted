@@ -112,5 +112,10 @@
     "music.sorcery_temple":"妖禅冥寺",
     "music.pigstep":"猪的舞步",
     "action.identify":"鉴定",
-    "action.identify.tut":"在物品栏中点击以鉴定"
+    "action.identify.tut":"在物品栏中点击以鉴定",
+    "skill.anvil_form":"铁砧之魂",
+    "skill.anvil_form.1":"进入持续(%s)s的铁砧形态",
+    "skill.anvil_form.2":"期间在下落中近战击中敌人时，",
+    "skill.anvil_form.3":"若脚下2格内有方块，",
+    "skill.anvil_form.4":"则立刻以超高速下砸至地面上"
 }

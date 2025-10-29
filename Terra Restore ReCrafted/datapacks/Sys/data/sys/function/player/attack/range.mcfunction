@@ -1,4 +1,4 @@
-advancement revoke @s only sys:dealt_range
+#advancement revoke @s only sys:dealt_range
 say triggered range attack
 function sys:player/attack/reset_params
 
