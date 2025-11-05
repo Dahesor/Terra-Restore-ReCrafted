@@ -1,0 +1,1 @@
+$data modify storage comms:unlocked dialog.this.actions[-1].action.command set value "/trigger entry.archive set $(index)"

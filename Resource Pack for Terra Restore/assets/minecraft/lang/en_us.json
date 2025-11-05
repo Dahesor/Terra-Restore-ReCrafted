@@ -40,6 +40,8 @@
     "enchantment.level.49":"XLIX",
     "enchantment.level.50":"L",
     "potion.potency.6":"VI",
+    "menu.custom_options.tooltip": "",
+    "menu.custom_screen_info.tooltip": "",
     "soundCategory.music": "Music §c(Turn this Off)",
     "soundCategory.record": "BGM §a(Terra Restore Music)",
     "area.1": "Valley of Beginning",

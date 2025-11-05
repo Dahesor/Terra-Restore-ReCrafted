@@ -21,4 +21,5 @@ attribute @s attack_speed base set 2
 attribute @s entity_interaction_range base set 2
 scoreboard players set @s skill.right 1
 scoreboard players set @s skill.off 1
-
+scoreboard players set @s menu.archive 0
+scoreboard players set @s entry.archive -1

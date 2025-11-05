@@ -47,3 +47,7 @@ effect clear @s absorption
 
 #发光
 execute if score $player data matches 2.. run effect give @s glowing 2 0 true
+
+#允许向服务器发送图鉴请求
+scoreboard players enable @s menu.archive
+scoreboard players enable @s entry.archive

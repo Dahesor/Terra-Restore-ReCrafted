@@ -50,3 +50,7 @@ execute if score @s tp_cd matches 1.. run function sys:player/utils/tp/sender/ti
 
 #存储生命值
 function sys:player/bar/hp/re_record
+
+#图鉴按钮
+execute unless score @s menu.archive matches 0 run function comms:trigs/menu
+execute unless score @s entry.archive matches ..-1 run function comms:trigs/entry

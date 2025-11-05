@@ -1,0 +1,1 @@
+$data modify storage comms:unlocked run.ench set from storage comms:unlocked archive.enchantment[$(index)]

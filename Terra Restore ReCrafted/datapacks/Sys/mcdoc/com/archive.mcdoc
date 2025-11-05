@@ -1,0 +1,64 @@
+use::java::util::text::Text
+use::mcdoc::com::dialog_mix::DialogMix
+
+struct PlayerData{
+    UID?: int @ -1..,
+    name?: string,
+    UUID?: #[uuid] string,
+    unlocked?: struct{
+        [ArchiveType]?: [int @ 0..]
+    }
+}
+
+enum(string) ArchiveType{
+    tutorial = "tutorial",
+    enchantment = "enchantment",
+    item = "item",
+    enemy = "enemy",
+    location = "location",
+}
+
+dispatch minecraft:storage["comms:unlocked"] to struct{
+    player?: [PlayerData],
+    archive?: struct{
+        tutorial?: [TutorialArchive],
+        enchantment?: [EnchantmentArchive],
+    },
+    temp?: any,
+    list?: any,
+    this?: [struct{title?: Text}],
+    dialog?: struct{
+        this?: DialogMix,
+    },
+    run?: struct{
+        ench?: EnchantmentArchive,
+        random?: struct{title?: Text}
+    }
+}
+
+struct TutorialArchive{
+
+}
+
+struct EnchantmentArchive{
+    index: int @ 0..,
+    key: string,
+    max_level?: int @ 1..,
+    apply_to?: EnchantmentApplyTo,
+    lines?: [Text],
+    title?: Text
+}
+
+enum(string) EnchantmentApplyTo{
+    helmet = "helmet",
+    melee = "melee",
+    tool = "tool",
+    ranged = "ranged",
+    bow = "bow",
+    crossbow = "crossbow",
+    armor = "armor",
+    sword = "sword",
+    chestplate = "chestplate",
+    leggings = "leggings",
+    boots = "boots",
+}

@@ -1,0 +1,1 @@
+$data modify storage comms:unlocked archive.enchantment[0].lines[-1].with[0].translate set value "enchantment.apply_to.$(apply_to)"

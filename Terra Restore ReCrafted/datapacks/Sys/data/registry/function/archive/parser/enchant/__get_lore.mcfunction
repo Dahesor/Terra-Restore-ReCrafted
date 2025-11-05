@@ -1,0 +1,1 @@
+$data modify storage comms:unlocked archive.enchantment[0].lines[-1].translate set value "enchantment.$(key).lore"

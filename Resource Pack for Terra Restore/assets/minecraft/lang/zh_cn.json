@@ -1338,18 +1338,6 @@
     "tut.ench.allowed":"  -  适用于: %s",
     "tut.ench.max_level":"  -  最大等级: %s",
     "tut.ench.lore":"  -  %s",
-    "enchantment.sharpness.lore":"增加造成的基础近战伤害。伤害的大小取决于魔咒等级。\n  对横扫伤害只有20%%的效果。",
-    "enchantment.tenacity.lore":"坚韧描述",
-    "enchantment.armor.lore":"当前生命值至少为95%%时，提供（1 + 2 × 等级）点魔咒保护系数。\n   此外，被隐身敌人击中时，使其短时间高亮。",
-    "enchantment.holy_light.lore":"受到来自亡灵生物的攻击时，每级提供2点魔咒保护系数。",
-    "enchantment.darkmare.lore":"暗魇描述",
-    "enchantment.stun.lore":"近战击中目标有概率使其短时间内无法移动。高等级魔咒可以提高概率和持续时间。",
-    "enchantment.evaporate.lore":"近战击中正在着火的敌人时，根据魔咒等级，按一定比例提升造成的伤害；作为代价，熄灭敌人身上的火焰。",
-    "enchantment.corrosion.lore":"近战击中敌人会降低其护甲值与护甲任性，持续一段时间。",
-    "enchantment.block.lore":"有概率挡下至少6格开外敌人朝你射击的箭矢，不受任何伤害。",
-    "enchantment.unyielding.lore":"生命值低于一半时，每级提供2点魔咒保护系数。",
-    "enchantment.sword_wind.lore":"每级增加0.3格的攻击距离。",
-    "enchantment.weaken.lore":"近战击中敌人会使其虚弱，持续一段时间。",
     "tut.enchantment_protection":"魔咒保护系数：每点魔咒保护系数减少4%%的大部分伤害。最多计入20点",
     "weapon.sword.rapier":"刺剑",
     "weapon.sword.rapier.lore":"不错的攻击速度与距离，但对群乏力",
@@ -1459,5 +1447,8 @@
     "item.minecraft.golden_sword":"未鉴定的金质刃器",
     "item.minecraft.wooden_sword":"未鉴定的木质刃器",
     "item.minecraft.stone_sword":"未鉴定的石质刃器",
-    "item.minecraft.netherite_sword":"未鉴定的下界合金质刃器"
+    "item.minecraft.netherite_sword":"未鉴定的下界合金质刃器",
+    "menu.custom_options.tooltip": "",
+    "menu.custom_screen_info.tooltip": ""
+
 }

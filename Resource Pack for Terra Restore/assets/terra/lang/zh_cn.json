@@ -117,5 +117,16 @@
     "skill.anvil_form.1":"进入持续(%s)s的铁砧形态",
     "skill.anvil_form.2":"期间在下落中近战击中敌人时，",
     "skill.anvil_form.3":"若脚下2格内有方块，",
-    "skill.anvil_form.4":"则立刻以超高速下砸至地面上"
+    "skill.anvil_form.4":"则立刻以超高速下砸至地面上",
+    "archive.tutorial":"教程",
+    "archive.enchantment":"魔咒",
+    "archive.item":"物品",
+    "archive.enemy":"敌人",
+    "archive.location":"地点",
+    "archive.tutorial.lore":"有关游戏各种机制的说明",
+    "archive.enchantment.lore":"你遇到的所有附魔效果",
+    "archive.item.lore":"各种各样的神奇物品",
+    "archive.enemy.lore":"世界中游荡的敌人",
+    "archive.location.lore":"你发现的所有地点",
+    "archive.nothing":"你还未解锁任何条目"
 }

@@ -13,6 +13,11 @@ data modify storage sys:data events append from storage sys:data player[-1]
 data modify storage sys:data events[-1] merge value {Events:[]}
 data modify storage sys:data player[-1] merge value {skill:[],ability:{off:{},right:{},shift:{}}}
 
+#初始化玩家图鉴
+data modify storage comms:unlocked player append value {UID:-1,name:"",UUID:"0-0-0-0-0",unlocked:{}}
+data modify storage comms:unlocked player[-1].UID set from storage sys:data player[-1].UID
+data modify storage comms:unlocked player[-1].UUID set from storage sys:data player[-1].UUID
+data modify storage comms:unlocked player[-1].name set from storage sys:data player[-1].name
 
 scoreboard players set @s tp 0
 execute positioned 0 9 0 run function sys:player/life/set_spawn

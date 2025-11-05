@@ -1,0 +1,62 @@
+{
+    "type": "notice",
+    "title": {"translate": "ui.archive"},
+    "pause": false,
+    "can_close_with_escape": true,
+    "action": {
+        "label": {"translate": "gui.ok"},
+        "action": {
+            "type": "run_command",
+            "command": "/trigger menu.archive set -1"
+        }
+    },
+    "after_action": "none",
+    "body": [
+        {"type":"plain_message","contents": ""},
+        {
+            "type": "item","item": {"id":"knowledge_book"},
+            "show_tooltip": false, "show_decorations": false,
+            "description": [
+                {"text": " ","click_event": {"action": "run_command","command": "/trigger menu.archive set 101"}},
+                {"translate": "archive.tutorial","color": "green","underlined": true},"    ",
+                {"translate": "archive.tutorial.lore","color":"gray"}
+            ]
+        },
+        {
+            "type": "item","item": {"id":"heart_of_the_sea"},
+            "show_tooltip": false, "show_decorations": false,
+            "description": [
+                {"text": " ","click_event": {"action": "run_command","command": "/trigger menu.archive set 102"}},
+                {"translate": "archive.item","color": "aqua","underlined": true},"    ",
+                {"translate": "archive.item.lore","color":"gray"}
+            ]
+        },
+        {
+            "type": "item","item": {"id":"iron_sword","components": {"item_model": "terra:item/weapon/sword/iron_sword"}},
+            "show_tooltip": false, "show_decorations": false,
+            "description": [
+                {"text": " ","click_event": {"action": "run_command","command": "/trigger menu.archive set 103"}},
+                {"translate": "archive.enemy","color": "red","underlined": true},"    ",
+                {"translate": "archive.enemy.lore","color":"gray"}
+            ]
+        },
+        {
+            "type": "item","item": {"id":"map"},
+            "show_tooltip": false, "show_decorations": false,
+            "description": [
+                {"text": " ","click_event": {"action": "run_command","command": "/trigger menu.archive set 104"}},
+                {"translate": "archive.location","color": "white","underlined": true},"    ",
+                {"translate": "archive.location.lore","color":"gray"}
+            ]
+        },
+        {
+            "type": "item","item": {"id":"enchanted_book","components": {"enchantment_glint_override": true}},
+            "show_tooltip": false, "show_decorations": false,
+            "description": [
+                {"text": " ","click_event": {"action": "run_command","command": "/trigger menu.archive set 105"}},
+                {"translate": "archive.enchantment","color": "light_purple","underlined": true},"    ",
+                {"translate": "archive.enchantment.lore","color":"gray"}
+            ]
+        }
+    ]
+}

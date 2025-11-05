@@ -85,6 +85,9 @@ scoreboard objectives add max_hp_cache dummy
 scoreboard objectives add saved_blink dummy
 scoreboard objectives add HP.absorb dummy
 scoreboard objectives add player_slot dummy
+scoreboard objectives add menu.archive trigger
+scoreboard objectives add entry.archive trigger
+scoreboard objectives add screen.archive dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

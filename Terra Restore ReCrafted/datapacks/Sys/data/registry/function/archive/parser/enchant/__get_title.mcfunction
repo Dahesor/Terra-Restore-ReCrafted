@@ -1,0 +1,1 @@
+$data modify storage comms:unlocked archive.enchantment[0].title.translate set value "enchantment.$(key)"
