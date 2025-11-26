@@ -5,4 +5,5 @@ level.dat_old
 session.lock
 copy.bat
 **/.VSCodeCounter/**
+**/.vscode/**
 **/__pycache__/**
