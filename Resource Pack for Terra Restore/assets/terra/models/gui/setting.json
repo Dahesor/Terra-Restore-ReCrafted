@@ -1,6 +1,6 @@
 {
     "parent": "terra:background",
     "textures": {
-      "layer0": "block/redstone_torch"
+      "layer0": "terra:display/virtual_block/redstone_torch"
     }
 }

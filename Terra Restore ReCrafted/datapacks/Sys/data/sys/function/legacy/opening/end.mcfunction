@@ -1,10 +1,10 @@
 scoreboard objectives remove opening
-gamerule maxEntityCramming 24
-gamerule doMobSpawning true
-gamerule doMobLoot true
-gamerule doDaylightCycle true
-gamerule mobGriefing true
-gamerule doTileDrops true
+gamerule max_entity_cramming 24
+gamerule spawn_mobs true
+gamerule mob_drops true
+gamerule advance_time true
+gamerule mob_griefing true
+gamerule block_drops true
 effect clear @a invisibility
 effect clear @a weakness
 time set day

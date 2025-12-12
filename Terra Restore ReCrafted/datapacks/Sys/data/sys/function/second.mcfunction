@@ -2,7 +2,7 @@ execute as @e[type=marker,tag=sign_util,tag=!post1.21.5] at @s run function sys:
 
 execute as @e[type=#sys:need_ticking,distance=0..,tag=second_ticking] at @s run function sys:mob/ticking/second
 
-gamerule keepInventory true
+gamerule keep_inventory true
 
 execute if loaded 3096 115 -1144 run function sys:legacy/13_utils/ladder/blink
 

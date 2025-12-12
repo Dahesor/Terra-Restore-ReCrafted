@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "type": "directory",
+            "source": "disc",
+            "prefix": "disc/"
+        },
+        {
+            "type":"single",
+            "resource":"terra:blank"
+        },
+        {
+            "type": "directory",
+            "source": "display",
+            "prefix": "display/"
+        }
+    ]
+}
