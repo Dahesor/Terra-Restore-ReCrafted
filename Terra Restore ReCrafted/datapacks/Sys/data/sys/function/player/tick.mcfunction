@@ -41,9 +41,6 @@ execute if score @s warped_stick matches 1.. run function sys:dev/mark_cb
 #离开游戏
 execute if score @s leave_game matches 1.. run function sys:player/life/left_game
 
-#Legacy玩家检测
-execute if score @s region matches 6 run function sys:legacy/misc/uhc_foodcheck
-
 #TP检查
 execute unless score @s tp matches 0 if score @s[tag=!tper] UID matches 1.. run function sys:player/utils/tp/sender/check_valid
 execute if score @s tp_cd matches 1.. run function sys:player/utils/tp/sender/ticker

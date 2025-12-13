@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "ate":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "golden_apple"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/hp/items/golden_apple"
+    }
+}

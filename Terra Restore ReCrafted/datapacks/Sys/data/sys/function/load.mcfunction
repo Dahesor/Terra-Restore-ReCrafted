@@ -92,6 +92,7 @@ scoreboard objectives add monitor.HP dummy
 scoreboard objectives add monitor.Shield dummy
 scoreboard objectives add food_timer dummy
 scoreboard objectives add natural_regen dummy
+scoreboard objectives add hp_absorb_cache dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1
