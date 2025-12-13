@@ -81,13 +81,17 @@ scoreboard objectives add const dummy
 scoreboard objectives add sub_ui dummy
 scoreboard objectives add display.SHIELD dummy
 scoreboard objectives add highHpTick dummy
-scoreboard objectives add max_hp_cache dummy
+scoreboard objectives add MAX_HP dummy
 scoreboard objectives add saved_blink dummy
 scoreboard objectives add HP.absorb dummy
 scoreboard objectives add player_slot dummy
 scoreboard objectives add menu.archive trigger
 scoreboard objectives add entry.archive trigger
 scoreboard objectives add screen.archive dummy
+scoreboard objectives add monitor.HP dummy
+scoreboard objectives add monitor.Shield dummy
+scoreboard objectives add food_timer dummy
+scoreboard objectives add natural_regen dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

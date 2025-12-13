@@ -128,5 +128,6 @@
     "archive.item.lore":"各种各样的神奇物品",
     "archive.enemy.lore":"世界中游荡的敌人",
     "archive.location.lore":"你发现的所有地点",
-    "archive.nothing":"你还未解锁任何条目"
+    "archive.nothing":"你还未解锁任何条目",
+    "death.attack.dead.message":"§c❌ %1$s"
 }

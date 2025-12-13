@@ -8,8 +8,7 @@
           "type": "minecraft:special",
           "base": "terra:item/ground_head",
           "model": {
-            "type": "minecraft:head",
-            "kind": "player"
+            "type": "minecraft:player_head"
           }
         }
       }
@@ -18,8 +17,7 @@
       "type": "minecraft:special",
       "base": "minecraft:item/template_skull",
       "model": {
-        "type": "minecraft:head",
-        "kind": "player"
+        "type": "minecraft:player_head"
       }
     },
     "property": "custom_model_data",

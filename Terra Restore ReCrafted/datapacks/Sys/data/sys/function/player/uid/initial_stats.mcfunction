@@ -15,11 +15,15 @@ scoreboard players set @s CRIT.CHANCE 50
 scoreboard players set @s MP 300
 scoreboard players set @s MAX_MP 300
 scoreboard players set @s MP_REGEN 10
+scoreboard players set @s MAX_HP 2000
 scoreboard players set @s dodge_chance 10
 
 attribute @s attack_speed base set 2
 attribute @s entity_interaction_range base set 2
+attribute @s max_absorption base set 1024
+attribute @s max_health base set 1024
 scoreboard players set @s skill.right 1
 scoreboard players set @s skill.off 1
 scoreboard players set @s menu.archive 0
 scoreboard players set @s entry.archive -1
+scoreboard players set @s natural_regen 800

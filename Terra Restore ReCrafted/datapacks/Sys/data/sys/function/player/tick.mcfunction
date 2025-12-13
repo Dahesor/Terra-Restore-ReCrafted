@@ -48,8 +48,17 @@ execute if score @s region matches 6 run function sys:legacy/misc/uhc_foodcheck
 execute unless score @s tp matches 0 if score @s[tag=!tper] UID matches 1.. run function sys:player/utils/tp/sender/check_valid
 execute if score @s tp_cd matches 1.. run function sys:player/utils/tp/sender/ticker
 
+#生命值计算
+function sys:player/hp/check
+
+#生命恢复
+function sys:player/hp/regen/ticker
+
 #存储生命值
 function sys:player/bar/hp/re_record
+
+#击杀
+execute if score @s HP.dry matches ..0 run damage @s 999999999 sys:silent
 
 #图鉴按钮
 execute unless score @s menu.archive matches 0 run function comms:trigs/menu

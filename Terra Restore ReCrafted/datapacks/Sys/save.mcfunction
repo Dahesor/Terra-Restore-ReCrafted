@@ -1,1 +1,0 @@
-give @s player_head[profile={name:"Dahesor"}]

@@ -35,7 +35,6 @@ execute if score @s region matches 100 run function sys:player/utils/in_base
 execute unless score @s version >= %sys version run function sys:player/updates/2/main
 
 #更新最大生命值
-execute store result score @s max_hp_cache run attribute @s max_health get 100
 function sys:player/bar/hp/redraw
 function sys:player/bar/hp/redraw_absorb
 
@@ -43,7 +42,7 @@ function sys:player/bar/hp/redraw_absorb
 function sys:player/bar/mp/regen
 
 #清除伤害吸收
-effect clear @s absorption
+#effect clear @s absorption
 
 #发光
 execute if score $player data matches 2.. run effect give @s glowing 2 0 true

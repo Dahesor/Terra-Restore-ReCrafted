@@ -1,2 +1,2 @@
-execute store result score %this HP.absorb run data get entity @s AbsorptionAmount 100
+scoreboard players operation %this HP.absorb = @s HP.absorb
 function sys:player/bar/hp/absorb

@@ -1,6 +1,19 @@
 {
     "model": {
-        "type": "model",
-        "model": "terra:item/unidentified/wooden_blade"
+        "type": "select",
+        "property": "display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "model",
+                    "model": "terra:item/unidentified/wooden_blade"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "item/wooden_sword"
+        }
     }
 }

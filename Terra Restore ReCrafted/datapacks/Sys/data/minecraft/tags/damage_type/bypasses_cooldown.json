@@ -2,6 +2,7 @@
     "values": [
         "player_attack",
         "arrow",
-        "sys:crit_dmg"
+        "sys:crit_dmg",
+        "sys:silent"
     ]
 }

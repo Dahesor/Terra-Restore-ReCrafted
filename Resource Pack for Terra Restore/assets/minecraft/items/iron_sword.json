@@ -1,6 +1,19 @@
 {
     "model": {
-        "type": "model",
-        "model": "terra:item/unidentified/iron_blade"
+        "type": "select",
+        "property": "display_context",
+        "cases": [
+            {
+                "when": "gui",
+                "model": {
+                    "type": "model",
+                    "model": "terra:item/unidentified/iron_blade"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "item/iron_sword"
+        }
     }
 }
