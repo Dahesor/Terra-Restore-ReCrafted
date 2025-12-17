@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "effect":{
+            "trigger": "effects_changed",
+            "conditions": {}
+        }
+    },
+    "rewards": {
+        "function": "dfh:hp/effects_update"
+    }
+}

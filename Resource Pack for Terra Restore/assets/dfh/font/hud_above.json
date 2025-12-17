@@ -1,0 +1,83 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "include/space"
+        },
+        {
+            "type": "space",
+            "advances": {
+                "*": -2,
+                "=": 10,
+                "Q": 72,
+                "W": 2,
+                "q": -78,
+                ".": 15,
+                ",": -15
+            }
+        },
+        {
+            "type": "bitmap",
+            "ascent": 4,
+            "height":9,
+            "chars": ["z"],
+            "file": "dfh:gui/hud/ench_def_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": 4,
+            "height": 9,
+            "chars": ["x"],
+            "file": "dfh:gui/hud/ench_def_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -7,
+            "height":9,
+            "chars": ["c"],
+            "file": "dfh:gui/hud/armor_toughness_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -7,
+            "height": 9,
+            "chars": ["v"],
+            "file": "dfh:gui/hud/armor_toughness_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height":9,
+            "chars": ["b"],
+            "file": "dfh:gui/hud/20_plus_armor_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height": 9,
+            "chars": ["n"],
+            "file": "dfh:gui/hud/20_plus_armor_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height":9,
+            "chars": ["m"],
+            "file": "dfh:gui/hud/armor_empty.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height":9,
+            "chars": ["B"],
+            "file": "dfh:gui/hud/armor_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height": 9,
+            "chars": ["N"],
+            "file": "dfh:gui/hud/armor_half.png"
+        }
+    ]
+}

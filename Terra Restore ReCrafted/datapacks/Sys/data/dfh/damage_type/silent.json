@@ -1,0 +1,7 @@
+{
+    "exhaustion": 0.0,
+    "message_id": "dead",
+    "scaling": "never",
+    "effects": "poking",
+    "death_message_type": "intentional_game_design"
+}

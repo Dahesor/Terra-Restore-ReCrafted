@@ -1,0 +1,64 @@
+enum(string) dah_flags{
+    /// The command will be run by the server, not the entity
+    no_executer = "no_executer",
+    /// Output debug information to chat
+    debug = "debug",
+    /// It will try to resolve the current dimension. Assumes minecraft:overworld if fail.
+    try_dimension = "try_dimension",
+}
+
+dispatch minecraft:storage["dah.sch:new"] to struct{
+    new: dah_task_raw,
+}
+
+struct dah_task_raw {
+    /// The command to run. No slash. *REQUIRED*
+    run?: #[command] string,
+    /// The number of ticks to wait before running the command.  *REQUIRED*
+    time?: int,
+    /// Specifies the dimension to run the command in. If not specified, the command will always run in minecraft:overworld.
+    in?: #[id="dimension"] string,
+    /// What to do if the target entity is not found. Defaults to "discard". Options:
+    ///     discard: Do nothing and remove the task.
+    ///     delay: *FOR PLAYER* The timer ticks when the player is offline, but it only executes until the player go back online
+    ///     pause: *FOR PLAYER* Wait for the player to go back online. Timer freezes when the player is offline.
+    ///     by_server: The command will be run by the server, not the entity.
+    offline?: dah_offline,
+    /// Defines extra behavior for the task. Options:
+    ///     no_executer: The command will be run by server.
+    ///     debug: Output debug information to chat.
+    ///     try_dimension: It will try to resolve the current dimension. Assumes minecraft:overworld if fail.
+    flags?: [dah_flags],
+}
+
+struct dah_player{
+    task?: [dah_player_task],
+    pause?: [dah_player_task],
+    UID?: int @ -1..,
+    uuid?: #[uuid] string,
+}
+
+
+struct dah_player_task{
+    on?: int,
+    run?: #[command] string,
+    pos_x:double,
+    pos_y:double,
+    pos_z:double,
+    rot_x?: float,
+    rot_y?: float,
+    offline?: dah_offline,
+    flags?: [dah_flags],
+    by?: #[uuid] string,
+}
+
+enum(string) dah_offline{
+    ///discard: Do nothing and remove the task.
+    discard = "discard",
+    ///delay: **FOR PLAYER** The timer ticks when the player is offline, but it only executes until the player go back online
+    delay = "delay",
+    ///pause: **FOR PLAYER** Wait for the player to go back online. Timer freezes when the player is offline.
+    pause = "pause",
+    ///by_server: The command will be run by the server, not the entity.
+    by_server = "by_server"
+}

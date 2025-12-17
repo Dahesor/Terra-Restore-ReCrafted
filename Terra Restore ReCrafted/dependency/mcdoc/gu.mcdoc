@@ -1,0 +1,6 @@
+dispatch minecraft:storage["gu:main"] to struct {
+    ///输入端
+    in?: any,
+    ///输出端
+    out?: "string"
+}

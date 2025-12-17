@@ -1,4 +1,6 @@
 function dah.actbar_mixer:z_private/uid/get
+return fail
+#[!]
 execute if entity @s[gamemode=spectator] run return run data modify storage dah:actbar data[0].content[{id:"mp"}].text set value {text:""}
 
 scoreboard players operation #temp calculator = @s MP

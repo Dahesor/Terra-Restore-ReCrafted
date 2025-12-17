@@ -25,4 +25,4 @@ function sys:player/stats/calcs/get_final
 #Head
 execute unless entity @s[tag=__shulker] run function sys:player/stats/display
 
-function sys:player/stats/hud
+#function sys:player/stats/hud

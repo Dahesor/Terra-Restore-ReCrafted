@@ -2,7 +2,7 @@
 	"env": {
 		"dataSource": "GitHub",
 		"dependencies": [
-			"file:///C:/Users/dahes/Documents/.minecraft/versions/Terra%20Restore%20Dev/saves/Terra%20Restore%20ReCrafted/dependency.zip",
+			"file:///C:/Users/dahes/Documents/.minecraft/versions/Terra%20Restore%20Dev/saves/Terra%20Restore%20ReCrafted/dependency/",
 			"file:///C:/Users/dahes/Documents/.minecraft/versions/Terra%20Restore%20Dev/resourcepacks/Resource%20Pack%20for%20Terra%20Restore/",
 			"@vanilla-datapack",
 			"@vanilla-resourcepack",

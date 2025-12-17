@@ -1,6 +1,4 @@
-
-
-
+execute if score $by_entity dfh.var matches 1 run scoreboard players set $dmg dfh.var 100
 return 1
 
 

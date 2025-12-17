@@ -1,0 +1,3 @@
+dispatch minecraft:storage[dtm:output] to struct{
+    output?: [double]
+}

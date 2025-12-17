@@ -34,10 +34,6 @@ execute if score @s region matches 100 run function sys:player/utils/in_base
 #系统更新
 execute unless score @s version >= %sys version run function sys:player/updates/2/main
 
-#更新最大生命值
-function sys:player/bar/hp/redraw
-function sys:player/bar/hp/redraw_absorb
-
 #蓝量回复
 function sys:player/bar/mp/regen
 

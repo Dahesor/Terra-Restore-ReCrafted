@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "effect":{
+            "trigger": "any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "block_state_property",
+                        "block": "cake"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "dfh:logic/regen/cake"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "changed":{
+            "trigger": "inventory_changed",
+            "conditions": {}
+        }
+    },
+    "rewards": {
+        "function": "dfh:stats/equipment_changed"
+    }
+}

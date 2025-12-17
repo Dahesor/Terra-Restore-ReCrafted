@@ -3,6 +3,7 @@
         "player_attack",
         "arrow",
         "sys:crit_dmg",
-        "sys:silent"
+        "sys:silent",
+        "dfh:silent"
     ]
 }

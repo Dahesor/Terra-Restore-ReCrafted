@@ -1,5 +1,6 @@
 {
     "values": [
-        "sys:silent"
+        "sys:silent",
+        "dfh:silent"
     ]
 }

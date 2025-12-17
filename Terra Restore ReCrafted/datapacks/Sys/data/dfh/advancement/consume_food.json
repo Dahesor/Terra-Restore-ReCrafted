@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "effect":{
+            "trigger": "consume_item"
+        }
+    },
+    "rewards": {
+        "function": "dfh:logic/regen/food"
+    }
+}

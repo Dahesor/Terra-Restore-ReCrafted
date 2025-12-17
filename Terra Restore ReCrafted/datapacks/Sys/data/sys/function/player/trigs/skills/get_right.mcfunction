@@ -1,3 +1,7 @@
+gamemode spectator
+gamemode adventure
+
+
 scoreboard players set $skill_slot calculator 1
 scoreboard players set @s right_trigger 0
 execute if score @s right.pause matches 1.. run return fail

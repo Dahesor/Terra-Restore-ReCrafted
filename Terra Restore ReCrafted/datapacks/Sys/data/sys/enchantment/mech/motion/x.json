@@ -1,0 +1,26 @@
+{
+  "description": "",
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {"base": 0, "per_level_above_first": 0},
+  "max_cost": {"base": 0, "per_level_above_first": 0},
+  "anvil_cost": 0,
+  "slots": ["saddle"],
+  "effects": {
+    "location_changed": [
+      {
+        "effect": {
+          "type": "apply_impulse",
+          "direction": [-1.6331238640577083e+16,1,0],
+          "coordinate_scale": [0,0,-0.0001],
+          "magnitude": {
+            "type": "linear",
+            "base": 16777216,
+            "per_level_above_first": 16777216
+          }
+        }
+      }
+    ]
+  }
+}

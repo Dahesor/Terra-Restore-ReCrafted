@@ -26,6 +26,6 @@ scoreboard players set @s skill.right 1
 scoreboard players set @s skill.off 1
 scoreboard players set @s menu.archive 0
 scoreboard players set @s entry.archive -1
-scoreboard players set @s natural_regen 800
+scoreboard players set @s dfh.Regen 800
 scoreboard players set @s HP.dry 2000
 scoreboard players set @s HP.absorb 0

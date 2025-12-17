@@ -1,0 +1,304 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "include/space"
+        },
+        {
+            "type": "space",
+            "advances": {
+                "*": -2,
+                "=": 10,
+                "Q": 72,
+                "W": 2,
+                "q": -78,
+                ".": 15,
+                ",": -15
+            }
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height":9,
+            "chars": ["z"],
+            "file": "dfh:gui/hud/ench_def_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -6,
+            "height": 9,
+            "chars": ["x"],
+            "file": "dfh:gui/hud/ench_def_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -17,
+            "height":9,
+            "chars": ["c"],
+            "file": "dfh:gui/hud/armor_toughness_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -17,
+            "height": 9,
+            "chars": ["v"],
+            "file": "dfh:gui/hud/armor_toughness_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -16,
+            "height":9,
+            "chars": ["m"],
+            "file": "dfh:gui/hud/armor_empty.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -16,
+            "height":9,
+            "chars": ["B"],
+            "file": "dfh:gui/hud/armor_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -16,
+            "height": 9,
+            "chars": ["N"],
+            "file": "dfh:gui/hud/armor_half.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -16,
+            "height":9,
+            "chars": ["b"],
+            "file": "dfh:gui/hud/20_plus_armor_full.png"
+        },
+        {
+            "type": "bitmap",
+            "ascent": -16,
+            "height": 9,
+            "chars": ["n"],
+            "file": "dfh:gui/hud/20_plus_armor_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["s"],"file": "dfh:gui/hud/hearts/normal/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["d"],"file": "dfh:gui/hud/hearts/normal/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["a"],"file": "dfh:gui/hud/hearts/layers/1.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["f"],"file": "dfh:gui/hud/hearts/normal/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["S"],"file": "dfh:gui/hud/hearts/normal/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["D"],"file": "dfh:gui/hud/hearts/normal/half_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["A"],"file": "dfh:gui/hud/hearts/layers/1_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["p"],"file": "dfh:gui/hud/hearts/layers/2.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["P"],"file": "dfh:gui/hud/hearts/layers/2_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["["],"file": "dfh:gui/hud/hearts/layers/3.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["{"],"file": "dfh:gui/hud/hearts/layers/3_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["]"],"file": "dfh:gui/hud/hearts/layers/4.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["}"],"file": "dfh:gui/hud/hearts/layers/4_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["/"],"file": "dfh:gui/hud/hearts/layers/5.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["?"],"file": "dfh:gui/hud/hearts/layers/5_blinking.png"
+        },
+
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["g"],"file": "dfh:gui/hud/hearts/poisoned/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["h"],"file": "dfh:gui/hud/hearts/poisoned/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["F"],"file": "dfh:gui/hud/hearts/poisoned/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["G"],"file": "dfh:gui/hud/hearts/poisoned/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["H"],"file": "dfh:gui/hud/hearts/poisoned/half_blinking.png"
+        },
+
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["j"],"file": "dfh:gui/hud/hearts/withered/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["k"],"file": "dfh:gui/hud/hearts/withered/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["l"],"file": "dfh:gui/hud/hearts/withered/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["J"],"file": "dfh:gui/hud/hearts/withered/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["K"],"file": "dfh:gui/hud/hearts/withered/half_blinking.png"
+        },
+
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["e"],"file": "dfh:gui/hud/hearts/roll_2/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["r"],"file": "dfh:gui/hud/hearts/roll_2/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["t"],"file": "dfh:gui/hud/hearts/roll_2/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["E"],"file": "dfh:gui/hud/hearts/roll_2/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["R"],"file": "dfh:gui/hud/hearts/roll_2/half_blinking.png"
+        },
+
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["y"],"file": "dfh:gui/hud/hearts/roll_3/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["u"],"file": "dfh:gui/hud/hearts/roll_3/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["T"],"file": "dfh:gui/hud/hearts/roll_3/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["Y"],"file": "dfh:gui/hud/hearts/roll_3/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["U"],"file": "dfh:gui/hud/hearts/roll_3/half_blinking.png"
+        },
+
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["i"],"file": "dfh:gui/hud/hearts/roll_4/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["o"],"file": "dfh:gui/hud/hearts/roll_4/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["1"],"file": "dfh:gui/hud/hearts/roll_4/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["I"],"file": "dfh:gui/hud/hearts/roll_4/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["O"],"file": "dfh:gui/hud/hearts/roll_4/half_blinking.png"
+        },
+
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["2"],"file": "dfh:gui/hud/hearts/roll_5/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["3"],"file": "dfh:gui/hud/hearts/roll_5/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["!"],"file": "dfh:gui/hud/hearts/roll_5/overhalf.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["@"],"file": "dfh:gui/hud/hearts/roll_5/full_blinking.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["#"],"file": "dfh:gui/hud/hearts/roll_5/half_blinking.png"
+        },
+
+
+
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["4"],"file": "dfh:gui/hud/hearts/absorb/full.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["$"],"file": "dfh:gui/hud/hearts/absorb/half.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["5"],"file": "dfh:gui/hud/hearts/absorb/2_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["%"],"file": "dfh:gui/hud/hearts/absorb/2_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["6"],"file": "dfh:gui/hud/hearts/absorb/3_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["^"],"file": "dfh:gui/hud/hearts/absorb/3_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["7"],"file": "dfh:gui/hud/hearts/absorb/4_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["&"],"file": "dfh:gui/hud/hearts/absorb/4_half.png"
+        }
+    ]
+}

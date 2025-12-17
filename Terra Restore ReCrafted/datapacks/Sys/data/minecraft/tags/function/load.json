@@ -1,5 +1,6 @@
 {
     "values": [
-        "sys:load"
+        "sys:load",
+        "dfh:load"
     ]
 }
