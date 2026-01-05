@@ -44,4 +44,4 @@ scoreboard players remove #temp2 calculator 100
 execute store result entity @s attributes[{id:"minecraft:knockback_resistance"}].modifiers[{id:"sys:factor"}].amount double 0.01 run scoreboard players get #temp2 calculator
 
 execute store result entity @s Health float 1 run attribute @s max_health get
-execute store result score @s hp_cache run attribute @s max_health get 100
+execute store result score @s dfh.hp_cache run attribute @s max_health get 100

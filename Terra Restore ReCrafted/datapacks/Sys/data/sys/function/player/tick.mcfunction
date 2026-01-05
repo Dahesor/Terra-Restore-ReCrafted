@@ -46,7 +46,7 @@ execute unless score @s tp matches 0 if score @s[tag=!tper] UID matches 1.. run 
 execute if score @s tp_cd matches 1.. run function sys:player/utils/tp/sender/ticker
 
 #击杀
-execute if score @s HP.dry matches ..0 run function sys:core/operation/kill
+execute if score @s dfh.HP matches ..0 run function sys:core/operation/kill
 
 #图鉴按钮
 execute unless score @s menu.archive matches 0 run function comms:trigs/menu

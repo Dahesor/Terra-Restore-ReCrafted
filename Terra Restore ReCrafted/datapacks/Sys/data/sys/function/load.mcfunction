@@ -66,11 +66,9 @@ scoreboard objectives add CRIT.DAM dummy
 scoreboard objectives add sweep_counter dummy
 scoreboard objectives add dmg dummy
 scoreboard objectives add dmg_TimeStamp dummy
-scoreboard objectives add hp_cache dummy
 scoreboard objectives add MAX_MP dummy
 scoreboard objectives add MP dummy
 scoreboard objectives add MP_REGEN dummy
-scoreboard objectives add HP.dry dummy
 scoreboard objectives add enchant.corrosion dummy
 scoreboard objectives add sweep_recorder dummy
 scoreboard objectives add registry dummy
@@ -80,19 +78,10 @@ scoreboard objectives add hit_chance dummy
 scoreboard objectives add const dummy
 scoreboard objectives add sub_ui dummy
 scoreboard objectives add display.SHIELD dummy
-scoreboard objectives add highHpTick dummy
-scoreboard objectives add MAX_HP dummy
-scoreboard objectives add saved_blink dummy
-scoreboard objectives add HP.absorb dummy
 scoreboard objectives add player_slot dummy
 scoreboard objectives add menu.archive trigger
 scoreboard objectives add entry.archive trigger
 scoreboard objectives add screen.archive dummy
-#scoreboard objectives add monitor.HP dummy
-#scoreboard objectives add dfh.monitor.Shield dummy
-#scoreboard objectives add dfh.food_timer dummy
-#scoreboard objectives add dfh.Regen dummy
-#scoreboard objectives add hp_absorb_cache dummy
 
 execute unless score %sys data matches 1.. run function sys:plugin/updates/1
 scoreboard players set %sys version 1

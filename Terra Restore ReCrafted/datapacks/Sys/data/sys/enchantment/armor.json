@@ -23,7 +23,7 @@
                     "value": {
                         "type": "score",
                         "target": "this",
-                        "score": "HP.dry"
+                        "score": "dfh.HP"
                     },
                     "range": {
                         "min": {
