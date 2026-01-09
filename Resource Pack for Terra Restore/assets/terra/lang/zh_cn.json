@@ -66,6 +66,11 @@
     "skill.arrow_storm": "箭雨",
     "skill.arrow_storm.1": "向前方发射大量箭矢",
     "skill.arrow_storm.2": "箭雨",
+    "skill.soul_fire": "灵魂火",
+    "skill.soul_fire.1": "在接下来的0.5秒内",
+    "skill.soul_fire.2": "消耗当前生命值的50%%",
+    "skill.soul_fire.3": "每消耗2点生命值，",
+    "skill.soul_fire.4": "增加%1$s的基础攻击力，持续%2$s秒",
     "ui.setting": "设置",
     "ui.setting.1": "在这里修改个人偏好设置",
     "ui.setting.2": "或修复游戏音乐等问题",
@@ -129,5 +134,9 @@
     "archive.enemy.lore":"世界中游荡的敌人",
     "archive.location.lore":"你发现的所有地点",
     "archive.nothing":"你还未解锁任何条目",
-    "death.attack.dead.message":"§c❌ %1$s"
+    "death.attack.dead.message":"§c❌ %1$s",
+    "item.skill_book":"§a技能书：%s",
+    "action.learn":"%s以学习",
+    "action.already_learned":"[!] 你已经学会该技能了",
+    "action.learn_success":"§a[!] 你学会了新技能§f[%s§f]。\n   §e在玩家面板中查看或装备"
 }

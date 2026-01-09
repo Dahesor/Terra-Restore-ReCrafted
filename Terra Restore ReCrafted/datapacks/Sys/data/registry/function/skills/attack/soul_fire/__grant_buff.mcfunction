@@ -1,0 +1,1 @@
+$attribute @s attack_damage modifier add registry:skill/soul_fire $(int) add_value

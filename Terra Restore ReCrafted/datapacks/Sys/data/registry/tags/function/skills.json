@@ -5,6 +5,7 @@
         "registry:skills/defence/battle_cry/meta",
         "registry:skills/attack/arrow_storm/meta",
         "registry:skills/defence/shields/basic/meta",
-        "registry:skills/attack/anvil_form/meta"
+        "registry:skills/attack/anvil_form/meta",
+        "registry:skills/attack/soul_fire/meta"
     ]
 }

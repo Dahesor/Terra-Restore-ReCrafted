@@ -16,7 +16,8 @@
             {"namespace": "minecraft","path": "recipe/rabbit_stew_from_red_mushroom"},
             {"namespace": "minecraft","path": "recipe/recovery_compass"},
             {"namespace": "minecraft","path": "recipe/carrot_on_a_stick"},
-            {"namespace": "minecraft","path": "recipe/repair_item"}
+            {"namespace": "minecraft","path": "recipe/repair_item"},
+            {"namespace": "minecraft","path": "recipe/recovery_compass"}
         ]
     }
 }

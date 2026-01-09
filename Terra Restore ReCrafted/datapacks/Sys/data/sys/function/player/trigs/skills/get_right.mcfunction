@@ -1,7 +1,3 @@
-gamemode spectator
-gamemode adventure
-
-
 scoreboard players set $skill_slot calculator 1
 scoreboard players set @s right_trigger 0
 execute if score @s right.pause matches 1.. run return fail
@@ -17,7 +13,8 @@ function sys:player/trigs/skills/_get_skill with storage sys:data player[0].abil
 
 execute unless function sys:player/trigs/modify/mp run return run function sys:player/trigs/skills/need_mp
 
-
+scoreboard players set $var const 0
+execute if data storage data SkillData.var store result score $var const run data get storage data SkillData.var
 function sys:player/trigs/skills/execute_skill with storage data SkillData
 
 execute store result score $RawCD calculator run data get storage data SkillData.cd

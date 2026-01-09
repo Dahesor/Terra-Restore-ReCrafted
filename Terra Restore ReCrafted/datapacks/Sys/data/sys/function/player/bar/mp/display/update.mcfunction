@@ -1,6 +1,5 @@
 function dah.actbar_mixer:z_private/uid/get
-return fail
-#[!]
+
 execute if entity @s[gamemode=spectator] run return run data modify storage dah:actbar data[0].content[{id:"mp"}].text set value {text:""}
 
 scoreboard players operation #temp calculator = @s MP
@@ -14,7 +13,7 @@ function sys:player/bar/mp/display/exhust
 function sys:player/bar/mp/display/get_number_space
 
 
-data modify storage data text set value [{text:"",font: "mp",color: "white",shadow_color:0},{score: {name: "@s",objective: "MP"}},"/",{score: {name: "@s",objective: "MAX_MP"}}," ",{text:""}," ",{text:""},{text:""}]
+data modify storage data text set value [{text:"",font: "mp",color: "white",shadow_color:0,extra:["`"]},{score: {name: "@s",objective: "MP"}},"/",{score: {name: "@s",objective: "MAX_MP"}}," ",{text:""}," ",{text:""},{text:""},"`"]
 
 data modify storage data text[0].text set from storage temp offset
 data modify storage data text[5].text set from storage temp bar

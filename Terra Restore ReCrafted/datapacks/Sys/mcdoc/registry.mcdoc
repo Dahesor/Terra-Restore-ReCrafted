@@ -54,9 +54,7 @@ dispatch minecraft:storage["registry:archive"] to struct {
 }
 
 
-struct RawArchive{
-
-}
+struct RawArchive{}
 
 enum(string) ArchiveTypes{
     tutorial = "tutorial",
@@ -92,18 +90,27 @@ struct SkillData{
 }
 
 struct SkillRegistryUnchanged{
+    /// 不重复的技能数字ID
     id?: int,
+    /// 不重复的技能字符串ID
     sid?: SkillSID,
+    /// 技能消耗的魔法值
     mp_cost?: int @ 0..,
     /// 技能冷却时间。单位：0.1秒
     cd?: int @ 0..,
+    /// 可选的输入参数
+    var?: int,
+    /// 技能可升级的方向
+    tree?: [TargetSkill],
     /// 技能冷却缩减后不会小于的最小冷却时间。单位：0.1秒
     min_cd?: int @ 0..,
     /// 进入函数
     entry?: #[id="function"] string,
     flags?: [SkillFlags],
     type?: SkillTypes,
+    /// 技能图标
     icon?: #[id(registry="item_definition")] string,
+    /// 技能可装备的栏位限制
     slot_limit?: struct{
         [SkillSlots] : byte @ 0..1,
     }
@@ -153,6 +160,11 @@ struct RawPrefix{
     },
     negative?: byte @ 0..1,
     for?: [EquipmentClass]
+}
+
+struct TargetSkill{
+    id?: int,
+    cost?: int,
 }
 
 struct Prefix{

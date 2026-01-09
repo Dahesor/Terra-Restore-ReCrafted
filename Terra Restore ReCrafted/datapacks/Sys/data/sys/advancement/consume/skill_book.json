@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "using_skill_book":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "echo_shard"
+                    ],
+                    "predicates": {
+                        "custom_data": {
+                            "skill_book": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "sys:player/utils/skill_book/new_skill"
+    }
+}

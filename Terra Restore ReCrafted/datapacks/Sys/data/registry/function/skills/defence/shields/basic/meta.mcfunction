@@ -17,7 +17,7 @@ data modify storage registry:skill temp append value \
     slot_limit:{right:1b,off:0b,shift:0b},\
     type:"defence",\
     flags:["CON","defence","POW"],\
-    mp_cost:120,\
+    mp_cost:300,\
     cd:120,min_cd:100,\
     icon:"shield",\
     entry:"registry:skills/defence/shields/basic/enter",\

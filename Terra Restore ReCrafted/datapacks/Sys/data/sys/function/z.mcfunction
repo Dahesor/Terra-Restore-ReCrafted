@@ -1,4 +1,5 @@
-execute if score $by_entity dfh.var matches 1 run scoreboard players set $dmg dfh.var 100
+tellraw @s {translate:"action.learn_success",color:"light_purple",with:[{storage:"data",nbt:"custom_data.skill_book.displayName",interpret:true}],hover_event:{action:"show_text",value:{storage:"data",nbt:"custom_data.skill_book.description[]",interpret:true,separator:"\n"}}}
+
 return 1
 
 

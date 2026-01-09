@@ -3,7 +3,7 @@ dialog show @s {type:"multi_action",title:{text:"DEV"},actions:[\
 {label:"1",action:{type:"run_command",command:"/say 1"}},\
 {label:"卡欧矿洞",action:{type:"run_command",command:"/execute in minecraft:overworld run tp @s 663.48 91.83 -2.14 -1600.22 8.70"}},\
 {label:"不详山坡",action:{type:"run_command",command:"/execute in minecraft:overworld run tp @s 757.60 165.74 -662.73 -1986.17 22.05"}},\
-{label:"1",action:{type:"run_command",command:"/say 1"}},\
+{label:"冰封之塔",action:{type:"run_command",command:"/execute in minecraft:overworld run tp @s 544.90 158.24 -1103.83 98.08 46.20"}},\
 {label:"水银矿洞",action:{type:"run_command",command:"/execute in minecraft:overworld run tp @s 848.99 187.00 -1523.64 99.15 5.25"}},\
 {label:"1",action:{type:"run_command",command:"/say 1"}},\
 {label:"1",action:{type:"run_command",command:"/say 1"}},\

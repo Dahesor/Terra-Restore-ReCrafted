@@ -1,3 +1,5 @@
+tellraw @a {score:{name:"$var",objective:"const"}}
+
 data modify storage sys:data new_event set value {id:"SKILL.arrow_storm",time:100,interval:1,run:"function registry:skills/attack/arrow_storm/event_tick"}
 function sys:player/uid/insert_event
 

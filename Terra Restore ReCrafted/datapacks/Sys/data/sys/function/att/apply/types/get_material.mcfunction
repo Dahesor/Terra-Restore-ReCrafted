@@ -1,4 +1,5 @@
 execute if items entity 0-0-0-0-0 container.0 #sys:material/wood run return run data modify storage sys:data item.components."minecraft:item_name".with[1] set value {translate:"material.wood"}
+execute if items entity 0-0-0-0-0 container.0 #sys:material/copper run return run data modify storage sys:data item.components."minecraft:item_name".with[1] set value {translate:"material.copper"}
 execute if items entity 0-0-0-0-0 container.0 #sys:material/leather run return run data modify storage sys:data item.components."minecraft:item_name".with[1] set value {translate:"material.leather"}
 execute if items entity 0-0-0-0-0 container.0 #sys:material/stone run return run data modify storage sys:data item.components."minecraft:item_name".with[1] set value {translate:"material.stone"}
 execute if items entity 0-0-0-0-0 container.0 #sys:material/chainmail run return run data modify storage sys:data item.components."minecraft:item_name".with[1] set value {translate:"material.chainmail"}
