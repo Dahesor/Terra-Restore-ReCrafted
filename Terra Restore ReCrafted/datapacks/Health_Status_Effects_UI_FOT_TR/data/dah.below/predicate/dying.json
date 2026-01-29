@@ -1,0 +1,9 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "dfh.HP": {
+            "max": 500
+        }
+    }
+}

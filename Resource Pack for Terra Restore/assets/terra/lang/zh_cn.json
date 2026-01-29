@@ -135,6 +135,7 @@
     "archive.location.lore":"你发现的所有地点",
     "archive.nothing":"你还未解锁任何条目",
     "death.attack.dead.message":"§c❌ %1$s",
+    "death.attack.dfh_dead.message":"§c❌ %1$s",
     "item.skill_book":"§a技能书：%s",
     "action.learn":"%s以学习",
     "action.already_learned":"[!] 你已经学会该技能了",

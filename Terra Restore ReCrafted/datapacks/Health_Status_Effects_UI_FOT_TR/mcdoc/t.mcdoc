@@ -1,0 +1,13 @@
+use ::java::util::effect::MobEffectInstance
+use ::java::util::text::Text
+
+dispatch minecraft:storage["dah.below:m"] to struct {
+    t?: struct{
+        number?: int,
+        format?: Text,
+        ef?: [string] @ 0..,
+        new?: string,
+        ram?: [MobEffectInstance],
+        loc?: Text
+    }
+}

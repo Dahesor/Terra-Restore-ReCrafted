@@ -1,6 +1,5 @@
 {
     "values": [
-        "sys:tick",
-        "dfh:tick"
+        "sys:tick"
     ]
 }

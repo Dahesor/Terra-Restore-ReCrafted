@@ -1,0 +1,7 @@
+{
+    "criteria": {
+        "im":{
+            "trigger": "impossible"
+        }
+    }
+}

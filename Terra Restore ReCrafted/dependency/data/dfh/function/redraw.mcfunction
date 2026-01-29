@@ -1,0 +1,1 @@
+#Immediately erase and redraw the entire hud for this player.

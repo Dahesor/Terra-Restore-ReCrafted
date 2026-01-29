@@ -1,0 +1,7 @@
+dispatch mcdoc:custom_data["dfh"] to struct{
+    temp?: boolean
+}
+
+dispatch minecraft:storage["dfh:var"] to struct{
+    type?: #[id="damage_type"] string
+}

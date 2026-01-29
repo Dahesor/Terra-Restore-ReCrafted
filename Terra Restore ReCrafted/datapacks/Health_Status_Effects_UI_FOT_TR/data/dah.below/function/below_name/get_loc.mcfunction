@@ -1,0 +1,27 @@
+execute if score @s region matches 1 run return run data modify storage dah.below:m t.loc set value {"translate": "area.1","font":"default","color": "green"}
+execute if score @s region matches 2 run return run data modify storage dah.below:m t.loc set value {"translate": "area.2","font":"default","color": "#b34500"}
+execute if score @s region matches 3 run return run data modify storage dah.below:m t.loc set value {"translate": "area.3","font":"default","color": "gold"}
+execute if score @s region matches 4 run return run data modify storage dah.below:m t.loc set value {"translate": "area.4","font":"default","color": "#00861d"}
+execute if score @s region matches 5 run return run data modify storage dah.below:m t.loc set value {"translate": "area.5","font":"default","color": "aqua"}
+execute if score @s region matches 6 run return run data modify storage dah.below:m t.loc set value {"translate": "area.6","font":"default","color": "blue"}
+execute if score @s region matches 7 run return run data modify storage dah.below:m t.loc set value {"translate": "area.7","font":"default","color": "red"}
+execute if score @s region matches 8 run return run data modify storage dah.below:m t.loc set value {"translate": "area.8","font":"default","color": "gray"}
+execute if score @s region matches 9 run return run data modify storage dah.below:m t.loc set value {"translate": "area.9","font":"default","color": "dark_aqua"}
+execute if score @s region matches 10 run return run data modify storage dah.below:m t.loc set value {"translate": "area.10","font":"default","color": "yellow"}
+execute if score @s region matches 11 run return run data modify storage dah.below:m t.loc set value {"translate": "area.11","font":"default","color": "dark_red"}
+execute if score @s region matches 12 run return run data modify storage dah.below:m t.loc set value {"translate": "area.12","font":"default","color": "green"}
+execute if score @s region matches 13 run return run data modify storage dah.below:m t.loc set value {"translate": "area.13","font":"default","color": "dark_purple"}
+execute if score @s region matches 14 run return run data modify storage dah.below:m t.loc set value {"translate": "area.14","font":"default","color": "light_purple"}
+execute if score @s region matches 15 run return run data modify storage dah.below:m t.loc set value {"translate": "area.15","font":"default","color": "yellow"}
+execute if score @s region matches 16..17 run return run data modify storage dah.below:m t.loc set value {"translate": "area.16","font":"default","color": "dark_red"}
+execute if score @s region matches 101 run return run data modify storage dah.below:m t.loc set value {"translate": "area.int.1","font":"default","color": "#84ffc6"}
+execute if score @s region matches 102 run return run data modify storage dah.below:m t.loc set value {"translate": "area.int.2","font":"default","color": "#84ffc6"}
+execute if score @s region matches 103 run return run data modify storage dah.below:m t.loc set value {"translate": "area.int.3","font":"default","color": "#84ffc6"}
+execute if score @s region matches 104 run return run data modify storage dah.below:m t.loc set value {"translate": "area.int.4","font":"default","color": "#84ffc6"}
+execute if score @s region matches 100 run return run data modify storage dah.below:m t.loc set value {"translate": "area.base","font":"default","color": "white"}
+execute if score @s region matches 200 run return run data modify storage dah.below:m t.loc set value {"translate": "area.city","font":"default","color": "light_purple"}
+execute if score @s region matches 3000 run return run data modify storage dah.below:m t.loc set value {"translate": "biome.sys.boss","font":"default","color": "#fa6464"}
+execute if score @s region matches 1000 run return run data modify storage dah.below:m t.loc set value {"translate": "area.sea","font":"default","color": "dark_blue"}
+execute if score @s region matches 0 run return run data modify storage dah.below:m t.loc set value {"translate": "area.lobby","font":"default","color": "white"}
+execute if score @s region matches ..-2 run return run data modify storage dah.below:m t.loc set value {"translate": "area.domain","font":"default","color": "#eea8f8"}
+data modify storage dah.below:m t.loc set value {"translate": "area.void","font":"default"}

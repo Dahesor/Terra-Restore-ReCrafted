@@ -6,6 +6,16 @@ dispatch minecraft:storage["dah:actbar"] to struct{
     sleep?: [player_data],
     new?: text_component,
     separator?: Text,
+    sys?: struct{
+        /// Data version of this datapack.
+        version?: int,
+        /// The name of this version
+        VersionName?:string,
+        /// MC version range this datapack is compatible with.
+        MCVersionRange?: string,
+        /// ping reply
+        pong__?: boolean,
+    }
 }
 
 struct player_data{
