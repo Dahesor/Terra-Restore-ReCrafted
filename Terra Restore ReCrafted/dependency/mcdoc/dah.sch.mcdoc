@@ -5,6 +5,8 @@ enum(string) dah_flags{
     debug = "debug",
     /// It will try to resolve the current dimension. Assumes minecraft:overworld if fail.
     try_dimension = "try_dimension",
+    /// Position and rotation will be ignored; run at world spawn
+    location_less = "location_less",
 }
 
 dispatch minecraft:storage["dah.sch:new"] to struct{
@@ -21,44 +23,28 @@ struct dah_task_raw {
     /// What to do if the target entity is not found. Defaults to "discard". Options:
     ///     discard: Do nothing and remove the task.
     ///     delay: *FOR PLAYER* The timer ticks when the player is offline, but it only executes until the player go back online
-    ///     pause: *FOR PLAYER* Wait for the player to go back online. Timer freezes when the player is offline.
+    ///     pause: *FOR PLAYER* Timer freezes when the player is offline.
     ///     by_server: The command will be run by the server, not the entity.
     offline?: dah_offline,
     /// Defines extra behavior for the task. Options:
     ///     no_executer: The command will be run by server.
     ///     debug: Output debug information to chat.
     ///     try_dimension: It will try to resolve the current dimension. Assumes minecraft:overworld if fail.
+    ///     location_less:  Position and rotation will be ignored; run at world spawn
     flags?: [dah_flags],
-}
-
-struct dah_player{
-    task?: [dah_player_task],
-    pause?: [dah_player_task],
-    UID?: int @ -1..,
-    uuid?: #[uuid] string,
-}
-
-
-struct dah_player_task{
-    on?: int,
-    run?: #[command] string,
-    pos_x:double,
-    pos_y:double,
-    pos_z:double,
-    rot_x?: float,
-    rot_y?: float,
-    offline?: dah_offline,
-    flags?: [dah_flags],
-    by?: #[uuid] string,
+    /// if **offline** is set to `discard` or `by_server`, then if entity is not found at execution, the task will be retiried on the next tick, up to this number of times.
+    /// If all retries failed then it proceeds to be discarded or executed by server
+    /// Defaults to 0 (no retries).
+    max_retry?: int @ 0..
 }
 
 enum(string) dah_offline{
-    ///discard: Do nothing and remove the task.
+    ///Do nothing and remove the task.
     discard = "discard",
-    ///delay: **FOR PLAYER** The timer ticks when the player is offline, but it only executes until the player go back online
+    ///*FOR PLAYER ONLY* The timer ticks when the player is offline, but it only executes until the player go back online
     delay = "delay",
-    ///pause: **FOR PLAYER** Wait for the player to go back online. Timer freezes when the player is offline.
+    ///*FOR PLAYER ONLY* Timer freezes when the player is offline.
     pause = "pause",
-    ///by_server: The command will be run by the server, not the entity.
+    ///The command will be run by the server, not the entity.
     by_server = "by_server"
 }
