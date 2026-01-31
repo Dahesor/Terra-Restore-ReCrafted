@@ -1,0 +1,63 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "echo_shard"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_components",
+            "components": {
+                "consumable": {
+                    "animation": "none",
+                    "consume_seconds": 9999999,
+                    "has_consume_particles": false,
+                    "sound": "intentionally_empty"
+                },
+                "max_stack_size": 1,
+                "item_model": "terra:item/unidentified/skill_book",
+                "minecraft:custom_data": {
+                    "skill_book_unkown": -1,
+                    "identify": true
+                },
+                "tooltip_style": "terra:gui/_"
+            }
+        },
+        {
+            "function": "copy_custom_data",
+            "source": {
+                "type": "storage",
+                "source": "data"
+            },
+            "ops": [
+                {
+                    "source": "run",
+                    "target": "skill_book_unkown",
+                    "op": "replace"
+                }
+            ]
+        },
+        {
+            "function": "set_name",
+            "name": {"translate": "item.skill_book.unknown"}
+        },
+        {
+            "function": "set_lore",
+            "mode": "replace_all",
+            "entity":"this",
+            "lore": [
+                "",
+                [{"storage": "data","nbt": "text","interpret": true}," ... ?"],
+                "",
+                {"translate": "item.skill_book.unknown.1","color": "yellow","italic": false}
+            ]
+        }
+    ]
+}

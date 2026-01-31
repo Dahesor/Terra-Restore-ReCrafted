@@ -30,6 +30,7 @@ function sys:player/attack/ticker
 
 #物品鉴定
 execute if items entity @s[tag=!stop_att] player.cursor #sys:may_att[!custom_data~{att_lock:1b}] run function sys:att/apply/new
+execute if items entity @s player.cursor echo_shard[custom_data~{identify:true}] run function sys:att/special/cases
 
 #每秒更新内容
 execute if score #loop_20 calculator matches 4 run function sys:player/second

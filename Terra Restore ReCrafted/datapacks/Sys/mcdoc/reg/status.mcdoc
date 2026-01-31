@@ -1,0 +1,20 @@
+use ::java::util::text::Text
+
+dispatch minecraft:storage["registry:status"] to struct {
+
+}
+
+struct StatusInstance{}
+
+
+struct StatusData{
+    ...NewStatusData,
+    body?: Text
+}
+
+struct NewStatusData{
+    /// Id of the status
+    id?: string,
+    /// Must be zero width
+    extra?: Text
+}

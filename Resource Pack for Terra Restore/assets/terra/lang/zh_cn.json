@@ -139,5 +139,7 @@
     "item.skill_book":"§a技能书：%s",
     "action.learn":"%s以学习",
     "action.already_learned":"[!] 你已经学会该技能了",
-    "action.learn_success":"§a[!] 你学会了新技能§f[%s§f]。\n   §e在玩家面板中查看或装备"
+    "action.learn_success":"§a[!] 你学会了新技能§f[%s§f]。\n   §e在玩家面板中查看或装备",
+    "item.skill_book.unknown":"§a未鉴定的技能书",
+    "item.skill_book.unknown.1":"在物品栏中点击以鉴定"
 }

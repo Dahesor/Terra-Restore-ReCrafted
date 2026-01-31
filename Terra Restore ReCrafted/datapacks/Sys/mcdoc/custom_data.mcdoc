@@ -3,7 +3,7 @@ use::mcdoc::identify::RecordedStats
 use::mcdoc::identify::Stats
 use::mcdoc::playerdata::UnlockedSkill
 use::java::util::text::Text
-use::mcdoc::registry::SkillData
+use::mcdoc::reg::registry::SkillData
 
 dispatch mcdoc:custom_data["weapon_type"] to string
 dispatch mcdoc:custom_data["att_lock"] to byte
@@ -25,6 +25,8 @@ dispatch mcdoc:custom_data["stats"] to Stats
 dispatch mcdoc:custom_data["StoredAbility"] to UnlockedSkill
 dispatch mcdoc:custom_data["TimeStamp"] to long
 dispatch mcdoc:custom_data["skill_book"] to SkillData
+dispatch mcdoc:custom_data["skill_book_unkown"] to int
+dispatch mcdoc:custom_data["identify"] to boolean
 
 dispatch mcdoc:custom_data["ui"] to struct{
     head?: byte,

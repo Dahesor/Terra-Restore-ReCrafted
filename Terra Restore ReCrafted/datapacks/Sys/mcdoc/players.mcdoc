@@ -16,7 +16,7 @@ dispatch minecraft:storage["sys:data"] to struct {
     test?: tp_data,
     spot?: [int] @ 3,
     item?: InventoryItem,
-    itemSlot?: SlottedItem,
+    itemSlot?: SlottedItem<byte @ -106..106>,
     Inv?: [SlottedItem<byte @ -106..106>] @ -106..106,
     Inv2?: [SlottedItem<byte @ -106..106>] @ -106..106,
     SaveInv?: [SlottedItem<byte @ -106..106>] @ -106..106,

@@ -1,9 +1,9 @@
-use::mcdoc::registry::ParsedWeaponType
-use::mcdoc::registry::SimpleAttributeModifier
-use::mcdoc::registry::Prefix
-use::mcdoc::registry::PrefixEffect
-use::mcdoc::registry::StatsEffect
-use::mcdoc::registry::SkillData
+use::mcdoc::reg::registry::ParsedWeaponType
+use::mcdoc::reg::registry::SimpleAttributeModifier
+use::mcdoc::reg::registry::Prefix
+use::mcdoc::reg::registry::PrefixEffect
+use::mcdoc::reg::registry::StatsEffect
+use::mcdoc::reg::registry::SkillData
 use::mcdoc::playerdata::UnlockedSkill
 use::java::world::item::ItemStack
 use::java::world::component::item::AttributeModifier
@@ -34,6 +34,7 @@ dispatch minecraft:storage["data"] to struct {
     //SimpleAttributeModifier
     sm?: SimpleAttributeModifier,
     pr?: Prefix,
+    run?: any,
 
     pcalc?: struct{
         this?: PrefixEffect,
