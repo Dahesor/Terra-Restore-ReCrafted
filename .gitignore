@@ -1,6 +1,6 @@
 **/.DS_Store
-Terra Restore ReCrafted/playerdata/**.dat_old
-
+Terra Restore ReCrafted/players/data/**.dat_old
+Terra Restore ReCrafted/players/stats/**.json
 level.dat_old
 session.lock
 copy.bat
