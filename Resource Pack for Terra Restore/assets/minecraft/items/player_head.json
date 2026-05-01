@@ -9,6 +9,12 @@
           "base": "terra:item/ground_head",
           "model": {
             "type": "minecraft:player_head"
+          },
+          "transformation": {
+            "left_rotation": [1,0,0,0],
+            "right_rotation": [0,0,0,1],
+            "scale": [1,1,1],
+            "translation": [0.5,0,0.5]
           }
         }
       }
@@ -18,6 +24,12 @@
       "base": "minecraft:item/template_skull",
       "model": {
         "type": "minecraft:player_head"
+      },
+      "transformation": {
+        "left_rotation": [1,0,0,0],
+        "right_rotation": [0,0,0,1],
+        "scale": [1,1,1],
+        "translation": [0.5,0,0.5]
       }
     },
     "property": "custom_model_data",
