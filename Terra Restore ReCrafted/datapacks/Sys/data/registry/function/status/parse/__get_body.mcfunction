@@ -1,0 +1,1 @@
+$data modify storage registry:status data[0].body.translate set value "terra.status.$(id)"

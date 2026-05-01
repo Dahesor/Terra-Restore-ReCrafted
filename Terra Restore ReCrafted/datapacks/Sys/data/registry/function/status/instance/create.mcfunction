@@ -1,0 +1,1 @@
+function registry:status/instance/macro with storage registry:status create

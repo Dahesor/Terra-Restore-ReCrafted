@@ -1,4 +1,8 @@
-tellraw @s {translate:"action.learn_success",color:"light_purple",with:[{storage:"data",nbt:"custom_data.skill_book.displayName",interpret:true}],hover_event:{action:"show_text",value:{storage:"data",nbt:"custom_data.skill_book.description[]",interpret:true,separator:"\n"}}}
+data modify storage registry:status create set value {id:"generic_attack_add_value"}
+function registry:status/instance/create
+scoreboard players set #time calculator 50000000
+function registry:status/instance/until/timed
+function registry:status/instance/add/from_inst
 
 return 1
 

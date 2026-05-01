@@ -1,10 +1,24 @@
 use ::java::util::text::Text
+use ::mcdoc::reg::status_ids::StatusID
 
 dispatch minecraft:storage["registry:status"] to struct {
-
+    new?: [NewStatusData],
+    data?: [StatusData],
+    this?: StatusData,
+    instance?: StatusInstance,
+    create?: struct{
+        id: StatusID
+    },
+    temp?: [StatusInstance],
+    run?: any
 }
 
-struct StatusInstance{}
+struct StatusInstance{
+    content?: Text,
+    instance?: int,
+    id?: StatusID,
+    until?: int
+}
 
 
 struct StatusData{
@@ -14,7 +28,7 @@ struct StatusData{
 
 struct NewStatusData{
     /// Id of the status
-    id?: string,
+    id?: StatusID,
     /// Must be zero width
     extra?: Text
 }

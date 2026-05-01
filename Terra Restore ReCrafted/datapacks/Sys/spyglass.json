@@ -1,6 +1,5 @@
 {
 	"env": {
-		"dataSource": "GitHub",
 		"dependencies": [
 			"file:///C:/Users/dahes/Documents/.minecraft/versions/Terra%20Restore%20Dev/saves/Terra%20Restore%20ReCrafted/dependency/",
 			"file:///C:/Users/dahes/Documents/.minecraft/versions/Terra%20Restore%20Dev/resourcepacks/Resource%20Pack%20for%20Terra%20Restore/",
@@ -8,7 +7,7 @@
 			"@vanilla-resourcepack",
 			"@vanilla-mcdoc"
 		],
-		"gameVersion": "1.21.11"
+		"gameVersion": "26.1.2"
 	},
 	"snippet": {
 		"executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",

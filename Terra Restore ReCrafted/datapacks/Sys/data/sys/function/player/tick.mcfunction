@@ -1,4 +1,4 @@
-#data modify storage data player set from entity @s
+function sys:player/uid/get
 
 #检测玩家数量
 scoreboard players add $player data 1
@@ -37,7 +37,6 @@ execute if score #loop_20 calculator matches 4 run function sys:player/second
 
 #开发者
 execute if score @s warped_stick matches 1.. run function sys:dev/mark_cb
-#execute if entity @s[nbt={SelectedItem:{id:"minecraft:structure_void"}}] positioned ~ ~1 ~ run function sys:dev/spread_find
 
 #离开游戏
 execute if score @s leave_game matches 1.. run function sys:player/life/left_game

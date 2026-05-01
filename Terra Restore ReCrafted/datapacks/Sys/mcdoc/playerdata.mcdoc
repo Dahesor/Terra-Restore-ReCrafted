@@ -1,6 +1,7 @@
 use ::java::util::slot::SlottedItem
 use ::java::world::item::ItemStack
 use ::mcdoc::skill_sid::SkillSID
+use ::mcdoc::reg::status::StatusInstance
 
 struct PlayerData{
     UID?: int @ -1..,
@@ -15,7 +16,8 @@ struct PlayerData{
     },
     misc?: struct{
         music_played?: int @ 0..,
-    }
+    },
+    status?: [StatusInstance],
 }
 
 struct UnlockedSkill{

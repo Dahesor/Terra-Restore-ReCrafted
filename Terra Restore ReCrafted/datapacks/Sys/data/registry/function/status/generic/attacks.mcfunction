@@ -1,0 +1,1 @@
+data modify storage registry:status new append value {id:"generic_attack_add_value"}
