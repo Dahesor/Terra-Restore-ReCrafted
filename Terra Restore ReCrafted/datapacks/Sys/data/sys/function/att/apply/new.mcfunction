@@ -1,4 +1,5 @@
 #初始化
+say 1
 scoreboard players set $region calculator 1
 scoreboard players operation $region calculator = @s region
 item replace entity 0-0-0-0-0 container.0 from entity @s player.cursor

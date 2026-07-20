@@ -4,7 +4,7 @@
             "trigger": "player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "type": "interaction",
+                    "entity_type": "interaction",
                     "nbt": "{Tags:['box']}"
                 }
             }

@@ -38,7 +38,7 @@
             "condition": "entity_properties",
             "entity": "attacker",
             "predicate": {
-              "type": "iron_golem"
+              "entity_type": "iron_golem"
             }
           }
         }

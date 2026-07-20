@@ -1,27 +1,27 @@
 {
   "dah.sch:new_player": {
     "criteria": {
-      "any": "2025-04-27 02:29:28 -0400"
+      "any": "2025-04-26 23:29:28 -0700"
     },
     "done": true
   },
   "dah.actbar_mixer:new_player": {
     "criteria": {
-      "tick": "2025-11-26 11:51:44 -0500"
+      "tick": "2025-11-26 09:51:44 -0700"
     },
     "done": true
   },
   "dfh:init": {
     "criteria": {
-      "tick": "2026-01-09 12:09:36 -0500"
+      "tick": "2026-01-09 10:09:36 -0700"
     },
     "done": true
   },
   "sys:new_player": {
     "criteria": {
-      "tick": "2026-01-09 12:09:36 -0500"
+      "tick": "2026-01-09 10:09:36 -0700"
     },
     "done": true
   },
-  "DataVersion": 4790
+  "DataVersion": 4903
 }

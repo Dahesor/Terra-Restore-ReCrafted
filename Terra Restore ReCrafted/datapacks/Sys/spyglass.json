@@ -7,7 +7,7 @@
 			"@vanilla-resourcepack",
 			"@vanilla-mcdoc"
 		],
-		"gameVersion": "26.1.2"
+		"gameVersion": "26.2"
 	},
 	"snippet": {
 		"executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",

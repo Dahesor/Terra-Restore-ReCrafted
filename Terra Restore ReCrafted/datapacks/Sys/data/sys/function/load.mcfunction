@@ -89,6 +89,7 @@ scoreboard players set %sys version 1
 scoreboard players set #-1 calculator -1
 scoreboard players set #2 calculator 2
 scoreboard players set #3 calculator 3
+scoreboard players set #4 calculator 4
 scoreboard players set #5 calculator 5
 scoreboard players set #6 calculator 6
 scoreboard players set #10 calculator 10
@@ -96,6 +97,7 @@ scoreboard players set #20 calculator 20
 scoreboard players set #30 calculator 30
 scoreboard players set #60 calculator 60
 scoreboard players set #100 calculator 100
+scoreboard players set #400 calculator 400
 scoreboard players set #1000 calculator 1000
 scoreboard players set #10000 calculator 10000
 

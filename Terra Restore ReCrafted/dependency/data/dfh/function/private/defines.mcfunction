@@ -12,6 +12,7 @@ scoreboard objectives add dfh.armor dummy
 scoreboard objectives add dfh.toughness dummy
 scoreboard objectives add dfh.ench_defence dummy
 scoreboard objectives add dfh.disabled_trigger dummy
+scoreboard objectives add dfh.hp_cache dummy
 
 scoreboard players set $dmg dfh.var 1
 scoreboard players set $heal dfh.var 1

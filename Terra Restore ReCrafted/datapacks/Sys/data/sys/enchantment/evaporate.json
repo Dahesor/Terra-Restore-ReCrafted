@@ -34,7 +34,7 @@
                             "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "type": "blaze"
+                                "entity_type": "blaze"
                             }
                         }
                     ]
@@ -70,7 +70,7 @@
                             "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "type": "blaze"
+                                "entity_type": "blaze"
                             }
                         }
                     ]

@@ -9,8 +9,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type_specific": {
-              "type": "minecraft:slime",
+            "type_specific/cube_mob": {
               "size": 1
             }
           }
@@ -26,7 +25,7 @@
                 "condition": "minecraft:damage_source_properties",
                 "predicate": {
                   "source_entity": {
-                    "type": "minecraft:frog"
+                    "entity_type": "minecraft:frog"
                   }
                 }
               }
@@ -61,7 +60,7 @@
               "condition": "minecraft:damage_source_properties",
               "predicate": {
                 "source_entity": {
-                  "type": "minecraft:frog"
+                  "entity_type": "minecraft:frog"
                 }
               }
             }

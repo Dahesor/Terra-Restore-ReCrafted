@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "sys:player/hp/items/golden_apple"
+        "function": "sys:player/utils/consume/golden_apple"
     }
 }

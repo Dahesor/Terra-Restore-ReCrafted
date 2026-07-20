@@ -28,7 +28,7 @@
                     "range": {
                         "min": {
                             "type": "score",
-                            "score": "hp_cache",
+                            "score": "dfh.hp_cache",
                             "target": "this",
                             "scale": 0.95
                         }
